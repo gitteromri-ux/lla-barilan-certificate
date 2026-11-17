@@ -6,7 +6,7 @@ Landing-page background loops for the Bar-Ilan University (Health 360 Center) an
 
 | Slot | Section | Current clip | Source res. | Output | Flag |
 |---|---|---|---|---|---|
-| `hero-science` | Hero, beat 01 "Science" | Stylised CGI DNA double helix (glowing particle backbones, twisted base-pair rungs), cyan on near-black navy, slow continuous rotation | 3840x2160 | 1920x1080, 10.00 s, 1.90 MB (+720p 0.88 MB) | Verify helix handedness |
+| `hero-science` | Hero, beat 01 "Science" | Stylised translucent teal cell with a warm nucleus drifting among out-of-focus cells on deep teal-navy | 3840x2160 | 1920x1080, 9.50 s, 2.97 MB (+720p 1.19 MB) | AI-generated source: replace before paid traffic |
 | `hero-evidence` | Hero, beat 02 "Evidence" | Bearded researcher in a lab coat looking into a light microscope in a bright, modern lab; locked-off, minimal movement | 4096x2160 | 1920x1080, 10.00 s, 0.86 MB (+720p 0.31 MB) |  |
 | `hero-practice` | Hero, beat 03 "Practice" | Younger advisor (man) and an older woman on a sofa at home reviewing a printed page together, smiling and talking | 3840x2160 | 1920x1080, 8.60 s, 1.61 MB (+720p 0.68 MB) | 8.6 s (source length) |
 | `hero-impact` | Hero, beat 04 "Impact" | Older couple walking hand in hand toward camera through a summer meadow, soft overcast light | 4096x2160 | 1920x1080, 10.00 s, 1.83 MB (+720p 0.71 MB) |  |
@@ -64,26 +64,27 @@ ffmpeg -ss IN -i SOURCE -frames:v 1 -vf "${VF%,format=yuv420p}" -q:v 4 site/asse
 
 - **Page section**: Hero, beat 01 "Science" (What actually extends healthy life)
 - **Meaning**: Luminous cellular/molecular imagery, deep blue, slow drift; macro full-bleed.
-- **Current clip**: Stylised CGI DNA double helix (glowing particle backbones, twisted base-pair rungs), cyan on near-black navy, slow continuous rotation.
-  - Source page: https://www.pexels.com/video/digital-formation-of-a-dna-in-an-animated-presentation-3191572/
-  - Direct file: https://videos.pexels.com/video-files/3191572/3191572-uhd_3840_2160_25fps.mp4
-  - Creator: Pressmaster
-  - Licence: Pexels License (free commercial use, no attribution required, modification allowed; https://www.pexels.com/license/)
-  - Source resolution: 3840x2160 @ 25 fps, 24.88 s
-  - Segment used: 2-12 s
-- **Processed files**: `hero-science.mp4`: 1920x1080, 10.00 s, 1.90 MB (CRF 25); `hero-science-720.mp4`: 1280x720, 10.00 s, 0.88 MB (CRF 27); `hero-science.jpg`: 1920x1080, 92 KB (JPEG q80)
-- **Notes**: CGI render, not microscopy. FLAG: helix handedness could not be verified in this stylised, partly defocused render (biological B-DNA is right-handed). Ask a Bar-Ilan scientist to sign off; if judged left-handed, add hflip at the start of the -vf chain (mirroring reverses handedness) or replace via the brief. Small magenta highlights in the strands.
+- **Current clip**: Stylised render of a single translucent teal cell with a warm orange nucleus, drifting slowly in a field of out-of-focus cells on deep teal-navy.
+  - Source page: https://pixabay.com/videos/ai-generated-cell-microscope-352552/
+  - Direct file: Pixabay "large" MP4 rendition of video 352552 (download from the source page)
+  - Creator: doktorkleinmusic
+  - Licence: Pixabay Content License (free commercial use, no attribution required, modification allowed; https://pixabay.com/service/license-summary/)
+  - Source resolution: 3840x2160 @ 24 fps, 9.63 s
+  - Segment used: 0-9.5 s
+- **Processed files**: `hero-science.mp4`: 1920x1080, 9.50 s, 2.97 MB (CRF 25); `hero-science-720.mp4`: 1280x720, 9.50 s, 1.19 MB (CRF 27); `hero-science.jpg`: 1920x1080, 78 KB (JPEG q80)
+- **Notes**: FLAG: Pixabay labels this clip AI-generated. It is an illustrative cell, not microscopy, and makes no specific biological claim, so it is fine as a placeholder loop; replace with licensed CGI or real microscopy via the brief before paid traffic. It replaced the earlier Pexels DNA helix (Pressmaster, 3191572) because that render's handedness could not be verified (biological B-DNA is right-handed), which is a visible error risk for an academic audience. The warm nucleus echoes the Stage 2 amber.
 - **Artlist / Artgrid replacement brief**:
   - Shot type and scale: Macro / extreme close-up, full-bleed; either real fluorescence or confocal microscopy of living human cells, or a scientifically accurate CGI of right-handed B-DNA (visible major/minor grooves). No labels, UI or text.
   - Subject (age, diversity): Cells, organelles or DNA only; no people.
   - Action: Very slow drift or orbit (under ~5 degrees/s), gentle particle float, optional slow rack-focus through depth.
   - Setting: Abstract dark field.
-  - Lighting and time of day: Self-luminous cyan/teal emission on a deep navy-to-black ground; no red/magenta accents.
+  - Lighting and time of day: Self-luminous cyan/teal emission on a deep navy-to-black ground; a single warm amber accent (nucleus or organelle) is welcome, no red/magenta.
   - Lens and camera movement: Macro look, very shallow depth of field, slow push-in or orbit, locked horizon.
   - Mood: Awe, precision, calm authority.
   - Colour grade: Deep navy blacks (#040D24 to #0A1E3A), cool blue mids, restrained saturation; must sit under white headline type.
   - Ideal duration: 10-15 s, one continuous take, loopable.
   - Aspect: 16:9 master (3840x2160 or larger). Mobile 9:16 safe area: a centred 9:16 crop keeps only the middle ~32% of the frame width (about 1215 px of 3840), so keep faces/hands/key action inside that centre column and avoid critical detail at the frame edges.
+  - Scientific check: if the replacement shows DNA, a Bar-Ilan scientist confirms it is right-handed B-DNA before it goes live.
   - Search keywords: "fluorescence microscopy living cells", "confocal cells blue 4K", "B-DNA double helix accurate", "cell biology macro navy", "microscopic particles slow drift"
 
 ### `hero-evidence`

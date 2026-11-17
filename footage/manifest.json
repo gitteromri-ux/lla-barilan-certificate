@@ -7,14 +7,14 @@
   "poster": "assets/video/hero-science.jpg",
   "width": 1920,
   "height": 1080,
-  "duration_s": 10.0,
-  "size_bytes": 1990047,
-  "source_page": "https://www.pexels.com/video/digital-formation-of-a-dna-in-an-animated-presentation-3191572/",
-  "source_file": "https://videos.pexels.com/video-files/3191572/3191572-uhd_3840_2160_25fps.mp4",
-  "creator": "Pressmaster",
-  "licence": "Pexels License (free commercial use, no attribution required, modification allowed; https://www.pexels.com/license/)",
-  "source_resolution": "3840x2160 @ 25 fps, 24.88 s",
-  "notes": "Stylised CGI DNA double helix (glowing particle backbones, twisted base-pair rungs), cyan on near-black navy, slow continuous rotation. CGI render, not microscopy. FLAG: helix handedness could not be verified in this stylised, partly defocused render (biological B-DNA is right-handed). Ask a Bar-Ilan scientist to sign off; if judged left-handed, add hflip at the start of the -vf chain (mirroring reverses handedness) or replace via the brief. Small magenta highlights in the strands. [Segment 2-12 s of source; x264 CRF 25; 720p file 0.88 MB (CRF 27); poster 92 KB (JPEG q80)]"
+  "duration_s": 9.5,
+  "size_bytes": 2974502,
+  "source_page": "https://pixabay.com/videos/ai-generated-cell-microscope-352552/",
+  "source_file": "Pixabay 'large' MP4 rendition of video 352552 (download from the source page)",
+  "creator": "doktorkleinmusic",
+  "licence": "Pixabay Content License (free commercial use, no attribution required, modification allowed; https://pixabay.com/service/license-summary/)",
+  "source_resolution": "3840x2160 @ 24 fps, 9.63 s",
+  "notes": "Stylised render of a single translucent teal cell with a warm orange nucleus drifting among out-of-focus cells on deep teal-navy. FLAG: Pixabay labels this clip AI-generated; illustrative, not microscopy, no specific biological claim. Replace with licensed CGI or real microscopy before paid traffic. Replaced the Pexels DNA helix (Pressmaster, 3191572) whose handedness could not be verified. [Segment 0-9.5 s of source; x264 CRF 25; 720p file 1.19 MB (CRF 27); poster 78 KB (JPEG q80)]"
  },
  {
   "slot": "hero-evidence",
