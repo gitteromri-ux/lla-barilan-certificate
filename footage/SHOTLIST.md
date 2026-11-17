@@ -18,7 +18,7 @@ Landing-page background loops for the Bar-Ilan University (Health 360 Center) an
 | `course-5-purpose` | 02 Program journey | Senior woman in glasses and an apron shaping clay at a pottery wheel in a bright studio | 3840x2160 | 1280x720, 8.80 s, 0.51 MB |  |
 | `course-6-social` | 02 Program journey | Grandparents and granddaughter laughing together outdoors against a timber facade | 4096x2160 | 1280x720, 10.00 s, 0.85 MB |  |
 | `stage-4-capstone` | 02 Program journey | Woman presenting to a small seated group in a bright library learning space, no screen | 3840x2160 | 1280x720, 10.00 s, 0.70 MB |  |
-| `live-online` | 02 Program journey | Older man at a laptop in a home study, typing and then taking handwritten notes | 3840x2160 | 1280x720, 8.88 s, 0.62 MB |  |
+| `live-online` | 02 Program journey | Educator speaking and gesturing to camera as if teaching a live online class, bookshelves behind | 3840x2160 | 1280x720, 10.00 s, 0.77 MB | Reframed to exclude a school letterboard |
 | `opp-organizations` | 04 Professional opportunities | Diverse team in a workshop, posting sticky notes on a glass wall, filmed through the glass | 3840x2160 | 1280x720, 10.00 s, 1.11 MB |  |
 | `opp-individuals` | 04 Professional opportunities | Professional woman in an armchair listening to an off-screen client and taking notes in a notebook | 3840x2160 | 1280x720, 10.00 s, 0.62 MB |  |
 | `opp-community` | 04 Professional opportunities | Group of older adults on mats in a sunny park following an instructor through gentle stretches | 3840x2160 | 1280x720, 8.80 s, 2.41 MB |  |
@@ -375,16 +375,16 @@ ffmpeg -ss IN -i SOURCE -frames:v 1 -vf "${VF%,format=yuv420p}" -q:v 4 site/asse
 ### `live-online`
 
 - **Page section**: 02 Program journey: Stage 01 Program start (Orientation), Stage 04 Final assessment, live-lesson panel
-- **Meaning**: Educator on a video call, or a professional attending a live class taking notes.
-- **Current clip**: Older man at a laptop in a home study, typing and then taking handwritten notes.
-  - Source page: https://www.pexels.com/video/a-man-studying-using-his-laptop-5762416/
-  - Direct file: https://videos.pexels.com/video-files/5762416/5762416-uhd_3840_2160_24fps.mp4
-  - Creator: RDNE Stock project
+- **Meaning**: An educator teaching live on a video call (webcam point of view), used as the instructor tile of the live-classroom mockup and behind the orientation and final-assessment screens.
+- **Current clip**: Educator in a blazer and glasses speaking and gesturing straight to camera, as if teaching a live online class, in front of bookshelves.
+  - Source page: https://www.pexels.com/video/a-teacher-discussing-her-online-lesson-5200350/
+  - Direct file: https://videos.pexels.com/video-files/5200350/5200350-uhd_3840_2160_25fps.mp4
+  - Creator: Max Fischer
   - Licence: Pexels License (free commercial use, no attribution required, modification allowed; https://www.pexels.com/license/)
-  - Source resolution: 3840x2160 @ 23.976 fps, 12.89 s
-  - Segment used: 4-12.85 s
-- **Processed files**: `live-online.mp4`: 1280x720, 8.88 s, 0.62 MB (CRF 27); `live-online.jpg`: 1280x720, 80 KB (JPEG q80)
-- **Notes**: The laptop logo is covered by a yellow sticky note in the original footage; the screen is never visible. Reads as attending an online class, with no explicit video-call UI. The opening dolly is trimmed (cut starts at 4.0 s) so the head is not cropped.
+  - Source resolution: 3840x2160 @ 25 fps, 22.80 s
+  - Segment used: 3.5-13.5 s
+- **Processed files**: `live-online.mp4`: 1280x720, 10.00 s, 0.77 MB (CRF 27); `live-online.jpg`: 1280x720, 64 KB
+- **Notes**: Replaced the first pick (a man studying at a laptop, Pexels 5762416), which showed a learner rather than an educator teaching. The source frame includes a classroom letterboard reading "CLASSWORK · MATHS · BREAK", which signals a children's school, so the clip is reframed with `crop=2420:1361:250:90` (from 3840x2160) to keep it out of shot; the remaining crop is still 1.9x the delivered width. Small continent labels on a wall map remain at the delivered size.
 - **Artlist / Artgrid replacement brief**:
   - Shot type and scale: Medium or over-the-shoulder.
   - Subject (age, diversity): Educator aged 40-65 teaching live, or a mid-career professional aged 35-60 attending a live class.
