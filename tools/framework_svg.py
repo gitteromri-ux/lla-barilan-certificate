@@ -93,9 +93,9 @@ def build():
     out.append(f'<circle r="{R_APPR + 9}" fill="none" stroke="rgba(232,241,255,.35)" stroke-width=".8"/>')
     out.append(f'<circle r="{R_APPR - 9}" fill="none" stroke="rgba(232,241,255,.2)" stroke-width=".8"/>')
     out.append(f'<path id="fwApprTop" d="{arc_path(R_APPR - 3.5, -160, -20)}" fill="none"/>')
-    out.append('<text class="ring-label" style="fill:#E8F1FF"><textPath href="#fwApprTop" startOffset="50%" text-anchor="middle">Evidence appraisal · established · emerging · unsupported</textPath></text>')
+    out.append('<text class="ring-label" style="fill:#E8F1FF"><textPath href="#fwApprTop" startOffset="50%" text-anchor="middle">Evidence appraisal</textPath></text>')
     out.append(f'<path id="fwApprBot" d="{arc_path(R_APPR + 4.5, 160, 20)}" fill="none"/>')
-    out.append('<text class="ring-label" style="fill:#E8F1FF"><textPath href="#fwApprBot" startOffset="50%" text-anchor="middle">Separating evidence from claims</textPath></text>')
+    out.append('<text class="ring-label" style="fill:#E8F1FF"><textPath href="#fwApprBot" startOffset="50%" text-anchor="middle">Established · emerging · unsupported</textPath></text>')
     out.append('</g>')
 
     # Method cycle
