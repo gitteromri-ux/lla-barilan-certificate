@@ -763,6 +763,7 @@
   .cr-stage { grid-template-columns: minmax(0, 1fr); }
   .cr-tiles { grid-template-rows: none; grid-template-columns: repeat(4, 1fr); }
   .cr-tile { aspect-ratio: 1 / .8; font-size: 20px; }
+  .cr-tile i { display: none; }
   .fac-top { flex-direction: column; align-items: flex-start; }
   .fac-photo { width: min(300px, 100%); }
   .fac-list { grid-template-columns: minmax(0, 1fr); }
