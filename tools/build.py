@@ -119,7 +119,7 @@ def header_html(base, current=""):
     return f'''<header class="site-header is-scrolled" id="header">
   <div class="wrap bar">
     <a class="lockup" href="{base}index.html" aria-label="Longevity Life Academy, in partnership with Bar-Ilan University — program home">
-      <img class="lla" src="{base}assets/img/lla-logo.png" width="720" height="231" alt="Longevity Life Academy">
+      <img class="lla" src="{base}assets/img/lla-logo-sm.png" width="320" height="103" alt="Longevity Life Academy">
       <span class="divider" aria-hidden="true"></span>
       <img class="biu" src="{base}assets/img/biu-logo-white.png" width="833" height="309" alt="Bar-Ilan University">
     </a>
@@ -152,7 +152,7 @@ def footer_html(base):
     <div class="footer-top">
       <div class="footer-brand">
         <a class="lockup" href="{base}index.html" aria-label="Program home">
-          <img class="lla" src="{base}assets/img/lla-logo.png" width="720" height="231" alt="Longevity Life Academy" loading="lazy">
+          <img class="lla" src="{base}assets/img/lla-logo-sm.png" width="320" height="103" alt="Longevity Life Academy" loading="lazy">
           <span class="divider" aria-hidden="true"></span>
           <img class="biu" src="{base}assets/img/biu-logo-white.png" width="833" height="309" alt="Bar-Ilan University" loading="lazy">
         </a>

@@ -135,7 +135,9 @@
   /* ---------- Video: lazy load, play only in view ---------- */
   const autoplayOK = !reduceMotion && !saveData;
   function srcFor(v) { return (isSmall() && v.dataset.srcSm) || v.dataset.src; }
+  function ensurePoster(v) { if (v.dataset.poster && !v.getAttribute('poster')) v.setAttribute('poster', v.dataset.poster); }
   function ensureSrc(v) {
+    ensurePoster(v);
     if (!v.dataset.src || v.dataset.loaded) return;
     v.src = srcFor(v);
     v.dataset.loaded = '1';
@@ -154,10 +156,12 @@
         const v = e.target;
         const item = v.closest('.screen-item');
         if (item && !item.classList.contains('is-on')) return;
-        if (e.isIntersecting) playVideo(v); else if (!v.paused) v.pause();
+        if (e.isIntersecting) { ensurePoster(v); playVideo(v); } else if (!v.paused) v.pause();
       });
-    }, { rootMargin: '200px 0px', threshold: 0.01 });
+    }, { rootMargin: '400px 0px', threshold: 0.01 });
     lazyVideos.forEach((v) => vio.observe(v));
+  } else {
+    lazyVideos.forEach(ensurePoster);
   }
 
   /* ---------- Hero reel ---------- */
@@ -237,7 +241,7 @@
       const on = it.id === id;
       it.classList.toggle('is-on', on);
       const v = $('video', it);
-      if (v) { if (on) playVideo(v); else v.pause(); }
+      if (v) { if (on) { ensurePoster(v); playVideo(v); } else v.pause(); }
     });
     $$('.rail-card', panel).forEach((c) => { const on = c.dataset.item === id; c.classList.toggle('is-on', on); c.setAttribute('aria-selected', String(on)); });
   }
