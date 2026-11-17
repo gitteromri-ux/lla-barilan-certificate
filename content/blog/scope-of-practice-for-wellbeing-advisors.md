@@ -1,74 +1,103 @@
 ---
 slug: scope-of-practice-for-wellbeing-advisors
 title: Scope of practice for wellbeing advisors, from intake to referral
-dek: Non-clinical advisors work alongside regulated professions. A clear scope, a structured intake, attention to red flags and a referral plan protect clients and make the advisory role credible.
+dek: What a non-clinical longevity and wellbeing advisor can do, where licensed practice begins in the United States, which red flags call for referral, and what research on coaching-style roles does and does not show.
 course: Professional-practice strand · Scope, ethics and referral
 stage: 4
 category: Scope of practice
-reading_minutes: 5
+reading_minutes: 6
 summary_points:
-  - The certificate's proposed scope covers structured, non-diagnostic assessment, planning, behavior-change support, progress review and referral. It does not confer a clinical license.
-  - In a review of 284 articles, health and wellness coaching was defined by patient-centered goals, self-discovery, accountability and an ongoing relationship with a trained coach, but results were mixed.
-  - Medical nutrition therapy, medication decisions and the assessment of depression belong with licensed professionals.
-  - ACSM preparticipation screening rests on current activity, signs or symptoms and known disease, and desired exercise intensity, which helps advisors decide when to recommend medical clearance.
-  - Warning signs of suicide call for immediate connection to 988 or 911, and privacy obligations such as HIPAA depend on the setting.
-in_practice: A Longevity and Lifelong Wellbeing Advisor opens every engagement with a structured, non-diagnostic intake that includes activity-readiness questions, explains the scope of the role and obtains consent. Goals are co-created, progress is documented and reviewed, and referral routes, from the client's own physician to crisis lines, are identified before they are needed.
-scope_note: Advisors do not diagnose, treat, prescribe or change medication, and they do not provide medical nutrition therapy or mental health treatment. Signs of disease, questions about medicines or supplements and emotional distress call for referral, and warning signs of suicide call for immediate connection to the 988 Suicide and Crisis Lifeline or, if life is in danger, 911.
+  - Advisors conduct a structured, non-diagnostic intake and assessment, co-create plans, support behavior change, review progress, document and refer, without diagnosing, prescribing or altering medication.
+  - The majority of US states regulate dietetics through licensure, state certification or title protection, and most that regulate it limit the services unlicensed individuals may provide.
+  - Under FTC guidance, health claims for products generally need competent and reliable scientific evidence. HIPAA applies only to covered entities and their business associates, so privacy duties depend on the setting.
+  - Heart attack and stroke warning signs call for 911, a suicidal crisis for 988, substance use concerns for SAMHSA's National Helpline, and suspected elder abuse for Adult Protective Services, or 911 if danger is immediate.
+  - A compendium of 219 articles describes health and wellness coaching as promising for chronic diseases, but definitions have varied, effect sizes were not estimated and publication bias is possible.
+in_practice: A Longevity and Lifelong Wellbeing Advisor opens each engagement by explaining what the role includes and what it does not, then conducts a structured, non-diagnostic intake that covers current activity, symptoms, medicines and supplements. Plans are co-created with measurable goals and reviewed over time, and the advisor keeps a brief record of what was discussed, agreed and referred. Crisis and reporting routes are known before they are needed.
+scope_note: Advisors do not diagnose, interpret medical test results, prescribe treatment or supplements, or change medication, and they do not provide medical nutrition therapy or psychotherapy. Warning signs of a heart attack or stroke call for 911, a suicidal crisis calls for 988, and suspected elder abuse calls for Adult Protective Services, or 911 if someone is in immediate danger.
 references:
   - n: 1
     text: "Wolever RQ, Simmons LA, Sforzo GA, et al. A systematic review of the literature on health and wellness coaching: defining a key behavioral intervention in healthcare. Glob Adv Health Med. 2013;2(4):38-57. doi:10.7453/gahmj.2013.042"
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3833550/"
   - n: 2
-    text: "Centers for Medicare & Medicaid Services. Medical nutrition therapy services [Internet]. Baltimore (MD): CMS; [cited 2026 Nov 17]."
-    url: "https://www.medicare.gov/coverage/medical-nutrition-therapy-services"
+    text: "National Board for Health & Wellness Coaching. NBHWC health & wellness coach scope of practice [Internet]. Scottsdale (AZ): NBHWC; [cited 2026 Nov 17]."
+    url: "https://nbhwc.org/scope-of-practice/"
   - n: 3
-    text: "Office of Dietary Supplements, National Institutes of Health. Dietary supplements: what you need to know [Internet]. Bethesda (MD): NIH; 2023 Jan 4 [cited 2026 Nov 17]."
-    url: "https://ods.od.nih.gov/factsheets/WYNTK-Consumer/"
+    text: "Academy of Nutrition and Dietetics. Overview: regulation of food, nutrition and health [Internet]. Chicago (IL): Academy of Nutrition and Dietetics; [cited 2026 Nov 17]."
+    url: "https://www.eatrightpro.org/advocacy/state-policy/why-licensure/overview-regulation-of-food-nutrition-and-health"
   - n: 4
-    text: "National Institute of Mental Health. Depression [Internet]. Bethesda (MD): NIMH; 2024 [cited 2026 Nov 17]. NIH Publication No. 24-MH-8079."
-    url: "https://www.nimh.nih.gov/health/publications/depression"
+    text: "Office of Dietary Supplements. Dietary supplements: what you need to know [Internet]. Bethesda (MD): National Institutes of Health; 2023 Jan 4 [cited 2026 Nov 17]."
+    url: "https://ods.od.nih.gov/factsheets/WYNTK-Consumer/"
   - n: 5
+    text: "Federal Trade Commission. Health products compliance guidance [Internet]. Washington (DC): Federal Trade Commission; 2022 Dec [cited 2026 Nov 17]."
+    url: "https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance"
+  - n: 6
+    text: "US Department of Health and Human Services. HIPAA privacy and security and workplace wellness programs [Internet]. Washington (DC): HHS; 2015 Apr 20 [cited 2026 Nov 17]."
+    url: "https://www.hhs.gov/hipaa/for-professionals/privacy/workplace-wellness/index.html"
+  - n: 7
     text: "Riebe D, Franklin BA, Thompson PD, et al. Updating ACSM's recommendations for exercise preparticipation health screening. Med Sci Sports Exerc. 2015;47(11):2473-9. doi:10.1249/MSS.0000000000000664"
     url: "https://pubmed.ncbi.nlm.nih.gov/26473759/"
-  - n: 6
-    text: "National Institute of Mental Health. Warning signs of suicide [Internet]. Bethesda (MD): NIMH; 2025 [cited 2026 Nov 17]. NIMH Identifier No. OM 25-4316."
-    url: "https://www.nimh.nih.gov/health/publications/warning-signs-of-suicide"
-  - n: 7
-    text: "US Department of Health and Human Services. Covered entities and business associates [Internet]. Washington (DC): HHS; 2024 Aug 21 [cited 2026 Nov 17]."
-    url: "https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html"
+  - n: 8
+    text: "Centers for Disease Control and Prevention. About heart attack symptoms, risk, and recovery [Internet]. Atlanta (GA): CDC; 2024 Oct 24 [cited 2026 Nov 17]."
+    url: "https://www.cdc.gov/heart-disease/about/heart-attack.html"
+  - n: 9
+    text: "Centers for Disease Control and Prevention. Signs and symptoms of stroke [Internet]. Atlanta (GA): CDC; 2026 May 19 [cited 2026 Nov 17]."
+    url: "https://www.cdc.gov/stroke/signs-symptoms/index.html"
+  - n: 10
+    text: "Substance Abuse and Mental Health Services Administration. Find help & support [Internet]. Rockville (MD): SAMHSA; 2023 Apr 24 [cited 2026 Nov 17]."
+    url: "https://www.samhsa.gov/find-help"
+  - n: 11
+    text: "National Center on Elder Abuse. Find help: reporting abuse, neglect, or exploitation [Internet]. Los Angeles (CA): National Center on Elder Abuse; 2026 Sep 2 [cited 2026 Nov 17]."
+    url: "https://ncea.usc.edu/find-help/"
+  - n: 12
+    text: "Sforzo GA, Kaye MP, Todorova I, et al. Compendium of the health and wellness coaching literature. Am J Lifestyle Med. 2018;12(6):436-47. doi:10.1177/1559827617708562"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6236633/"
 ---
-Longevity and wellbeing advice sits close to medicine, nutrition and mental health care, and much of the risk lies at those boundaries. A clear scope protects clients, and it makes the advisory role credible to the clinicians, employers and community partners an advisor works alongside. The certificate's proposed scope is explicit. Graduates conduct structured, non-diagnostic assessment, planning, behavior-change support, progress review and referral, and the certificate does not confer a medical, nutritional, psychological or other regulated clinical license. Graduates may not diagnose disease, prescribe treatment, alter medication or provide services reserved for licensed professionals unless they are separately qualified.
+Longevity and wellbeing advisors work alongside regulated professions. In one session, a client may mention chest tightness on the stairs, a new supplement, a changed prescription or weeks of low mood. What can a non-clinical advisor responsibly offer, and when does the conversation belong to a physician, dietitian, pharmacist or mental health professional? Even health and wellness coaching, the closest established role, has been inconsistently defined and has shown mixed results [1]. A clear scope protects clients first.
 
-## What the advisory role is
+## What the advisory role includes
 
-The closest established model is health and wellness coaching. A systematic review that included 284 full-text articles found that the literature described coaching as fully or partially patient-centered (86 percent of articles), with patient-determined goals (71 percent), self-discovery and active learning (63 percent), accountability for behaviors (86 percent) and some education alongside coaching (91 percent) [1]. In 78 percent of articles, coaching took place within a consistent, ongoing relationship with a coach trained in behavior change, communication and motivational skills [1]. The same review notes that coaching had been inconsistently defined and had shown mixed results [1]. That is a reason to describe the role precisely, and to promise a structured process rather than health outcomes.
+In the certificate's proposed scope, a Longevity and Lifelong Wellbeing Advisor conducts a structured intake and non-diagnostic assessment, co-creates a plan with measurable goals, supports behavior change and implementation, reviews progress, documents the work and refers when a need falls outside the role. The certificate does not confer a medical, nutritional, psychological or other regulated clinical license, and advisors may not diagnose disease, prescribe treatment, alter medication or provide services reserved for licensed professionals unless separately qualified.
 
-## Where regulated practice begins
+In a systematic review of 284 articles on health and wellness coaching, 86 percent described a fully or partially patient-centered process, 71 percent patient-determined goals, 86 percent accountability for behaviors and 91 percent some education; 63 percent described self-discovery and active learning rather than more passive receipt of advice [1].
 
-Three boundaries come up most often. The first is clinical nutrition. Medicare Part B covers medical nutrition therapy for people with diabetes or kidney disease, or who have had a kidney transplant in the last 36 months, when a doctor refers them, and only a registered dietitian or a nutrition professional who meets certain requirements can provide it [2]. Advisors can support everyday eating patterns, while diets for disease management belong with those professionals. Advisors should also check the rules on nutrition advice in the state where they practice.
+The National Board for Health & Wellness Coaching (NBHWC) offers a reference point from a neighboring profession. Its scope of practice casts the coach as an "accountability partner, not director," and states that coaches on their own "do not diagnose, interpret medical data, prescribe or de-prescribe, recommend supplements" [2]. Nor do they provide nutrition consultation, create meal plans, prescribe exercise or provide psychological therapeutic interventions such as cognitive behavioral therapy, which qualified professionals use for diagnosed medical or mental health conditions [2]. Coaches with another active credential may work within that credential's scope, but the dual role and any conflicts of interest must be discussed with the client and documented from the start [2].
 
-The second is medicines and supplements. The NIH Office of Dietary Supplements advises getting a health care provider's approval before taking dietary supplements in place of, or in combination with, prescribed medicines [3]. Its examples are concrete: vitamin K can reduce the ability of the blood thinner warfarin to prevent clotting, and St. John's wort can speed the breakdown of many medicines and reduce their effectiveness [3]. An advisor never suggests starting, stopping or changing a medicine, and refers supplement questions that involve medicines to a pharmacist or physician.
+## Where licensed practice begins in the United States
 
-The third is mental health. According to the National Institute of Mental Health (NIMH), a diagnosis of depression requires symptoms most of the day, nearly every day, for at least two weeks [4]. Advisors do not assess for depression. They notice, ask with care and encourage contact with a health care provider or mental health professional [4].
+Nutrition shows how the boundary varies by state. According to the Academy of Nutrition and Dietetics, most states regulate dietetics through licensure, state certification or title protection [3]. Licensure laws always include a title protection provision, and most regulating states also limit the services unlicensed individuals may provide; California, Colorado and Virginia protect titles only [3]. Advisors refer therapeutic diets and medical nutrition therapy to a registered dietitian or physician, and should check where their own state draws the legal line.
 
-## Readiness for physical activity
+Medication and supplements are a frequent crossing point. The NIH Office of Dietary Supplements warns that supplements can interact with medicines (vitamin K, for example, can reduce the ability of the blood thinner warfarin to prevent clotting) and advises getting a provider's approval before taking supplements with, or in place of, prescribed medicines [4]. Advisors do not change medication or prescribe supplements, but they can encourage clients to keep a complete record of everything they take and share it with their health care providers [4].
 
-Physical activity is part of most longevity plans, so advisors need a defensible approach to readiness. The American College of Sports Medicine (ACSM) bases exercise preparticipation screening on three factors: the individual's current level of physical activity, the presence of signs or symptoms and/or known cardiovascular, metabolic or renal disease, and the desired exercise intensity [5]. Its 2015 roundtable noted that earlier guidelines could result in excessive physician referrals, that exercise is safe for most people and that exercise-related cardiovascular events are often preceded by warning signs or symptoms [5]. In practice, the advisor asks these questions at intake, encourages gradual progression and uses the ACSM model to decide when to recommend medical clearance before a client starts or intensifies exercise [5].
+Claims are another boundary. Under the Federal Trade Commission's Health Products Compliance Guidance of December 2022, claims about the health benefits or safety of health-related products generally require "competent and reliable scientific evidence," typically randomized, controlled human clinical testing [5]. Consumers' anecdotes never suffice, promotion on social media counts as advertising, and the FTC has acted against expert endorsers as well as marketers [5]. Advisors who promote products should keep claims within the evidence and check disclosure duties with counsel or their employer.
 
-## Red flags and referral routes
+Privacy obligations depend on the setting. The HIPAA Rules apply only to covered entities (health plans, health care clearinghouses and most health care providers) and their business associates, not to employers in their capacity as employers [6]. Information from a workplace wellness program offered as part of a group health plan is protected by HIPAA; information an employer collects through a program offered directly is not, although other federal or state laws may apply [6]. Advisors should ask their employer or counsel which rules govern the records they keep.
 
-Some situations call for immediate action rather than a referral letter. NIMH's warning signs of suicide include talking about wanting to die or being a burden, feeling hopeless or trapped, and behavior changes such as making a plan, withdrawing from friends or giving away important items [6]. In the United States, the 988 Suicide and Crisis Lifeline is available by call or text at 988 and by chat at 988lifeline.org [6]. If a life is in immediate danger, call 911. Advisors should know, before the first session, whom they will contact: the client's own clinician, local crisis services and, in workplace programs, the employee assistance program.
+## Red flags and where they lead
 
-## Records, consent and privacy
+Some signals mean a need lies outside the role or that safety comes first. In physical activity, the American College of Sports Medicine published updated preparticipation screening recommendations in 2015, after studies suggested that its earlier guidelines could cause excessive physician referrals, a possible barrier to exercise [7]. The update rests on three factors: current physical activity; signs or symptoms and/or known cardiovascular, metabolic or renal disease; and desired exercise intensity [7]. Exercise-related cardiovascular events are often preceded by warning signs or symptoms [7]. Asking about symptoms before intensity rises, and pausing when they appear, is therefore a core habit.
 
-Documentation is part of the role: intake answers, agreed goals, progress reviews and any referral, including what was said and when. Privacy obligations depend on the setting. The HIPAA Rules apply to covered entities and business associates, and an entity that meets neither definition does not have to comply with them [7]. A health care provider is a covered entity only if it transmits information electronically in connection with a transaction for which HHS has adopted a standard [7]. An advisor working inside a clinic, or for one, may therefore be bound by HIPAA, while an independent advisor may not be. Either way, the advisor obtains informed consent, stores records securely and confirms obligations with counsel or an employer.
+Other signals need urgent routes that advisors should know in advance.
 
-## Scope in three settings
+| Signal | Route |
+|---|---|
+| Chest pain or discomfort, shortness of breath, light-headedness, or pain in the jaw, neck, back, arms or shoulders | Call 911 immediately [8] |
+| Sudden numbness or weakness on one side, confusion, trouble speaking or seeing, or a sudden severe headache | Call 911 right away; do not drive the person to the hospital [9] |
+| Talk of suicide, or distress that feels like a crisis | Call or text the 988 Suicide and Crisis Lifeline [10] |
+| Concern about alcohol or drug use | SAMHSA's National Helpline, 1-800-662-HELP (4357), for free, confidential treatment referral [10] |
+| Suspected abuse, neglect or exploitation of an older adult | 911 if the person is in immediate danger; otherwise Adult Protective Services or the Eldercare Locator, 1-800-677-1116 [11] |
 
-In a one-to-one session, a client mentions that she has replaced her blood pressure medicine with a supplement. The advisor does not comment on the product or the dose, records the disclosure, explains that medicine decisions belong with the prescriber and encourages the client to contact her physician or pharmacist before the next session [3].
+Reporting suspected elder mistreatment does not require proof, and mandatory reporters are designated by state statute, so advisors should learn whether their role is covered [11]. Outside emergencies, referring well means naming the concern plainly without suggesting a diagnosis, agreeing on next steps with the client, recording what was observed and advised, and following up.
 
-In a workplace wellbeing program, an employee says after a workshop that he has felt hopeless for weeks. The advisor listens, asks directly about safety and shares the 988 Lifeline and the employee assistance program, and calls 911 if there is immediate danger [6].
+## What the evidence on coaching-style roles shows
 
-In a community walking group for older adults, a participant reports chest discomfort on hills. The advisor stops the activity for that participant, who does not resume until a clinician has given medical clearance [5].
+The review by Wolever and colleagues began with 800 abstracts; 76 percent of the included articles were empirical, and the authors found an emerging consensus on a patient-centered process grounded in behavior change theory and delivered by health professionals with diverse backgrounds [1]. Yet variability in definitions, they noted, precluded rigorous reviews or meta-analyses [1]. A later compendium found 219 articles meeting a standardized definition of health and wellness coaching, 150 of them data-based, and described coaching as a promising intervention for chronic diseases, though further research is needed in most categories [12]. By design it did not estimate effect sizes, its reviewers speculated that publication bias might favor positive findings, and the optimum frequency, length and number of sessions need focused research [12]. In clinical care, the authors note, coaches often work within multidisciplinary teams [12]. Structured, client-centered support is promising rather than proven, and it belongs within a network of clinical care.
 
-> A clear scope does not limit an advisor's value. It is what allows clinicians, employers and clients to trust the work.
+## Staying in scope: three illustrative cases
+
+In a one-to-one advisory session, a client in her sixties who walks most days wants to start jogging and mentions chest pressure on hills over the past month. The advisor does not interpret the symptom, but pauses the progression, encourages her to contact her doctor promptly and records the conversation. The advisor also goes over the heart attack warning signs that call for 911 [8].
+
+In a workplace wellbeing program, a lead planning a health survey first asks whether the program is part of the group health plan, which determines whether HIPAA applies, and involves the employer's privacy officer or counsel [6]. When a vendor pitches a supplement as clinically proven to slow aging, the lead asks for competent and reliable scientific evidence [5].
+
+In a community program for older adults, a balance class begins with simple questions about current activity, symptoms and known heart, metabolic or kidney conditions [7]. When a participant arrives with unexplained bruises and seems afraid of a relative who manages her money, the advisor does not investigate, but calls 911 if she is in immediate danger and otherwise follows the organization's policy for contacting Adult Protective Services [11].
+
+> An advisor does not need every answer. The skill lies in knowing which questions belong to someone else, and in making the handover safe.
