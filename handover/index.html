@@ -1,36 +1,50 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Bar-Ilan × LLA · Pre-Pilot Handover · Nov 18, 2026</title>
 <style>
-:root{--ink:#0B1F3A;--blue:#3D6394;--sky:#E8F1FF;--line:#C9DBF5}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:#fff;color:var(--ink);font-size:20px;line-height:1.55}
-header{background:linear-gradient(135deg,#0B1F3A,#3D6394);color:#fff;padding:48px 24px}
-.w{max-width:1000px;margin:0 auto}
-header small{letter-spacing:.14em;text-transform:uppercase;opacity:.8;font-size:14px}
-h1{font-size:40px;line-height:1.15;margin:10px 0 8px}header p{margin:0;opacity:.9}
-nav{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:5}
-nav .w{display:flex;gap:8px;overflow-x:auto;padding:12px 24px}
-nav a{white-space:nowrap;text-decoration:none;color:var(--blue);font-weight:600;font-size:16px;padding:8px 14px;border-radius:999px;background:var(--sky)}
-section{padding:40px 24px;border-bottom:1px solid var(--line)}
-h2{font-size:30px;margin:0 0 18px;color:var(--blue)}
-.tl{display:grid;gap:14px}
-.ms{display:grid;grid-template-columns:200px 1fr;gap:18px;background:var(--sky);border-left:6px solid var(--blue);border-radius:12px;padding:18px 20px}
-.ms b{display:block;font-size:18px}.ms span{font-size:15px;color:var(--blue);font-weight:600}
-.ms.live{background:#0B1F3A;color:#fff;border-color:#7FB2FF}.ms.live span{color:#9CC4FF}
-ol.q{counter-reset:q;list-style:none;padding:0;margin:0;display:grid;gap:16px}
-ol.q li{counter-increment:q;position:relative;background:#fff;border:2px solid var(--line);border-radius:14px;padding:20px 20px 20px 76px}
-ol.q li:before{content:counter(q);position:absolute;left:20px;top:18px;width:40px;height:40px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
-ol.q h3{margin:0 0 6px;font-size:22px}ol.q p{margin:0}
-.note{font-size:15px;color:#4a6285;margin-top:6px}
-.gold{background:#FFF8E1;border:2px solid #E8C766;border-radius:14px;padding:18px 20px;margin-top:10px}
-ul.c{padding-left:22px;margin:0}ul.c li{margin:8px 0}
-.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
-.f{background:var(--sky);border-radius:12px;padding:16px}.f b{display:block;font-size:26px;color:var(--blue)}
-footer{padding:28px 24px;font-size:14px;color:#4a6285}
-@media(max-width:640px){body{font-size:18px}h1{font-size:30px}.ms{grid-template-columns:1fr;gap:4px}ol.q li{padding-left:66px}}
+@font-face{font-family:IS;src:url(../site/assets/fonts/InstrumentSerif-Regular.woff2) format("woff2")}
+@font-face{font-family:IS;font-style:italic;src:url(../site/assets/fonts/InstrumentSerif-Italic.woff2) format("woff2")}
+@font-face{font-family:Inter;src:url(../site/assets/fonts/Inter-latin-var.woff2) format("woff2");font-weight:100 900}
+:root{--navy:#040D24;--td:#0A1E3A;--blue:#3D6394;--sky:#E8F1FF;--ice:#EEF4FC;--p1:#6FA8FF;--ink2:#2A2F36;--ink3:#5A6472;--ease:cubic-bezier(.22,1,.36,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;background:#fff;color:var(--ink2);font-size:19px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.w{max-width:1080px;margin:0 auto}
+header{position:relative;overflow:hidden;background:radial-gradient(1200px 600px at 85% -10%,rgba(111,168,255,.35),transparent 60%),radial-gradient(800px 500px at -10% 110%,rgba(61,99,148,.5),transparent 60%),linear-gradient(160deg,var(--navy),var(--td));color:#fff;padding:28px 24px 84px}
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:64px}.brand img{height:40px}
+.brand .x{opacity:.5}.brand .biu{font-family:IS,serif;font-size:24px;letter-spacing:.01em}
+header small{display:inline-block;letter-spacing:.18em;text-transform:uppercase;font-size:13px;color:var(--p1);border:1px solid rgba(111,168,255,.4);padding:7px 14px;border-radius:999px}
+h1{font-family:IS,serif;font-weight:400;font-size:clamp(42px,6.4vw,76px);line-height:1.02;margin:22px 0 18px;letter-spacing:-.01em}
+h1 em{color:var(--p1)}
+header p{max-width:720px;font-size:20px;color:#C9D8EE;margin:0}
+nav{position:sticky;top:0;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid #E3EAF4;z-index:5}
+nav .w{display:flex;gap:6px;overflow-x:auto;padding:12px 24px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--td);font-weight:600;font-size:15px;padding:9px 16px;border-radius:999px;transition:.3s var(--ease)}nav a:hover{background:var(--sky);color:var(--blue)}
+section{padding:72px 24px}section:nth-of-type(even){background:var(--ice)}
+h2{font-family:IS,serif;font-weight:400;font-size:clamp(34px,4.4vw,52px);line-height:1.05;margin:0 0 28px;color:var(--navy)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.f{background:#fff;border:1px solid #DCE6F3;border-radius:22px;padding:24px;box-shadow:0 10px 30px -18px rgba(4,13,36,.25)}
+.f b{display:block;font-family:IS,serif;font-weight:400;font-size:44px;line-height:1;color:var(--blue);margin-bottom:8px}
+.tl{display:grid;gap:16px;position:relative}
+.ms{display:grid;grid-template-columns:220px 1fr;gap:24px;background:#fff;border:1px solid #DCE6F3;border-radius:22px;padding:26px 28px;box-shadow:0 10px 30px -20px rgba(4,13,36,.25)}
+.ms span{display:block;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);font-weight:700}
+.ms b{display:block;font-family:IS,serif;font-weight:400;font-size:30px;color:var(--navy);line-height:1.1;margin-top:4px}
+.ms.live{background:linear-gradient(160deg,var(--navy),var(--td));color:#DCE7F7;border:0}.ms.live b{color:#fff}.ms.live span{color:var(--p1)}
+ol.q{counter-reset:q;list-style:none;padding:0;margin:0;display:grid;gap:18px}
+ol.q li{counter-increment:q;position:relative;background:#fff;border:1px solid #DCE6F3;border-radius:22px;padding:28px 28px 28px 104px;box-shadow:0 10px 30px -20px rgba(4,13,36,.25)}
+ol.q li:before{content:"0" counter(q);position:absolute;left:28px;top:22px;font-family:IS,serif;font-size:52px;line-height:1;color:var(--blue)}
+ol.q h3{margin:0 0 8px;font-size:23px;color:var(--navy)}ol.q p{margin:0}
+.note{font-size:15px;color:var(--ink3);margin-top:8px}
+.gold{background:var(--sky);border-left:4px solid var(--blue);border-radius:14px;padding:20px 22px;margin-top:14px;font-family:IS,serif;font-size:22px;line-height:1.4;color:var(--navy)}
+.gold b{font-family:Inter;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);display:block;margin-bottom:6px}
+.gold .note{font-family:Inter}
+ul.c{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ul.c li{background:#fff;border:1px solid #DCE6F3;border-radius:18px;padding:18px 22px 18px 54px;position:relative}
+ul.c li:before{content:"";position:absolute;left:22px;top:27px;width:12px;height:12px;border-radius:50%;background:var(--p1);box-shadow:0 0 0 5px var(--sky)}
+footer{background:var(--navy);color:#8FA6C6;padding:36px 24px;font-size:14px}
+@media(max-width:680px){body{font-size:17px}section{padding:52px 20px}.ms{grid-template-columns:1fr;gap:6px;padding:22px}ol.q li{padding:76px 22px 24px}ol.q li:before{left:22px;top:20px;font-size:44px}.brand{margin-bottom:44px}}
 </style></head><body>
-<header><div class="w"><small>Pre-pilot handover · Meeting Nov 18, 2026</small>
-<h1>Bar-Ilan University × Longevity Life Academy</h1>
-<p>Professional Certificate in Longevity &amp; Lifelong Wellbeing Advisory Practice. Health 360 (Prof. Nadav Davidovitch) &amp; Akadima, with eTeacher.</p></div></header>
+<header><div class="w"><div class="brand"><img src="../site/assets/img/lla-logo-dark.png" alt="Longevity Life Academy" onerror="this.src='../site/assets/img/lla-logo.png'"><span class="x">×</span><span class="biu">Bar-Ilan University</span></div><small>Pre-pilot handover · Meeting Nov 18, 2026</small>
+<h1>Longevity &amp; Lifelong Wellbeing <em>Advisory Practice</em></h1>
+<p>Professional certificate · Bar-Ilan University Health 360 (Prof. Nadav Davidovitch) &amp; Akadima, with eTeacher.</p></div></header>
 <nav><div class="w"><a href="#plan">Agreed plan</a><a href="#ms">Milestones</a><a href="#q">Top 5 questions</a><a href="#more">Other matters</a><a href="#facts">Program facts</a></div></nav>
 
 <section id="plan"><div class="w"><h2>The agreed plan</h2>
