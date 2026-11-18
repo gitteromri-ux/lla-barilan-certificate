@@ -45,8 +45,16 @@ COVERS = {
 STAGE_COLOR = {1: "var(--s1)", 2: "var(--s2)", 3: "var(--s3)", 4: "var(--s4)"}
 STAGE_NAME = {1: "Stage 1 · Scientific foundations", 2: "Stage 2 · Health behaviors", 3: "Stage 3 · Emotional & social wellbeing", 4: "Stage 4 · Practicum & capstone"}
 
-SPRITE = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
-SPRITE = SPRITE[SPRITE.index('<svg width="0" height="0"'):SPRITE.index("</svg>", SPRITE.index('<svg width="0" height="0"')) + 6]
+def _sprite():
+    for src in (ROOT / "site" / "index.html", ROOT / "site" / "blog" / "index.html"):
+        text = src.read_text(encoding="utf-8") if src.exists() else ""
+        k = text.find('<svg width="0" height="0"')
+        if k != -1:
+            return text[k:text.index("</svg>", k) + 6]
+    return ""
+
+
+SPRITE = _sprite()
 
 e = html.escape
 
