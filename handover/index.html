@@ -214,6 +214,14 @@ h2{font-family:Inter,system-ui,sans-serif!important;font-weight:800!important;le
 .bl b{font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#05070D;background:var(--lb);padding:8px 14px;border-radius:999px;white-space:nowrap}
 .bl p{font-size:22px;line-height:1.4;font-weight:650;color:var(--white)}
 @media(max-width:680px){.bl{grid-template-columns:1fr;gap:12px;padding:20px}.bl b{justify-self:start}.bl p{font-size:19px}.tl li h3{font-size:20px}}
+
+.sum3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.sum3 .pc{padding:30px}
+.sum3 .hotc{border-color:rgba(139,196,255,.7);box-shadow:0 0 50px -14px rgba(111,168,255,.6),inset 0 1px 0 rgba(255,255,255,.3)}
+ul.d3{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:10px}
+ul.d3 li{position:relative;padding-left:22px;font-size:19px;line-height:1.45;color:var(--text)}
+ul.d3 li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--lb);box-shadow:0 0 10px rgba(139,196,255,.8)}
+@media(max-width:900px){.sum3{grid-template-columns:1fr}}
 </style></head><body>
 <header><div class="w hd">
   <div class="brand"><img src="../site/assets/img/lla-logo.png" alt="Longevity Life Academy" width="720" height="231"><i aria-hidden="true"></i><img class="biu" src="../site/assets/img/biu-logo-white.png?v=en" alt="Bar-Ilan University" width="833" height="309"></div>
@@ -223,11 +231,22 @@ h2{font-family:Inter,system-ui,sans-serif!important;font-weight:800!important;le
   <div class="tabs"><a class="on" href="./">Pre-pilot plan</a><a href="certification.html">US &amp; Europe certification</a></div>
 </div></header>
 
-<nav aria-label="Sections"><div class="w"><a href="#goal">Goal</a><a href="#plan">The plan</a><a href="#ms">Milestones</a><a href="#phases">Marketing phases</a><a class="hot" href="#q">Top 5 questions</a><a href="#more">Other matters</a><a href="certification.html">Certification →</a></div></nav>
+<nav aria-label="Sections"><div class="w"><a href="#sum">Summary</a><a href="#goal">Why</a><a href="#plan">Plan</a><a href="#ms">Week by week</a><a class="hot" href="#q">5 decisions today</a><a href="#more">Also to agree</a><a href="#phases">Appendix: scope</a><a href="certification.html">Certification →</a></div></nav>
 
 <main>
+<section id="sum"><div class="w">
+  <span class="kicker">Summary · one screen</span>
+  <h2>The meeting in 3 steps</h2>
+  <div class="sum3">
+    <div class="pc"><span class="ph-k">Step 1</span><h3>Where we are</h3><ul class="d3"><li>Kick-off was Nov 15</li><li>Phase 1: 4 weeks of prep &amp; creation</li><li>Go-live Dec 13, then 30 days of demand validation</li></ul></div>
+    <div class="pc hotc"><span class="ph-k">Step 2</span><h3>What we need today</h3><ul class="d3"><li>Product &amp; scope</li><li>Course structure &amp; length</li><li>APHEA wording &amp; timing</li><li>Price &amp; installments</li><li>Certificate &amp; Bar-Ilan branding</li></ul></div>
+    <div class="pc"><span class="ph-k">Step 3</span><h3>What happens next</h3><ul class="d3"><li>Week 1 approvals lock this week</li><li>Production starts Week 3</li><li>Results decide the Feb 2027 semester</li></ul></div>
+  </div>
+  <div class="bl"><b>Bottom line</b><p>Answer the 5 questions today and we go live on Dec 13 as agreed.</p></div>
+</div></section>
+
 <section id="goal" class="goal"><div class="w">
-  <span class="kicker">01 · Goal</span>
+  <span class="kicker">01 · Why</span>
   <p class="goal-s">Prove US demand for the Bar-Ilan Longevity certificate, find the messages and audiences that bring <em>qualified leads</em>, and decide on the Feb 2027 semester from real data.</p>
 <div class="bl"><b>Bottom line</b><p>One test, one decision: real US demand data decides the Feb 2027 semester.</p></div>
 </div></section>
@@ -255,8 +274,34 @@ h2{font-family:Inter,system-ui,sans-serif!important;font-weight:800!important;le
   </ol>
 <div class="bl"><b>Bottom line</b><p>Every week ends with an approval. Week 1 approvals today keep Dec 13 on track.</p></div>
 </div></section>
+<section id="q"><div class="w">
+  <span class="kicker">04 · Decisions for today</span>
+  <h2>5 decisions we need today</h2>
+  <p class="intro">The heart of this meeting: each answer unlocks the next milestone.</p>
+  <ol class="qs">
+    <li><span class="qn" aria-hidden="true">01</span><div><h3>The product itself</h3><p>Who is the graduate and what can they do with the certificate (scope of practice)? Fully live online or a mix with recordings? Lesson times that work for US students?</p></div></li>
+    <li><span class="qn" aria-hidden="true">02</span><div><h3>Length of each course</h3><p>Today: 6 courses, 30 live lessons × 90 min, ~100 hours, ~8 months. How many lessons per course, in what order, and who teaches each?</p><p class="note">An even split would be 5 lessons per course. That is our arithmetic, not confirmed.</p></div></li>
+    <li><span class="qn" aria-hidden="true">03</span><div><h3>The European standard (APHEA)</h3><p>When is the application submitted, when is a decision expected, and may we use the line in ads?</p>
+      <div class="gold"><b>Approved wording only:</b><q>"As part of our commitment to academic excellence and international quality standards, the program is currently preparing to apply for accreditation by APHEA (Agency for Public Health Education Accreditation) under its Continuing Training &amp; Educational Event (CTEE) accreditation framework."</q><span class="note">Never say "accredited".</span></div></div></li>
+    <li><span class="qn" aria-hidden="true">04</span><div><h3>Price &amp; payments</h3><p>Tuition amount, 12-month installments, early-bird or academic-credit savings. To be confirmed today.</p></div></li>
+    <li><span class="qn" aria-hidden="true">05</span><div><h3>Certificate &amp; Bar-Ilan branding</h3><p>Exact certificate wording, and approval to use the Bar-Ilan name and logo in ads and on the landing page.</p><a class="certlink" href="certification.html">Which certificates matter in the US &amp; Europe →</a></div></li>
+  </ol>
+<div class="bl"><b>Bottom line</b><p>We need these 5 answers today to start production on schedule.</p></div>
+</div></section>
+<section id="more"><div class="w">
+  <span class="kicker">05 · Also to agree today</span>
+  <h2>Also to agree today</h2>
+  <ul class="list">
+    <li><b>Approvals</b><span>Who signs off each milestone, and how fast approvals come back.</span></li>
+    <li><b>Data &amp; CRM</b><span>All leads, CRM, GA4, pixels and triggers go to eTeacher's CRM, not Bar-Ilan's.</span></li>
+    <li><b>Syllabus &amp; faculty</b><span>Full syllabus, faculty list and faculty photos: who sends them, and when.</span></li>
+    <li><b>Budget &amp; success target</b><span>Media budget for the 30-day test, and the success threshold (target: 334+ leads, 10+ students).</span></li>
+    <li><b>Announcement</b><span>Timing of Bar-Ilan's own announcement of the program.</span></li>
+  </ul>
+<div class="bl"><b>Bottom line</b><p>Clear owners and dates for each item, agreed before we leave the room.</p></div>
+</div></section>
 <section id="phases" class="alt"><div class="w">
-  <span class="kicker">04 · Scope of work</span>
+  <span class="kicker">Appendix · Full scope of work</span>
   <h2>Marketing phases in detail</h2>
   <p class="intro">Two phases: build everything, then test demand in market.</p>
 
@@ -285,32 +330,6 @@ h2{font-family:Inter,system-ui,sans-serif!important;font-weight:800!important;le
   </div>
 <div class="bl"><b>Bottom line</b><p>Phase 1 builds every asset; Phase 2 tests it on Meta and Google and reports real cost per lead.</p></div>
 </div></section>
-<section id="q"><div class="w">
-  <span class="kicker">05 · Decisions for today</span>
-  <h2>Top 5 questions to close today</h2>
-  <p class="intro">The heart of this meeting: each answer unlocks the next milestone.</p>
-  <ol class="qs">
-    <li><span class="qn" aria-hidden="true">01</span><div><h3>The product itself</h3><p>Who is the graduate and what can they do with the certificate (scope of practice)? Fully live online or a mix with recordings? Lesson times that work for US students?</p></div></li>
-    <li><span class="qn" aria-hidden="true">02</span><div><h3>Length of each course</h3><p>Today: 6 courses, 30 live lessons × 90 min, ~100 hours, ~8 months. How many lessons per course, in what order, and who teaches each?</p><p class="note">An even split would be 5 lessons per course. That is our arithmetic, not confirmed.</p></div></li>
-    <li><span class="qn" aria-hidden="true">03</span><div><h3>The European standard (APHEA)</h3><p>When is the application submitted, when is a decision expected, and may we use the line in ads?</p>
-      <div class="gold"><b>Approved wording only:</b><q>"As part of our commitment to academic excellence and international quality standards, the program is currently preparing to apply for accreditation by APHEA (Agency for Public Health Education Accreditation) under its Continuing Training &amp; Educational Event (CTEE) accreditation framework."</q><span class="note">Never say "accredited".</span></div></div></li>
-    <li><span class="qn" aria-hidden="true">04</span><div><h3>Price &amp; payments</h3><p>Tuition amount, 12-month installments, early-bird or academic-credit savings. To be confirmed today.</p></div></li>
-    <li><span class="qn" aria-hidden="true">05</span><div><h3>Certificate &amp; Bar-Ilan branding</h3><p>Exact certificate wording, and approval to use the Bar-Ilan name and logo in ads and on the landing page.</p><a class="certlink" href="certification.html">Which certificates matter in the US &amp; Europe →</a></div></li>
-  </ol>
-<div class="bl"><b>Bottom line</b><p>We need these 5 answers today to start production on schedule.</p></div>
-</div></section>
-<section id="more"><div class="w">
-  <span class="kicker">06 · Open items</span>
-  <h2>Other matters to clear up</h2>
-  <ul class="list">
-    <li><b>Approvals</b><span>Who signs off each milestone, and how fast approvals come back.</span></li>
-    <li><b>Data &amp; CRM</b><span>All leads, CRM, GA4, pixels and triggers go to eTeacher's CRM, not Bar-Ilan's.</span></li>
-    <li><b>Syllabus &amp; faculty</b><span>Full syllabus, faculty list and faculty photos: who sends them, and when.</span></li>
-    <li><b>Budget &amp; success target</b><span>Media budget for the 30-day test, and the success threshold (target: 334+ leads, 10+ students).</span></li>
-    <li><b>Announcement</b><span>Timing of Bar-Ilan's own announcement of the program.</span></li>
-  </ul>
-<div class="bl"><b>Bottom line</b><p>Clear owners and dates for each item, agreed before we leave the room.</p></div>
-</div></section>
 <section id="facts" class="strip"><div class="w">
   <span class="kicker">At a glance</span>
   <h2>Program facts</h2>
@@ -318,6 +337,13 @@ h2{font-family:Inter,system-ui,sans-serif!important;font-weight:800!important;le
     <div><b>6</b><span>courses</span></div><div><b>30</b><span>live lessons × 90 min</span></div><div><b>~100</b><span>hours</span></div><div><b>~8</b><span>months</span></div><div><b>Feb 2027</b><span>semester start</span></div>
   </div>
 </div></section>
+
+
+
+
+
+
+
 </main>
 <footer><div class="w">Longevity Life Academy · Prepared for the Nov 18, 2026 meeting</div></footer>
 </body></html>
