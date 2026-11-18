@@ -287,16 +287,26 @@ nav{background:rgba(0,0,0,.6)!important}
 .gold{border-left:3px solid var(--lb)!important}
 .swipe{display:none}
 @media(max-width:720px){
- .sum3,.plan2,.tl,.opts,.list,.streams,.pf{display:flex!important;grid-template-columns:none!important;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:14px!important;padding:4px 22px 18px!important;margin:0 -22px!important;scrollbar-width:none}
+ html,body{overflow-x:hidden}
+ .sum3,.plan2,.tl,.opts,.list,.streams,.pf{display:flex!important;flex-wrap:nowrap!important;grid-template-columns:none!important;overflow-x:auto!important;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-left:20px;-webkit-overflow-scrolling:touch;gap:12px!important;padding:6px 20px 20px!important;margin:0 -20px!important;width:auto!important;scrollbar-width:none;list-style:none}
  .sum3::-webkit-scrollbar,.plan2::-webkit-scrollbar,.tl::-webkit-scrollbar,.opts::-webkit-scrollbar,.list::-webkit-scrollbar,.streams::-webkit-scrollbar,.pf::-webkit-scrollbar{display:none}
- .sum3>*,.plan2>*,.tl>li,.opts>*,.list>li,.streams>*{flex:0 0 84%;scroll-snap-align:start;min-width:0}
- .pf>div{flex:0 0 44%;scroll-snap-align:start}
- .opts{margin:0 -4px!important;padding:4px 4px 18px!important}.opts>*{flex-basis:88%}
+ .sum3>*,.plan2>*,.tl>li,.opts>*,.list>li,.streams>*,.pf>div{flex:0 0 82%!important;max-width:82%!important;scroll-snap-align:start;min-width:0;box-sizing:border-box;margin:0!important;transform:none!important;grid-column:auto!important}
+ .pf>div{flex-basis:46%!important;max-width:46%!important}
+ .qs .opts{margin:0 -22px!important;padding:6px 22px 18px!important;scroll-padding-left:22px}
  .tl::before,.tl li::before{display:none!important}
- .tl li.live{grid-column:auto!important}
- .stream{border:1px solid rgba(255,255,255,.12)!important;border-radius:20px}
- .swipe{display:block;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--lb);margin:-20px 0 14px;opacity:.85}
+ .phase{overflow:visible!important}
+ .streams{margin:0!important;padding:16px 16px 20px!important;scroll-padding-left:16px}
+ .stream{border:1px solid rgba(255,255,255,.12)!important;border-radius:20px;background:rgba(255,255,255,.04)}
+ .swipe{display:block;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--lb);margin:0 0 10px;opacity:.85}
 }
+
+/* nested-li reset + mobile fit */
+.tl li li{background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0 0 0 20px!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;flex:none!important;max-width:none!important;transform:none!important}
+.tl li li::after{display:none!important}
+.tl li li::before{display:block!important;content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:50%;background:var(--c);top:.62em}
+.qs>li>div{min-width:0;max-width:100%}
+.qs>li{overflow:hidden}
+.callout{display:block!important}.callout::before{display:none!important}
 </style></head><body>
 <header><div class="w hd">
   <div class="brand"><img src="../site/assets/img/lla-logo.png" alt="Longevity Life Academy" width="720" height="231"><i aria-hidden="true"></i><img class="biu" src="../site/assets/img/biu-logo-white.png?v=en" alt="Bar-Ilan University" width="833" height="309"></div>
