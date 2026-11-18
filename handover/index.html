@@ -188,15 +188,28 @@ footer{border-top:1px solid rgba(139,196,255,.14);color:var(--soft);padding:40px
  .strip{padding:56px 0}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.tabs{display:flex;gap:10px;margin-top:34px;flex-wrap:wrap}
+.tabs a{text-decoration:none;font-weight:650;font-size:16px;color:var(--soft);padding:12px 20px;border-radius:999px;border:1px solid var(--edge);background:rgba(255,255,255,.05);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.tabs a.on{color:#05070D;background:var(--lb);border-color:var(--lb)}
+.certlink{display:inline-block;margin-top:14px;color:var(--lb);font-weight:650;text-decoration:none;border-bottom:1px solid rgba(139,196,255,.5)}
+.tier{font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--lb);margin:14px 0 6px}
+.qs ul.d{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:8px}
+.qs ul.d li{position:relative;padding-left:22px;font-size:19px;color:var(--text)}
+.qs ul.d li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--lb)}
+.src{list-style:none;padding:0;margin:0;display:grid;gap:10px;font-size:17px}
+.src a{color:var(--lb);text-decoration:none;border-bottom:1px solid rgba(139,196,255,.35)}
+.lead{font-family:IS,Georgia,serif;font-size:clamp(28px,3.4vw,40px);line-height:1.25;color:var(--white);max-width:30ch}
 </style></head><body>
 <header><div class="w hd">
   <div class="brand"><img src="../site/assets/img/lla-logo.png" alt="Longevity Life Academy" width="720" height="231"><i aria-hidden="true"></i><img class="biu" src="../site/assets/img/biu-logo-white.png?v=en" alt="Bar-Ilan University" width="833" height="309"></div>
   <span class="pill">Pre-pilot handover · Meeting Nov 18, 2026</span>
   <h1>Longevity &amp; Lifelong Wellbeing <em>Advisory Practice</em></h1>
   <p>Professional certificate · Bar-Ilan University Health 360 (Prof. Nadav Davidovitch) &amp; Akadima, with eTeacher.</p>
+  <div class="tabs"><a class="on" href="./">Pre-pilot plan</a><a href="certification.html">US certification</a></div>
 </div></header>
 
-<nav aria-label="Sections"><div class="w"><a href="#goal">Goal</a><a href="#plan">The plan</a><a href="#ms">Milestones</a><a href="#phases">Marketing phases</a><a class="hot" href="#q">Top 5 questions</a><a href="#more">Other matters</a></div></nav>
+<nav aria-label="Sections"><div class="w"><a href="#goal">Goal</a><a href="#plan">The plan</a><a href="#ms">Milestones</a><a href="#phases">Marketing phases</a><a class="hot" href="#q">Top 5 questions</a><a href="#more">Other matters</a><a href="certification.html">US certification →</a></div></nav>
 
 <main>
 <section id="goal" class="goal"><div class="w">
@@ -264,7 +277,7 @@ footer{border-top:1px solid rgba(139,196,255,.14);color:var(--soft);padding:40px
     <li><span class="qn" aria-hidden="true">03</span><div><h3>The European standard (APHEA)</h3><p>When is the application submitted, when is a decision expected, and may we use the line in ads?</p>
       <div class="gold"><b>Approved wording only:</b><q>"As part of our commitment to academic excellence and international quality standards, the program is currently preparing to apply for accreditation by APHEA (Agency for Public Health Education Accreditation) under its Continuing Training &amp; Educational Event (CTEE) accreditation framework."</q><span class="note">Never say "accredited".</span></div></div></li>
     <li><span class="qn" aria-hidden="true">04</span><div><h3>Price &amp; payments</h3><p>Tuition amount, 12-month installments, early-bird or academic-credit savings. To be confirmed today.</p></div></li>
-    <li><span class="qn" aria-hidden="true">05</span><div><h3>Certificate &amp; Bar-Ilan branding</h3><p>Exact certificate wording, and approval to use the Bar-Ilan name and logo in ads and on the landing page.</p></div></li>
+    <li><span class="qn" aria-hidden="true">05</span><div><h3>Certificate &amp; Bar-Ilan branding</h3><p>Exact certificate wording, and approval to use the Bar-Ilan name and logo in ads and on the landing page.</p><a class="certlink" href="certification.html">Which certificates matter in the US →</a></div></li>
   </ol>
 </div></section>
 <section id="more"><div class="w">

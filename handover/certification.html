@@ -1,0 +1,275 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bar-Ilan × LLA · Pre-Pilot Handover · Nov 18, 2026</title>
+<meta name="robots" content="noindex">
+<link rel="preload" href="../site/assets/fonts/InstrumentSerif-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../site/assets/fonts/Inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:IS;src:url(../site/assets/fonts/InstrumentSerif-Regular.woff2) format("woff2");font-display:swap}
+@font-face{font-family:IS;font-style:italic;src:url(../site/assets/fonts/InstrumentSerif-Italic.woff2) format("woff2");font-display:swap}
+@font-face{font-family:Inter;src:url(../site/assets/fonts/Inter-latin-var.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{--bg:#05070D;--white:#FFFFFF;--text:#EAF3FF;--soft:#BFD8F6;--lb:#8BC4FF;--acc:#6FA8FF;--edge:rgba(139,196,255,.26);--edge-hi:rgba(160,210,255,.5);--ease:cubic-bezier(.22,1,.36,1)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;background:var(--bg)}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:transparent;color:var(--text);font-size:20px;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;position:relative;min-height:100vh}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+ radial-gradient(900px 620px at 82% -8%,rgba(40,90,190,.40),transparent 62%),
+ radial-gradient(760px 620px at -12% 38%,rgba(24,60,150,.32),transparent 62%),
+ radial-gradient(1000px 720px at 60% 118%,rgba(30,74,170,.30),transparent 62%),
+ var(--bg)}
+.w{max-width:1120px;margin:0 auto;padding:0 32px}
+h1,h2{font-family:IS,"Iowan Old Style",Georgia,serif;font-weight:400;letter-spacing:-.01em;color:var(--white)}
+p{margin:0}
+.kicker{display:block;font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--lb);margin-bottom:14px}
+
+/* Glass system */
+.pc,.tl li,.phase,.qs>li,.list li,.pf div,.callout,.gold{
+ position:relative;
+ background:linear-gradient(180deg,rgba(255,255,255,.10) 0%,rgba(255,255,255,.055) 100%);
+ border:1px solid var(--edge);
+ border-radius:24px;
+ -webkit-backdrop-filter:blur(18px) saturate(150%);backdrop-filter:blur(18px) saturate(150%);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.22),inset 0 0 0 1px rgba(255,255,255,.03),0 28px 60px -28px rgba(0,0,0,.9),0 2px 10px rgba(0,0,0,.35);
+}
+.pc::before,.tl li::after,.phase::before,.qs>li::after,.list li::after,.pf div::before,.gold::before{
+ content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+ background:linear-gradient(180deg,rgba(255,255,255,.13) 0%,rgba(255,255,255,0) 38%);
+}
+@media (hover:hover) and (pointer:fine){
+ .pc,.tl li,.qs>li,.list li,.pf div,.stream{transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .5s var(--ease),background .5s var(--ease)}
+ .pc:hover,.tl li:hover,.qs>li:hover,.list li:hover,.pf div:hover{transform:perspective(1100px) rotateX(2.2deg) translateY(-5px);border-color:var(--edge-hi);box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 40px 80px -30px rgba(0,0,0,.95),0 0 0 1px rgba(139,196,255,.12),0 18px 50px -30px rgba(111,168,255,.45)}
+}
+
+/* Header */
+header{position:relative}
+.hd{position:relative;z-index:1;padding:32px 0 72px}
+.brand{display:flex;align-items:center;gap:22px;margin-bottom:88px}
+.brand img{display:block;height:44px;width:auto}
+.brand .biu{height:46px}
+.brand i{display:block;width:1px;height:40px;background:rgba(139,196,255,.35)}
+.pill{display:inline-block;font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--lb);border:1px solid var(--edge);background:rgba(255,255,255,.05);padding:9px 16px;border-radius:999px}
+h1{font-size:clamp(46px,7.2vw,92px);line-height:1;margin:26px 0 24px;max-width:15ch}
+h1 em{font-style:italic;color:var(--lb)}
+.hd p{max-width:760px;font-size:22px;line-height:1.55;color:var(--soft)}
+
+/* Nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(5,7,13,.62);-webkit-backdrop-filter:blur(18px) saturate(150%);backdrop-filter:blur(18px) saturate(150%);border-top:1px solid rgba(139,196,255,.12);border-bottom:1px solid rgba(139,196,255,.16)}
+nav .w{display:flex;gap:4px;overflow-x:auto;padding-top:12px;padding-bottom:12px;scrollbar-width:none}
+nav .w::-webkit-scrollbar{display:none}
+nav a{flex:none;text-decoration:none;color:var(--text);font-weight:600;font-size:16px;padding:10px 16px;border-radius:999px;transition:background .25s var(--ease),color .25s var(--ease)}
+nav a:hover,nav a:focus-visible{background:rgba(139,196,255,.14);color:var(--white);outline:none}
+nav a.hot{background:rgba(111,168,255,.22);color:var(--white);box-shadow:inset 0 0 0 1px rgba(139,196,255,.45)}
+
+/* Sections */
+section{padding:104px 0;scroll-margin-top:64px;position:relative}
+section+section{border-top:1px solid rgba(139,196,255,.08)}
+h2{font-size:clamp(40px,5.2vw,64px);line-height:1.04;margin:0 0 20px}
+.intro{font-size:22px;color:var(--soft);max-width:760px;margin-bottom:52px}
+
+/* Goal */
+.goal{padding:96px 0 104px}
+.goal-s{font-family:IS,Georgia,serif;font-weight:400;font-size:clamp(36px,4.6vw,60px);line-height:1.12;letter-spacing:-.01em;color:var(--white);max-width:22ch;margin:0}
+.goal-s em{font-style:italic;color:var(--lb)}
+
+/* Plan */
+.plan2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.pc{padding:40px 40px 44px;border-radius:28px}
+.pc.dark{background:linear-gradient(180deg,rgba(111,168,255,.20),rgba(111,168,255,.07));border-color:rgba(139,196,255,.42)}
+.ph-k{display:block;font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--lb);margin-bottom:18px}
+.pc .dates{display:block;font-family:IS,Georgia,serif;font-size:clamp(44px,5vw,66px);line-height:1;color:var(--white);margin-bottom:18px}
+.pc h3{margin:0 0 12px;font-size:24px;font-weight:650;color:var(--white)}
+.pc p{font-size:19px;color:var(--text)}
+.callout{margin-top:24px;display:flex;gap:16px;align-items:flex-start;border-radius:20px;padding:22px 26px;color:var(--white);font-size:19px}
+.callout::before{content:"";flex:none;width:10px;height:10px;margin-top:10px;border-radius:50%;background:var(--lb);box-shadow:0 0 12px rgba(139,196,255,.8)}
+
+/* Timeline */
+.tl{list-style:none;margin:0;padding:34px 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) minmax(0,1.25fr);gap:18px;position:relative}
+.tl::before{content:"";position:absolute;left:24px;right:24px;top:10px;height:2px;background:linear-gradient(90deg,rgba(139,196,255,.25),var(--lb));box-shadow:0 0 14px rgba(111,168,255,.5)}
+.tl li{padding:28px 24px 28px}
+.tl li::before{content:"";position:absolute;left:24px;top:-35px;width:20px;height:20px;border-radius:50%;background:var(--bg);border:2px solid var(--lb);box-shadow:0 0 12px rgba(139,196,255,.6)}
+.tl .wk{display:block;font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--lb)}
+.tl .dt{display:block;font-family:IS,Georgia,serif;font-size:31px;line-height:1.1;color:var(--white);margin:6px 0 14px}
+.tl p{font-size:18px;line-height:1.6;color:var(--text)}
+.tl li.live{background:linear-gradient(180deg,rgba(111,168,255,.24),rgba(111,168,255,.08));border-color:rgba(139,196,255,.5)}
+.tl li.live::before{background:var(--lb);border-color:#fff;box-shadow:0 0 0 6px rgba(139,196,255,.18),0 0 18px rgba(139,196,255,.9)}
+
+/* Phases */
+.phase{border-radius:28px;overflow:hidden}
+.phase+.phase{margin-top:28px}
+.ph-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:32px;align-items:end;padding:40px 40px 36px;border-bottom:1px solid rgba(139,196,255,.16);background:rgba(139,196,255,.06);position:relative;z-index:1}
+.ph-head.dark{background:rgba(111,168,255,.14)}
+.ph-head h3{font-family:IS,Georgia,serif;font-weight:400;font-size:clamp(34px,3.6vw,46px);line-height:1.05;margin:0;color:var(--white)}
+.ph-head p{font-size:19px;color:var(--text)}
+.streams{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));position:relative;z-index:1}
+.stream{padding:34px 34px 38px}
+.stream+.stream{border-left:1px solid rgba(139,196,255,.14)}
+.stream .n{display:block;font-family:IS,Georgia,serif;font-size:40px;line-height:1;color:var(--lb);margin-bottom:16px}
+.stream h4{margin:0 0 18px;font-size:21px;line-height:1.3;font-weight:650;color:var(--white)}
+.stream ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.stream li{position:relative;padding-left:22px;font-size:18px;line-height:1.5;color:var(--text)}
+.stream li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--lb)}
+.stream li b{color:var(--white)}
+
+/* Questions: the heart of the page */
+#q{padding:128px 0;background:radial-gradient(900px 520px at 50% 0%,rgba(60,120,230,.22),transparent 70%)}
+#q h2{font-size:clamp(46px,6vw,78px)}
+.qs{list-style:none;margin:0;padding:0;display:grid;gap:22px}
+.qs>li{display:grid;grid-template-columns:104px minmax(0,1fr);gap:24px;padding:40px 40px 40px 28px;border-radius:28px}
+.qn{font-family:IS,Georgia,serif;font-size:76px;line-height:.9;color:var(--lb);text-align:center;text-shadow:0 0 28px rgba(111,168,255,.45)}
+.qs h3{margin:0 0 10px;font-size:28px;line-height:1.25;font-weight:650;color:var(--white)}
+.qs p{font-size:20px;color:var(--text)}
+.qs p+p{margin-top:12px}
+.note{font-size:17px;line-height:1.55;color:var(--soft)}
+.gold{margin-top:22px;border-radius:18px;padding:24px 26px;background:linear-gradient(180deg,rgba(139,196,255,.18),rgba(139,196,255,.07));border-color:rgba(139,196,255,.5);border-left:3px solid var(--lb)}
+.gold b{display:block;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--lb);margin-bottom:10px}
+.gold q{display:block;quotes:none;font-family:IS,Georgia,serif;font-size:25px;line-height:1.42;color:var(--white)}
+.gold .note{display:block;margin-top:12px;font-weight:600;color:var(--lb)}
+
+/* Other matters */
+.list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.list li{padding:24px 26px 24px 58px;border-radius:20px;color:var(--white);font-size:19px;line-height:1.5}
+.list li::before{content:"";position:absolute;left:26px;top:33px;width:11px;height:11px;border-radius:50%;background:var(--lb);box-shadow:0 0 12px rgba(139,196,255,.85)}
+
+/* Program facts */
+.strip{padding:80px 0}
+.strip h2{font-size:clamp(32px,3.6vw,44px);margin-bottom:24px}
+.pf{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.pf div{padding:26px 24px;border-radius:22px}
+.pf b{display:block;font-family:IS,Georgia,serif;font-weight:400;font-size:clamp(40px,4vw,54px);line-height:1;color:var(--lb);margin-bottom:10px}
+.pf span{display:block;font-size:18px;line-height:1.4;color:var(--white)}
+
+footer{border-top:1px solid rgba(139,196,255,.14);color:var(--soft);padding:40px 0;font-size:16px}
+
+@media (max-width:1000px){
+ .tl{grid-template-columns:repeat(2,minmax(0,1fr));padding-top:0}
+ .tl::before,.tl li::before{display:none}
+ .tl li.live{grid-column:1/-1}
+ .streams{grid-template-columns:1fr}
+ .stream+.stream{border-left:0;border-top:1px solid rgba(139,196,255,.14)}
+ .pf{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .ph-head{grid-template-columns:1fr;gap:14px;align-items:start}
+}
+@media (max-width:720px){
+ body{font-size:19px}
+ .w{padding:0 20px}
+ .hd{padding:24px 0 56px}
+ .brand{gap:14px;margin-bottom:56px}
+ .brand img{height:34px}.brand .biu{height:36px}
+ .brand i{height:30px}
+ .pill{font-size:12px;letter-spacing:.12em}
+ h1{font-size:46px;margin:20px 0 18px}
+ .hd p{font-size:19px}
+ section{padding:72px 0}
+ h2{font-size:40px}
+ .intro{font-size:19px;margin-bottom:32px}
+ .goal{padding:64px 0 64px}
+ .goal-s{font-size:34px}
+ .plan2{grid-template-columns:1fr;gap:16px}
+ .pc{padding:28px 22px 30px;border-radius:22px}
+ .pc .dates{font-size:42px}
+ .pc h3{font-size:21px}
+ .tl{grid-template-columns:1fr;gap:14px}
+ .tl li{padding:22px 22px 24px}
+ .tl .dt{font-size:30px}
+ .ph-head{padding:28px 22px 24px}
+ .stream{padding:26px 22px 28px}
+ #q{padding:80px 0}
+ #q h2{font-size:44px}
+ .qs>li{grid-template-columns:1fr;gap:6px;padding:26px 22px;border-radius:22px}
+ .qn{text-align:left;font-size:54px}
+ .qs h3{font-size:23px}
+ .qs p{font-size:19px}
+ .gold{padding:20px}
+ .gold q{font-size:21px}
+ .list{grid-template-columns:1fr}
+ .list li{font-size:18px;padding:20px 20px 20px 50px}
+ .list li::before{left:22px;top:29px}
+ .pf{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .pf div:last-child{grid-column:1/-1}
+ .strip{padding:56px 0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.tabs{display:flex;gap:10px;margin-top:34px;flex-wrap:wrap}
+.tabs a{text-decoration:none;font-weight:650;font-size:16px;color:var(--soft);padding:12px 20px;border-radius:999px;border:1px solid var(--edge);background:rgba(255,255,255,.05);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.tabs a.on{color:#05070D;background:var(--lb);border-color:var(--lb)}
+.certlink{display:inline-block;margin-top:14px;color:var(--lb);font-weight:650;text-decoration:none;border-bottom:1px solid rgba(139,196,255,.5)}
+.tier{font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--lb);margin:14px 0 6px}
+.qs ul.d{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:8px}
+.qs ul.d li{position:relative;padding-left:22px;font-size:19px;color:var(--text)}
+.qs ul.d li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--lb)}
+.src{list-style:none;padding:0;margin:0;display:grid;gap:10px;font-size:17px}
+.src a{color:var(--lb);text-decoration:none;border-bottom:1px solid rgba(139,196,255,.35)}
+.lead{font-family:IS,Georgia,serif;font-size:clamp(28px,3.4vw,40px);line-height:1.25;color:var(--white);max-width:30ch}
+</style></head><body>
+<header><div class="w hd">
+  <div class="brand"><img src="../site/assets/img/lla-logo.png" alt="Longevity Life Academy" width="720" height="231"><i aria-hidden="true"></i><img class="biu" src="../site/assets/img/biu-logo-white.png?v=en" alt="Bar-Ilan University" width="833" height="309"></div>
+  <span class="pill">Handover · US certification landscape</span>
+  <h1>Which certificates <em>matter</em> in the US</h1>
+  <p>Professional certificate · Bar-Ilan University Health 360 (Prof. Nadav Davidovitch) &amp; Akadima, with eTeacher.</p>
+  <div class="tabs"><a href="./">Pre-pilot plan</a><a class="on" href="certification.html">US certification</a></div>
+</div></header>
+
+<nav aria-label="Sections"><div class="w"><a href="./">← Pre-pilot plan</a><a href="#short">Short answer</a><a class="hot" href="#rank">Ranking</a><a href="#line">The line</a><a href="#choose">What buyers weigh</a><a href="#barilan">For Bar-Ilan</a><a href="#src">Sources</a></div></nav>
+<main>
+<section id="short"><div class="w">
+  <span class="kicker">01 · Short answer</span>
+  <h2>No certificate is mandatory</h2>
+  <p class="lead">“Longevity instructor” is not a licensed profession in the US, and no single governing body or universally recognized longevity coaching certification exists.</p>
+  <div class="callout">What people hold are credentials borrowed from neighboring fields. The ranking order is our judgment; the facts in each item are sourced.</div>
+</div></section>
+<section id="rank"><div class="w">
+  <span class="kicker">02 · Ranked by weight in the US market</span>
+  <h2>The certificates</h2>
+  <ol class="qs"><li><span class="qn" aria-hidden="true">01</span><div><h3>NBC-HWC · National Board Certified Health &amp; Wellness Coach</h3><p class="tier">The closest thing to a real board for coaches</p><ul class="d"><li>Exam run in partnership with the National Board of Medical Examiners</li><li>Requires graduating from an NBHWC Approved Training Program, 50 logged coaching sessions, and an associate degree or higher</li><li>The credential clinics, insurers and employers look for</li></ul></div></li><li><span class="qn" aria-hidden="true">02</span><div><h3>Lifestyle medicine · DipABLM / DipACLM</h3><p class="tier">The clinical tier</p><ul class="d"><li>ABLM certifies US physicians; ACLM certifies other eligible health professionals</li><li>Non-physician route requires a master’s or doctorate in a health discipline</li><li>Coaches can’t hold it. Their route: an NBC-HWC or Certified Wellcoach who finishes “Lifestyle Medicine for Coaches” gets the Lifestyle Medicine Coach Certificate</li><li>Gives medical credibility and an ACLM directory listing</li></ul></div></li><li><span class="qn" aria-hidden="true">03</span><div><h3>NCCA-accredited fitness certification · ACE, NASM, ACSM, NSCA</h3><p class="tier">The standard for anyone who trains bodies</p><ul class="d"><li>NCCA accreditation is the quality mark gyms and insurers check</li><li>Gives the right to be hired to lead exercise, plus liability insurance</li></ul></div></li><li><span class="qn" aria-hidden="true">04</span><div><h3>Aging specialty add-ons · Senior Fitness / Functional Aging Specialist</h3><p class="tier">Niche label</p><ul class="d"><li>Short courses stacked on a trainer certification, focused on older adults</li><li>On their own they carry little weight</li></ul></div></li><li><span class="qn" aria-hidden="true">05</span><div><h3>Branded “Certified Longevity Coach” programs</h3><p class="tier">Commercial certificates</p><ul class="d"><li>Each from its own school, often tied to a specific commercial program</li><li>A title and a niche; no outside body stands behind them</li></ul></div></li></ol>
+</div></section>
+<section id="line"><div class="w">
+  <span class="kicker">03 · Scope</span>
+  <h2>The line they cannot cross</h2>
+  <ul class="list">
+    <li>A certificate is not a license.</li>
+    <li>Most states require no license to work as a health coach.</li>
+    <li>Detailed nutrition plans or medical advice can count as practicing without a license.</li>
+    <li>Diagnosing, treating and prescribing stay with licensed clinicians.</li>
+  </ul>
+</div></section>
+<section id="choose"><div class="w">
+  <span class="kicker">04 · Our estimate, not sourced data</span>
+  <h2>What matters most to people choosing a program</h2>
+  <ol class="qs">
+    <li><span class="qn">01</span><div><h3>A credential someone else recognizes</h3><p>Does it lead to a board exam, or is it only the school’s own paper?</p></div></li>
+    <li><span class="qn">02</span><div><h3>The name on the diploma</h3><p>A university certificate beats a private academy.</p></div></li>
+    <li><span class="qn">03</span><div><h3>Clear scope</h3><p>What they are allowed to do with clients, and what they are not.</p></div></li>
+    <li><span class="qn">04</span><div><h3>Supervised practice</h3><p>Real coaching hours, not only lectures.</p></div></li>
+    <li><span class="qn">05</span><div><h3>A way to earn</h3><p>Client-getting, insurance, a directory or referral network.</p></div></li>
+  </ol>
+</div></section>
+<section id="barilan"><div class="w">
+  <span class="kicker">05 · Implication</span>
+  <h2>What this means for the Bar-Ilan program</h2>
+  <p class="lead">The strongest claim available is NBHWC Approved Training Program status, which makes graduates eligible for the US board exam.</p>
+  <ul class="list" style="margin-top:36px">
+    <li>Approved programs exist in the US and internationally, so an Israeli university is not excluded in principle.</li>
+    <li>Not yet checked: whether the planned curriculum meets the approval standards.</li>
+    <li>Without that status, the program sits in tier 5 with a university name on it.</li>
+    <li>That is still a real advantage over the private schools.</li>
+  </ul>
+</div></section>
+<section id="src" class="strip"><div class="w">
+  <span class="kicker">Sources</span>
+  <h2>References</h2>
+  <ul class="src">
+    <li><a href="https://nbhwc.org/get-board-certified/">NBHWC: Get Board Certified</a></li>
+    <li><a href="https://nbhwc.org/find-an-approved-training-program/">NBHWC Approved Training Program Directory</a></li>
+    <li><a href="https://nbhwc.org/wp-content/uploads/2024/11/NBHWC_Handbook_Oct_2024_FINAL.pdf">NBHWC Program Approval Handbook</a></li>
+    <li><a href="https://lifestylemedicine.zendesk.com/hc/en-us/articles/31844825631259-Am-I-eligible-to-certify-in-Lifestyle-Medicine-as-a-Health-Professional-non-Physician">ACLM: non-physician eligibility</a></li>
+    <li><a href="https://www.eurekalert.org/news-releases/1114405">ACLM: 10,000 certified news release</a></li>
+    <li><a href="https://connect.lifestylemedicine.org/expertdirectoryold/home">ACLM directory credential definitions</a></li>
+    <li><a href="https://app.spannr.com/articles/longevity-coach">Spannr: Longevity Coach</a></li>
+    <li><a href="https://cohenhealthcarelaw.com/legal-and-compliance-strategies-for-health-coaching-businesses/">Cohen Healthcare Law: health coaching compliance</a></li>
+    <li><a href="https://www.nutritioned.org/?p=6616">NutritionED: longevity nutrition counseling</a></li>
+    <li><a href="https://www.acefitness.org/sitemap/">ACE certifications</a></li>
+  </ul>
+</div></section>
+</main>
+<footer><div class="w">Longevity Life Academy · Prepared for the Nov 18, 2026 meeting</div></footer>
+</body></html>
