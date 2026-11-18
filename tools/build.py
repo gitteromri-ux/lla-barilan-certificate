@@ -164,14 +164,14 @@ def footer_html(base):
           <span class="divider" aria-hidden="true"></span>
           <img class="biu" src="{base}assets/img/biu-logo-white.png?v=en" width="833" height="309" alt="Bar-Ilan University" loading="lazy">
         </a>
-        <p>Professional Certificate in Longevity and Lifelong Wellbeing Advisory Practice. Issued through Bar-Ilan Akadima and Health 360, in partnership with eTeacher.</p>
+        <p>Professional Certificate in Longevity and Lifelong Wellbeing Advisory Practice. Issued through Bar-Ilan Akadima and Health 360, in partnership with Longevity Life Academy.</p>
       </div>
       <div><h3>Program</h3><ul><li><a href="{base}index.html#journey">Program journey</a></li><li><a href="{base}index.html#method">Methodology</a></li><li><a href="{base}index.html#certification">Certification</a></li><li><a href="{base}index.html#faq">FAQ</a></li></ul></div>
       <div><h3>Insights</h3><ul><li><a href="{base}blog/">All articles</a></li><li><a href="{base}index.html#register">Register interest</a></li></ul></div>
       <div><h3>Legal</h3><ul><li><a href="{base}legal.html#privacy">Privacy notice</a></li><li><a href="{base}legal.html#terms">Terms</a></li><li><a href="{base}legal.html#cookies">Cookies</a></li></ul></div>
     </div>
     <div class="footer-notes">
-      <p><b>Editorial note.</b> Insights articles are evidence summaries for professionals, not medical advice. They are editorial drafts pending academic review by Health 360 before publication. Program details remain subject to final institutional approval.</p>
+      <p><b>Editorial note.</b> Insights articles are evidence summaries for professionals, not medical advice. Program details remain subject to final institutional approval.</p>
     </div>
     <div class="footer-base"><span>© 2026 Longevity Life Academy is operated by eTeacher Group. All rights reserved.</span><span><a href="{base}legal.html#privacy">Privacy</a> · <a href="{base}legal.html#terms">Terms</a></span></div>
   </div>
@@ -236,7 +236,7 @@ def article_page(a, arts):
       <span class="a-k">{e(a["category"])}</span>
       <h1>{e(a["title"])}</h1>
       <p class="a-dek">{e(a["dek"])}</p>
-      <p class="a-meta"><span><b>{e(a["course"])}</b></span><span>{e(STAGE_NAME.get(a["stage"], ""))}</span><span>{a.get("reading_minutes", 6)} min read</span><span>LLA Insights editorial team</span><span class="ph-tag">Draft · pending Health 360 academic review</span></p>
+      <p class="a-meta"><span><b>{e(a["course"])}</b></span><span>{e(STAGE_NAME.get(a["stage"], ""))}</span><span>{a.get("reading_minutes", 6)} min read</span><span>LLA Insights editorial team</span></p>
     </div>
     <div class="a-cover">{cover}</div>
   </section>
@@ -253,7 +253,7 @@ def article_page(a, arts):
           <div class="box"><span class="label">Scope note</span><h3>Boundaries and referral</h3><p>{e(a.get("scope_note", ""))}</p></div>
         </div>
         <section class="refs" aria-labelledby="refs-h"><h2 id="refs-h">References</h2><ol>{refs}</ol></section>
-        <p class="a-disclaimer">This article summarizes published evidence for professionals. It is not medical advice and does not describe outcomes of the certificate program. It is an editorial draft pending academic review by Health 360.</p>
+        <p class="a-disclaimer">This article summarizes published evidence for professionals. It is not medical advice and does not describe outcomes of the certificate program.</p>
       </div>
       <aside class="a-aside">
         <div class="a-sticky">
@@ -280,7 +280,7 @@ def article_page(a, arts):
   <div class="ps-box"><b>In practice</b>{e(a.get("in_practice", ""))}</div>
   <div class="ps-box"><b>Scope note</b>{e(a.get("scope_note", ""))}</div>
   <p class="ps-refs"><b>Key sources:</b> {ps_refs}</p>
-  <p class="ps-foot">Professional Certificate in Longevity and Lifelong Wellbeing Advisory Practice · developed at Bar-Ilan University’s Health 360 Center · issued through Bar-Ilan Akadima and Health 360, in partnership with eTeacher (subject to final institutional approval). Editorial draft; not medical advice.</p>
+  <p class="ps-foot">Professional Certificate in Longevity and Lifelong Wellbeing Advisory Practice · developed at Bar-Ilan University’s Health 360 Center · issued through Bar-Ilan Akadima and Health 360, in partnership with Longevity Life Academy (subject to final institutional approval). Not medical advice.</p>
 </div>
 <script src="{base}assets/js/blog.js" defer></script>
 </body>

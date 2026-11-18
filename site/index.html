@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Professional Certificate in Longevity and Lifelong Wellbeing Advisory Practice · Bar-Ilan University Health 360</title>
-<meta name="description" content="A professional certificate developed at Bar-Ilan University’s Health 360 Center for health, wellbeing and people professionals: six courses, 30 live online lessons, supervised practice.">
+<meta name="description" content="A professional certificate developed at Bar-Ilan University’s Health 360 Center with Bar-Ilan Akadima: six courses, 30 live online sessions and a supervised capstone that prepare professionals to turn the science of healthy aging into structured, non-clinical practice.">
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#05070D">
+<meta name="theme-color" content="#040D24">
+<meta property="og:title" content="Longevity and Lifelong Wellbeing Advisory Practice · Bar-Ilan University Health 360">
+<meta property="og:description" content="Six courses, 30 live online sessions and a supervised capstone. First semester: February 2027.">
+<meta property="og:image" content="assets/video/hero-practice.jpg">
 <link rel="icon" href="assets/img/favicon.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/InstrumentSerif-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/Inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/video/hero-science.jpg" as="image">
-<link rel="stylesheet" href="assets/css/lp.css">
+<link rel="preload" href="assets/video/hero-evidence.jpg" as="image" fetchpriority="high">
+<link rel="stylesheet" href="assets/css/main.css">
 <script>
+document.documentElement.className += ' js';
 window.LLA_CONFIG = { ga4: 'G-XXXXXXXXXX', googleAds: 'AW-XXXXXXXXXX', metaPixel: 'XXXXXXXXXXXXXXX', crmEndpoint: '', whatsapp: '12029494750' };
 window.dataLayer = window.dataLayer || [];
 function gtag(){ dataLayer.push(arguments); }
@@ -21,189 +25,532 @@ gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_pe
 </script>
 </head>
 <body>
-<header class="hdr"><div class="w">
-  <a class="brand" href="#top" aria-label="Longevity Life Academy and Bar-Ilan University, home"><img src="assets/img/lla-logo-sm.png" alt="Longevity Life Academy" width="320" height="103"><i aria-hidden="true"></i><img class="biu" src="assets/img/biu-logo-white.png?v=en" alt="Bar-Ilan University" width="833" height="309"></a>
-  <nav class="nav" aria-label="Main"><a href="#about">Who it’s for</a><a href="#journey">Curriculum</a><a href="#faculty">Faculty</a><a href="#format">Format</a><a href="#certification">Certificate</a><a href="#tuition">Tuition</a><a href="#faq">FAQ</a></nav>
-  <a class="btn btn-p" href="#register">Apply</a>
-</div></header>
+<a class="skip" href="#main">Skip to content</a>
 
-<main id="top">
-<section class="hero" aria-labelledby="hero-title">
-  <video muted loop playsinline preload="none" poster="assets/video/hero-science.jpg" data-src="assets/video/hero-science.mp4" data-src-sm="assets/video/hero-science-720.mp4" aria-hidden="true"></video>
-  <div class="w">
-    <span class="k">Professional certificate · Bar-Ilan University</span>
-    <h1 id="hero-title">Become a Certified <em>Longevity &amp; Lifelong Wellbeing</em> Advisor.</h1>
-    <p class="lede">Developed at Bar-Ilan University’s Health 360 Center for health, wellbeing and people professionals ready to turn longevity science into structured, non-clinical practice.</p>
-    <div class="cta-row"><a class="btn btn-p" href="#register">Register your interest <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-g" href="#journey">Explore the curriculum</a></div>
-    <div class="facts g">
-      <div><b>6</b><span>Core courses</span></div>
-      <div><b>30</b><span>Live lessons · 90 min</span></div>
-      <div><b>~100</b><span>Hours of learning</span></div>
-      <div><b>~8</b><span>Months</span></div>
-      <div><b>Feb 2027</b><span>First cohort (planned)</span></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="arl" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="hdr">
+  <div class="bar">
+    <a class="brand" href="#top" aria-label="Longevity Life Academy and Bar-Ilan University">
+      <img src="assets/img/lla-logo-sm.png" alt="Longevity Life Academy" width="320" height="103">
+      <i aria-hidden="true"></i>
+      <img class="biu" src="assets/img/biu-logo-white.png?v=en" alt="Bar-Ilan University" width="833" height="309">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#why">Why now</a>
+      <a href="#role">The role</a>
+      <a href="#journey">Curriculum</a>
+      <a href="#faculty">Faculty</a>
+      <a href="#format">Format</a>
+      <a href="#certificate">Certificate</a>
+      <a href="#admissions">Admissions</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-lt cta" href="#register">Request information</a>
+    <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Mobile" aria-hidden="true">
+  <a href="#why">Why now</a>
+  <a href="#role">The role</a>
+  <a href="#journey">Curriculum</a>
+  <a href="#faculty">Faculty</a>
+  <a href="#format">Format</a>
+  <a href="#certificate">Certificate</a>
+  <a href="#admissions">Admissions</a>
+  <a href="#faq">FAQ</a>
+  <a class="btn btn-lt" href="#register">Request information</a>
+</nav>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="reel" aria-hidden="true">
+    <video class="on" muted playsinline preload="metadata" poster="assets/video/hero-evidence.jpg" data-src="assets/video/hero-evidence.mp4" data-src-sm="assets/video/hero-evidence-720.mp4"></video>
+    <video muted playsinline preload="none" data-poster="assets/video/hero-practice.jpg" data-src="assets/video/hero-practice.mp4" data-src-sm="assets/video/hero-practice-720.mp4"></video>
+    <video muted playsinline preload="none" data-poster="assets/video/hero-impact.jpg" data-src="assets/video/hero-impact.mp4" data-src-sm="assets/video/hero-impact-720.mp4"></video>
+  </div>
+  <div class="wrap">
+    <span class="kick">Bar-Ilan University · Health 360 Center</span>
+    <h1 id="hero-title">Longevity &amp; Lifelong Wellbeing <em>Advisory Practice</em></h1>
+    <span class="sub">A professional certificate. Live online, from Bar-Ilan University.</span>
+    <p class="lede">Six courses, 30 live sessions and a supervised capstone that prepare health, wellbeing and people professionals to turn the science of healthy aging into structured, non-clinical practice.</p>
+    <div class="ctas">
+      <a class="btn btn-lt" href="#register">Request program information <svg aria-hidden="true"><use href="#arr"/></svg></a>
+      <a class="btn btn-ghost" href="#journey">Explore the curriculum</a>
+    </div>
+    <div class="hfacts">
+      <div><b>Feb 2027</b><span>First semester</span></div>
+      <div><b>6 · 30</b><span>Courses · 90-minute live sessions</span></div>
+      <div><b>~100 h</b><span>Of learning in about eight months</span></div>
+      <div><b>Live online</b><span>With a supervised practicum and capstone</span></div>
+    </div>
+    <div class="reel-ui" role="group" aria-label="Hero film">
+      <button type="button" class="on" aria-pressed="true"><i></i>Science</button>
+      <button type="button" aria-pressed="false"><i></i>Practice</button>
+      <button type="button" aria-pressed="false"><i></i>Healthy aging</button>
     </div>
   </div>
 </section>
 
-<section class="partner" aria-label="Academic partnership"><div class="w">
-  <img src="assets/img/biu-logo-white.png?v=en" alt="Bar-Ilan University" width="833" height="309" loading="lazy">
-  <p>Developed within Bar-Ilan University’s Health 360 Center, led by Prof. Nadav Davidovitch, in collaboration with Bar-Ilan Akadima.</p>
-</div></section>
-
-<section class="sec" id="about" aria-labelledby="about-title"><div class="w">
-  <div class="sec-head"><div><span class="k">01 · Who it’s for</span><h2 id="about-title">For professionals who already <em>guide people.</em></h2></div><p class="lede">The full certification pathway is designed for professionals who want to broaden their existing work through a specialization in longevity and wellbeing.</p></div>
-  <ul class="aud"><li class="g lift"><span>01</span>Health promotion and public health professionals</li><li class="g lift"><span>02</span>Nurses and other professionals working in health systems</li><li class="g lift"><span>03</span>Welfare, employee wellbeing and human resources managers</li><li class="g lift"><span>04</span>Professionals and program staff in local authorities</li><li class="g lift"><span>05</span>Professionals in community-based and residential elder care</li><li class="g lift"><span>06</span>Professionals in nonprofit, civil-society and community organizations</li><li class="g lift"><span>07</span>Other professionals whose role includes health, wellbeing, education, workforce development or community programming</li><li class="g blue lift"><span>+</span>Exploring for yourself? Single courses are open to the general public.</li></ul>
-</div></section>
-
-<section class="sec" id="model" aria-labelledby="model-title"><div class="w">
-  <div class="sec-head"><div><span class="k">02 · What you’ll be able to do</span><h2 id="model-title">One advisory method, <em>four steps.</em></h2></div><p class="lede">A structured, non-diagnostic cycle you apply with individuals, teams and communities, practiced in every course.</p></div>
-  <ol class="cycle">
-    <li class="g lift"><span class="n">1</span><div><h3>Assess</h3><p>Conduct and document a structured, non-diagnostic longevity and wellbeing assessment.</p></div></li>
-    <li class="g lift"><span class="n">2</span><div><h3>Plan</h3><p>Co-create an individualized plan with measurable goals and an appropriate follow-up process.</p></div></li>
-    <li class="g lift"><span class="n">3</span><div><h3>Support</h3><p>Apply behavior-change and communication tools in individual or group settings.</p></div></li>
-    <li class="g lift"><span class="n">4</span><div><h3>Review</h3><p>Track progress, maintain professional boundaries, recognize red flags and refer when needed.</p></div></li>
-  </ol>
-  <div class="rails"><div class="g">Grounded in evidence appraisal</div><div class="g">Bounded by a non-clinical scope</div><div class="g">Referral to licensed professionals</div></div>
-  <div class="out">
-    <div class="g lift"><span class="k">Career outcome</span><h3>Within organizations</h3><p>Lead or contribute to wellbeing and health-promotion initiatives, assess employee or community needs, develop and review evidence-informed programs, and help embed wellbeing into organizational practice and culture.</p></div>
-    <div class="g lift"><span class="k">Career outcome</span><h3>With individuals</h3><p>Add a defined advisory specialization to your current role, or take on an independent coaching or advisory practice: assess, co-develop a realistic plan, support behavior change and review progress.</p></div>
+<!-- PARTNERSHIP -->
+<section class="partner" aria-label="Academic partnership">
+  <div class="wrap">
+    <img class="biu" src="assets/img/biu-logo-sm.png?v=en" alt="Bar-Ilan University" width="480" height="174" loading="lazy">
+    <p>Developed within Bar-Ilan University’s Health 360 Center, led by Prof. Nadav Davidovitch, in collaboration with Bar-Ilan Akadima.</p>
+    <img class="lla" src="assets/img/lla-logo-dark-sm.png" alt="Longevity Life Academy" width="360" height="116" loading="lazy">
   </div>
-</div></section>
-
-<section class="sec" id="journey" aria-labelledby="journey-title"><div class="w">
-  <div class="cur-top"><div><span class="k">03 · Curriculum</span><h2 id="journey-title">Six courses. <em>One progressive journey.</em></h2><p class="lede">Four stages, from the science of longevity to supervised practice. A professional-practice strand runs through every course.</p></div>
-  <div class="arrows"><button type="button" data-prev aria-label="Previous course"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" data-next aria-label="Next course"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
-  <div class="track" tabindex="0" aria-label="Courses">
-<article class="course g lift"><div class="img"><img src="assets/video/course-1-science.jpg" alt="" loading="lazy" width="1280" height="720"><span class="num">01</span></div><div class="body"><span class="stage">Stage 01 · Course 1</span><h3>The Science of Longevity: <em>What Actually Extends Life?</em></h3><p>Examine the scientific foundations of longevity and healthy aging: major biological processes, population-level findings, risk and protective factors, and the distinction between established evidence and emerging or unsupported longevity claims.</p><span class="meta">4 live lessons · 90 min each</span></div></article>
-<article class="course g lift"><div class="img"><img src="assets/video/course-2-food.jpg" alt="" loading="lazy" width="1280" height="720"><span class="num">02</span></div><div class="body"><span class="stage">Stage 02 · Course 2</span><h3>Food as Medicine: <em>Nutrition for Lifelong Health</em></h3><p>Explore the relationship between food, chronic disease prevention, functional health and healthy aging, with evidence-based nutritional principles applied in different personal, cultural and socioeconomic contexts. Health inequities in access to food and food culture are central.</p><span class="meta">4 live lessons · 90 min each</span></div></article>
-<article class="course g lift"><div class="img"><img src="assets/video/course-3-habits.jpg" alt="" loading="lazy" width="1280" height="720"><span class="num">03</span></div><div class="body"><span class="stage">Stage 02 · Course 3</span><h3>Habits That Shape Health: <em>Behavior Change and Longevity</em></h3><p>Examine how habits are formed, maintained and changed. Learn practical behavior-change tools and consider how individual choices are shaped by family, community, environment and wider social systems, including ingrained inequality in social structures.</p><span class="meta">4 live lessons · 90 min each</span></div></article>
-<article class="course g lift"><div class="img"><img src="assets/video/course-4-sleep.jpg" alt="" loading="lazy" width="1280" height="720"><span class="num">04</span></div><div class="body"><span class="stage">Stage 02 · Course 4</span><h3>Sleep, Stress, <em>and Healthy Aging</em></h3><p>Study the roles of sleep, stress, recovery and physiological regulation in lifelong health. Assess common barriers to healthy routines and develop realistic strategies for improving sleep and stress management.</p><span class="meta">4 live lessons · 90 min each</span></div></article>
-<article class="course g lift"><div class="img"><img src="assets/video/course-5-purpose.jpg" alt="" loading="lazy" width="1280" height="720"><span class="num">05</span></div><div class="body"><span class="stage">Stage 03 · Course 5</span><h3>Purpose, Meaning, <em>and Emotional Wellbeing</em></h3><p>Explore the relationship between emotional wellbeing, purpose, resilience, identity, life transitions and healthy aging, with reflective tools that can be applied personally or in professional and community settings.</p><span class="meta">4 live lessons · 90 min each</span></div></article>
-<article class="course g lift"><div class="img"><img src="assets/video/course-6-social.jpg" alt="" loading="lazy" width="1280" height="720"><span class="num">06</span></div><div class="body"><span class="stage">Stage 03 · Course 6</span><h3>Social Connection <em>and Longevity</em></h3><p>Examine social connection as a central dimension of health and longevity: loneliness, belonging, family and community relationships, social participation, and the development of supportive environments across the life course.</p><span class="meta">4 live lessons · 90 min each</span></div></article>
-<article class="course g lift cap"><div class="img"><img src="assets/video/stage-4-capstone.jpg" alt="" loading="lazy" width="1280" height="720"><span class="num">04</span></div><div class="body"><span class="stage">Stage 04 · Practicum &amp; capstone</span><h3>Supervised practice <em>and capstone</em></h3><p>Bring it together in a supervised practice case and a capstone portfolio built across the program, with three practicum and capstone clinics and a final presentation and oral assessment.</p><span class="meta">3 clinics · 2 final assessment sessions</span></div></article>
-  </div>
-  <div class="prog" aria-hidden="true"><i></i></div>
-</div></section>
-
-<section class="sec" id="faculty" aria-labelledby="faculty-title"><div class="w">
-  <div class="sec-head"><div><span class="k">04 · Faculty</span><h2 id="faculty-title">Academic leadership from <em>Bar-Ilan University.</em></h2></div><p class="lede">Developed within the Health 360 Center, under the academic responsibility of Bar-Ilan Akadima and Health 360. The full faculty will be published once approved.</p></div>
-  <div class="fac">
-    <article class="lead-card g"><img src="assets/img/nadav-davidovitch.jpg" alt="Prof. Nadav Davidovitch" width="325" height="270" loading="lazy"><div><span class="role">Founder &amp; head, Health 360 Center</span><h3>Prof. Nadav Davidovitch</h3><p class="t">Full Professor, Bar-Ilan University</p><ul>
-      <li>Medical specialist in Epidemiology and Public Health; Ph.D. in the History and Sociology of Health</li>
-      <li>Founded and leads the Health 360 Center, a multidisciplinary research center at Bar-Ilan University</li>
-      <li>Head of the Health Policy Program at the Taub Center; Chairman of the Public Health Forum of the Israel Medical Association</li>
-      <li>Serves on the Board of Governors of the Association of Schools of Public Health in the European Region (ASPHER)</li>
-    </ul></div></article>
-    <ul class="roster">
-      <li class="g"><span class="av" aria-hidden="true">RB</span><div><b>Rennana Bendor Pando</b><span>Head of Bar-Ilan Akadima, the continuing education unit through which the certificate is issued</span><span class="tbc">Photo TBC</span></div></li>
-      <li class="g"><span class="av" aria-hidden="true">AD</span><div><b>Academic director</b><span>Responsible for the syllabus, professional scope, assessment standards and certification decisions</span><span class="tbc">TBC</span></div></li>
-      <li class="g"><span class="av" aria-hidden="true">H</span><div><b>Health 360 subject-matter experts</b><span>Develop or approve the core content of every course</span><span class="tbc">TBC</span></div></li>
-      <li class="g"><span class="av" aria-hidden="true">I</span><div><b>Program instructors</b><span>Trained instructors with program-specific training and materials</span><span class="tbc">TBC</span></div></li>
-    </ul>
-  </div>
-</div></section>
-
-<section class="sec" id="format" aria-labelledby="format-title"><div class="w">
-  <div class="sec-head"><div><span class="k">05 · Format &amp; length</span><h2 id="format-title">Live online, <em>built around your work.</em></h2></div><p class="lede">Synchronous lessons with trained instructors, guided independent learning in the Health 360 digital library, and supervised practice.</p></div>
-  <div class="fmt">
-    <div class="g lift"><b>30</b><span>Live lessons, 90 minutes each</span></div>
-    <div class="g lift"><b>~100</b><span>Hours of learning in total</span></div>
-    <div class="g lift"><b>~8</b><span>Months</span><small>30 teaching weeks</small></div>
-    <div class="g blue lift"><b>Feb</b><span>2027 first cohort</span><small><span class="tbc">Planned · TBC</span></small></div>
-  </div>
-  <div class="split">
-    <div class="g"><h3>The 30 live lessons</h3><ul class="rows"><li><span>Six courses, four lessons each</span><span>24</span></li><li><span>Orientation and professional scope</span><span>1</span></li><li><span>Practicum and capstone clinics</span><span>3</span></li><li><span>Final assessment sessions</span><span>2</span></li></ul></div>
-    <div class="g"><h3>About 100 hours</h3><ul class="rows"><li><span>Live instruction</span><span>~45 h</span></li><li><span>Guided independent learning</span><span>~30 h</span></li><li><span>Practicum and capstone work</span><span>~25 h</span></li></ul></div>
-  </div>
-</div></section>
-
-<section class="band" aria-label="Program statement">
-  <video muted loop playsinline preload="none" poster="assets/video/cta-final.jpg" data-src="assets/video/cta-final.mp4" data-lazy aria-hidden="true"></video>
-  <div class="w"><p>Turn longevity science into <em>structured practice.</em></p></div>
 </section>
 
-<section class="sec" id="certification" aria-labelledby="cert-title"><div class="w">
-  <div class="sec-head"><div><span class="k">06 · Certificate</span><h2 id="cert-title">A university certificate, <em>with a clear scope.</em></h2></div><p class="lede">An academic home, a quality-assurance framework and an honest account of what the certificate is and is not.</p></div>
-  <div class="cert">
-    <div class="cert-main g">
-      <p class="iss">Issued through Bar-Ilan University’s Akadima and Health 360 Center, in partnership with Longevity Life Academy.</p>
-      <p>Subject to final institutional approval, approved nomenclature and branding requirements.</p>
-      <p>Graduates who meet all academic, practical, assessment and conduct requirements will be eligible to use the proposed designation:</p>
-      <div class="desig"><span>Proposed designation</span><b>Certified Longevity and Lifelong Wellbeing Advisor</b><small>Subject to final institutional approval.</small></div>
+<!-- WHY NOW -->
+<section class="sec light white why" id="why" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="grid">
+      <div class="copy">
+        <span class="kick" data-r>Why now</span>
+        <h2 id="why-title" data-r>People are living longer. <em>Living well takes expertise.</em></h2>
+        <p class="big" data-r>The question has shifted from how long we live to how many of those years are lived in good health.</p>
+        <p data-r>Research on healthy aging points to factors that people and organizations can influence: what we eat, how we move, sleep and recover, how we manage stress, and whether we have purpose and strong social ties. At the same time, longevity has become a crowded market of claims that often run ahead of the evidence.</p>
+        <p data-r>What is missing is a professional who can read that evidence critically, translate it into realistic, structured plans, and know where advisory work ends and clinical care begins. This program was designed to train that professional, and to treat longevity as a professional discipline rather than a general enrichment course.</p>
+      </div>
+      <figure class="media" data-r="2"><video data-par="0.05" muted loop playsinline preload="none" data-poster="assets/video/opp-community.jpg" data-src="assets/video/opp-community.mp4" data-lazy aria-label="Older adults following an instructor through gentle stretches in a park"></video></figure>
     </div>
-    <div class="cert-side">
-      <div class="aphea g blue"><span>International quality standards</span><blockquote>As part of our commitment to academic excellence and international quality standards, the program is currently preparing to apply for accreditation by APHEA (Agency for Public Health Education Accreditation) under its Continuing Training &amp; Educational Event (CTEE) accreditation framework.</blockquote></div>
-      <div class="scope g"><span>Non-clinical scope</span><p>The certificate does not confer a medical, nutritional, psychological or other regulated clinical license. Graduates may not diagnose disease, prescribe treatment, alter medication or provide services reserved for licensed professionals unless separately qualified.</p></div>
-      <div class="credit g"><span>Starting with a single course</span><p>Subject to Bar-Ilan Akadima policy, participants who complete eligible standalone courses and later meet the admission requirements for the certification pathway may apply to have those courses recognized toward the full program. Additional assessments, practicum requirements or time limits may apply, and recognition depends on admission eligibility, satisfactory assessment, course recency and institutional approval.</p></div>
+    <div class="stats">
+      <article class="stat card lift" data-r><b>1 in 6</b><p>people in the world will be aged 60 or over by 2030.</p><span class="src">World Health Organization, <a href="https://www.who.int/news-room/fact-sheets/detail/ageing-and-health" target="_blank" rel="noopener">Ageing and health</a></span></article>
+      <article class="stat card lift" data-r="2"><b>18.0<small>%</small></b><p>of Americans were 65 or older in 2024 (61.2 million people), up from 12.4% in 2004.</p><span class="src">U.S. Census Bureau, <a href="https://www.census.gov/newsroom/press-releases/2025/older-adults-outnumber-children.html" target="_blank" rel="noopener">Vintage 2024 population estimates</a></span></article>
+      <article class="stat card lift" data-r="3"><b>3<small>×</small></b><p>The number of people aged 80 or older is expected to triple between 2020 and 2050, to 426 million.</p><span class="src">World Health Organization, <a href="https://www.who.int/news-room/fact-sheets/detail/ageing-and-health" target="_blank" rel="noopener">Ageing and health</a></span></article>
     </div>
   </div>
-</div></section>
+</section>
 
-<section class="sec" id="tuition" aria-labelledby="tuition-title"><div class="w">
-  <div class="sec-head"><div><span class="k">07 · Tuition</span><h2 id="tuition-title">Spread tuition across <em>12 monthly installments.</em></h2></div><p class="lede">Tuition is being finalized and will be published once approved by Bar-Ilan University and eTeacher.</p></div>
-  <div class="tui">
-    <div class="plan g blue"><span class="lbl">Full certificate · 12 installments</span> <span class="tbc">TBC</span>
-      <div class="price"><b>$XXX</b><span>/ month × 12</span></div>
-      <div class="months" aria-hidden="true"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>9</i><i>10</i><i>11</i><i>12</i></div>
-      <p class="note">Placeholder figures, pending Bar-Ilan University and eTeacher approval.</p>
-      <a class="btn btn-p" href="#register">Register your interest <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<!-- THE ROLE -->
+<section class="sec dark role" id="role" aria-labelledby="role-title">
+  <div class="bgv" aria-hidden="true"><video muted loop playsinline preload="none" data-poster="assets/video/opp-individuals.jpg" data-src="assets/video/opp-individuals.mp4" data-lazy></video></div>
+  <div class="wrap">
+    <div class="head split">
+      <div><span class="kick" data-r>The role</span><h2 id="role-title" data-r>A defined professional role: <em>the longevity and wellbeing advisor.</em></h2></div>
+      <p class="lede" data-r="2">Graduates add a defined advisory specialization to their existing professional role, or take on an independent coaching or advisory practice. The work is evidence-informed, structured and non-clinical, and it follows one method in every setting.</p>
     </div>
-    <div class="alt-plans">
-      <div class="g lift"><h3>Pay in full <span class="tbc">TBC</span></h3><b>$X,XXX</b><p>One payment, with a saving of $XXX against installments.</p></div>
-      <div class="g lift"><h3>Single course <span class="tbc">TBC</span></h3><b>$XXX</b><p>Per standalone course. Does not confer the professional certificate.</p></div>
+    <ol class="cycle">
+      <li class="step glass lift" data-r><span class="n">1</span><div><h3>Assess</h3><p>Conduct and document a structured, non-diagnostic longevity and wellbeing assessment.</p></div></li>
+      <li class="step glass lift" data-r="2"><span class="n">2</span><div><h3>Plan</h3><p>Co-create an individualized plan with measurable goals and an appropriate follow-up process.</p></div></li>
+      <li class="step glass lift" data-r="3"><span class="n">3</span><div><h3>Support</h3><p>Apply behavior-change and communication tools in individual or group settings.</p></div></li>
+      <li class="step glass lift" data-r="4"><span class="n">4</span><div><h3>Review</h3><p>Review progress, adjust the plan and document the work, from implementation to follow-up.</p></div></li>
+    </ol>
+    <div class="boundary glass" data-r>
+      <span class="tag">Scope &amp; referral</span>
+      <p><b>Throughout the cycle,</b> the advisor maintains professional boundaries, recognizes red flags and refers to a licensed professional whenever a need falls outside the non-clinical scope.</p>
+    </div>
+    <div class="outcomes">
+      <article class="outcome glass lift" data-r><span class="kick">Career outcome</span><h3>Within organizations</h3><ul class="ticks"><li>Lead or contribute to wellbeing and health-promotion initiatives</li><li>Assess employee or community needs</li><li>Develop, implement and review evidence-informed programs</li><li>Advise teams on applying healthy-longevity principles</li><li>Help embed wellbeing into organizational practice and culture</li></ul></article>
+      <article class="outcome glass lift" data-r="2"><span class="kick">Career outcome</span><h3>With individuals</h3><ul class="ticks"><li>Conduct a structured, non-diagnostic longevity and wellbeing assessment</li><li>Co-develop a realistic, evidence-informed plan</li><li>Support goal setting and behavior change</li><li>Review progress over time</li><li>Recognize situations that require referral to a licensed professional</li></ul></article>
+    </div>
+    <div class="employers glass" data-r>
+      <h3>For employers</h3>
+      <p>Sponsoring staff members builds internal capacity to turn longevity and wellbeing evidence into practical initiatives: identifying workforce or community needs, designing and evaluating programs, coordinating referrals when specialist input is needed and strengthening a culture of wellbeing.</p>
     </div>
   </div>
-</div></section>
+</section>
 
-<section class="sec" id="faq" aria-labelledby="faq-title"><div class="w">
-  <div class="sec-head"><div><span class="k">08 · FAQ</span><h2 id="faq-title">Questions, <em>answered plainly.</em></h2></div><p class="lede">Everything here comes from the program proposal. Anything not yet approved is marked as such.</p></div>
-  <div class="faq">
-<details class="g"><summary>Is this a university degree?<i aria-hidden="true"></i></summary><p class="a">No. It is a structured professional-training and certification program. Participants who complete all requirements receive the Professional Certificate in Longevity and Lifelong Wellbeing Advisory Practice, issued through Bar-Ilan Akadima and Health 360, in partnership with Longevity Life Academy, subject to final institutional approval, approved nomenclature and branding requirements.</p></details>
-<details class="g"><summary>What will the certificate allow me to do, and what not?<i aria-hidden="true"></i></summary><p class="a">Graduates who meet all academic, practical, assessment and conduct requirements will be eligible to use the proposed designation Certified Longevity and Lifelong Wellbeing Advisor, subject to final institutional approval. The certificate adds a defined advisory specialization to your existing professional role, or allows you to take on an independent coaching or advisory practice. It does not confer a medical, nutritional, psychological or other regulated clinical license. Graduates may not diagnose disease, prescribe treatment, alter medication or provide services reserved for licensed professionals unless separately qualified.</p></details>
-<details class="g"><summary>What are the admission requirements?<i aria-hidden="true"></i></summary><p class="a">Recommended admission requirements for the certification pathway include a relevant academic degree or recognized professional qualification. Applicants with substantial relevant experience may be admitted following individual review. All certification participants commit to the attendance, assessment, practicum and professional-conduct requirements and acknowledge the program’s scope of practice.</p></details>
-<details class="g"><summary>How is it delivered, and how much time does it take?<i aria-hidden="true"></i></summary><p class="a">The program is delivered live online. It includes 30 synchronous lessons of 90 minutes (45 clock hours, or 60 academic hours, of live instruction): 24 lessons across the six courses, one orientation and professional-scope lesson, three practicum and capstone clinics and two final assessment sessions. Together with about 30 hours of guided independent learning and about 25 hours of practicum and capstone work, the total is about 100 clock hours. It runs over 30 teaching weeks and is normally completed in about eight months, excluding institutional breaks.</p></details>
-<details class="g"><summary>Who teaches the program?<i aria-hidden="true"></i></summary><p class="a">Synchronous online instruction is delivered by trained instructors from the eTeacher team, who receive program-specific training and teaching materials. Core content is developed or approved by Health 360 subject-matter experts, and an academic director appointed or approved by Bar-Ilan Akadima and Health 360 holds responsibility for the syllabus, professional scope, assessment standards and certification decisions.</p></details>
-<details class="g"><summary>How is my work assessed?<i aria-hidden="true"></i></summary><p class="a">Throughout the program rather than through attendance alone. Assessment includes participation, short knowledge checks, applied and case-based assignments, an observed or recorded skills assessment, a supervised practice case, a progressively developed capstone portfolio and a final presentation and oral assessment. To be certified you attend at least 85% of synchronous sessions and all required clinics, complete all assignments, achieve at least 70% in each course and 75% overall, complete the practice case, have your portfolio approved and pass the final oral assessment.</p></details>
-<details class="g"><summary>Can I take a single course?<i aria-hidden="true"></i></summary><p class="a">Yes. Standalone enrichment courses are open to members of the general public and to professionals seeking focused continuing education, without the practicum, capstone portfolio or final professional assessment. Successful completion may lead to a course-specific certificate of completion or participation, subject to Bar-Ilan Akadima policy. It does not confer the professional certificate or the graduate designation.</p></details>
-<details class="g"><summary>How much does it cost?<i aria-hidden="true"></i></summary><p class="a">Tuition, the monthly installment structure and any pay-in-full saving are being finalized and will be published once approved by Bar-Ilan University and eTeacher.</p></details>
+<!-- WHO IT'S FOR -->
+<section class="sec light" id="audience" aria-labelledby="aud-title">
+  <div class="wrap">
+    <div class="head split">
+      <div><span class="kick" data-r>Who it’s for</span><h2 id="aud-title" data-r>For professionals who <em>already guide people.</em></h2></div>
+      <p class="lede" data-r="2">The full certification pathway is intended primarily for professionals who want to broaden their existing work through a specialization in longevity and wellbeing.</p>
+    </div>
+    <div class="aud">
+      <ol class="alist" data-r>
+        <li><span>01</span>Health promotion and public health professionals</li>
+        <li><span>02</span>Nurses and other professionals working in health systems</li>
+        <li><span>03</span>Welfare, employee wellbeing and human resources managers in organizations</li>
+        <li><span>04</span>Professionals and program staff in local authorities</li>
+        <li><span>05</span>Professionals working in elder care, community-based and residential</li>
+        <li><span>06</span>Professionals in nonprofit, civil-society and community organizations</li>
+        <li><span>07</span>Other qualified professionals whose role includes health, wellbeing, education, workforce development or community programming</li>
+      </ol>
+      <aside class="admit card" data-r="2">
+        <h3>Admission</h3>
+        <p>Recommended requirements for the certification pathway include a relevant academic degree or recognized professional qualification.</p>
+        <p>Applicants with substantial relevant experience may be admitted following individual review.</p>
+        <hr>
+        <p>Participants commit to the attendance, assessment, practicum and professional-conduct requirements and acknowledge the program’s scope of practice.</p>
+        <a class="btn btn-dk" href="#register">Check your eligibility <svg aria-hidden="true"><use href="#arr"/></svg></a>
+      </aside>
+    </div>
   </div>
-</div></section>
+</section>
 
-<section class="sec" id="register" aria-labelledby="register-title"><div class="w apply">
-  <div><span class="k">09 · Apply</span><h2 id="register-title">Register your <em>interest.</em></h2><p class="lede">Tell us a little about your work and your plans. An admissions advisor will reply with the full program details.</p>
-    <ol class="steps"><li><b>1</b><span>Share your details, your timing and your main goal.</span></li><li><b>2</b><span>An admissions advisor contacts you with the syllabus and dates.</span></li><li><b>3</b><span>Reserve your place once enrollment opens.</span></li></ol>
+<!-- CURRICULUM -->
+<section class="sec dark deep" id="journey" aria-labelledby="cur-title">
+  <div class="wrap">
+    <div class="head split">
+      <div><span class="kick" data-r>Curriculum</span><h2 id="cur-title" data-r>Four stages. Six courses. <em>One professional sequence.</em></h2></div>
+      <p class="lede" data-r="2">Rather than a collection of independent courses, the program is a coherent sequence: from scientific foundations to evidence appraisal, practical skills, supervised application and a capstone portfolio.</p>
+    </div>
+    <div class="stages" data-r>
+      <div><b>Stage 1</b><span>Scientific foundations</span></div>
+      <div><b>Stage 2</b><span>Health behaviors and daily practice</span></div>
+      <div><b>Stage 3</b><span>Emotional and social wellbeing</span></div>
+      <div><b>Stage 4</b><span>Practicum and capstone</span></div>
+    </div>
+    <div class="slider" data-slider>
+      <div class="s-top">
+        <span class="s-count" aria-live="polite"><b data-cur>1</b> / 7 · Swipe to explore</span>
+        <div class="s-arrows"><button type="button" data-prev aria-label="Previous course"><svg aria-hidden="true"><use href="#arl"/></svg></button><button type="button" data-next aria-label="Next course"><svg aria-hidden="true"><use href="#arr"/></svg></button></div>
+      </div>
+      <div class="track" tabindex="0" aria-label="Courses, scroll horizontally">
+        <article class="course glass">
+          <div class="ph"><img src="assets/video/hero-evidence.jpg" alt="" width="1920" height="1080" loading="lazy"><span class="no">01</span><span class="st">Stage 1</span></div>
+          <div class="bd">
+            <h3>The Science of Longevity <em>What Actually Extends Life?</em></h3>
+            <p class="scope">The scientific foundations of longevity and healthy aging: major biological processes, population-level findings, risk and protective factors, and the distinction between established evidence and emerging or unsupported longevity claims.</p>
+            <ul class="topics"><li>Biological processes of aging</li><li>Population-level findings</li><li>Risk &amp; protective factors</li><li>Appraising longevity claims</li></ul>
+            <div class="ev"><span class="k">Evidence in focus</span><b>14.0 yrs</b><p>longer projected life expectancy at age 50 for U.S. women who adopted five low-risk lifestyle factors, compared with none (12.2 years for men). Observational cohort data.</p><span class="src">Li Y et al., <a href="https://pubmed.ncbi.nlm.nih.gov/29712712/" target="_blank" rel="noopener">Circulation, 2018</a></span></div>
+            <div class="more"><a class="link" href="blog/what-actually-extends-healthy-life.html">Read: what actually extends healthy life <svg aria-hidden="true"><use href="#arr"/></svg></a></div>
+          </div>
+        </article>
+        <article class="course glass">
+          <div class="ph"><img src="assets/video/course-2-food.jpg" alt="" width="1280" height="720" loading="lazy"><span class="no">02</span><span class="st">Stage 2</span></div>
+          <div class="bd">
+            <h3>Food as Medicine <em>Nutrition for Lifelong Health</em></h3>
+            <p class="scope">The relationship between food, chronic disease prevention, functional health and healthy aging, with evidence-based nutritional principles applied in different personal, cultural and socioeconomic contexts. Health inequities in access to food and food culture are central.</p>
+            <ul class="topics"><li>Chronic disease prevention</li><li>Functional health</li><li>Cultural &amp; socioeconomic context</li><li>Food equity</li></ul>
+            <div class="ev"><span class="k">Evidence in focus</span><b>11 million</b><p>deaths worldwide in 2017 were attributable to dietary risk factors.</p><span class="src">GBD 2017 Diet Collaborators, <a href="https://pubmed.ncbi.nlm.nih.gov/30954305/" target="_blank" rel="noopener">The Lancet, 2019</a></span></div>
+            <div class="more"><a class="link" href="blog/food-as-medicine-dietary-patterns-and-equity.html">Read: food as medicine <svg aria-hidden="true"><use href="#arr"/></svg></a></div>
+          </div>
+        </article>
+        <article class="course glass">
+          <div class="ph"><img src="assets/video/course-3-habits.jpg" alt="" width="1280" height="720" loading="lazy"><span class="no">03</span><span class="st">Stage 2</span></div>
+          <div class="bd">
+            <h3>Habits That Shape Health <em>Behavior Change and Longevity</em></h3>
+            <p class="scope">How habits are formed, maintained and changed, with practical behavior-change tools, and how individual choices are shaped by family, community, environment and wider social systems, including ingrained inequality in social structures.</p>
+            <ul class="topics"><li>Habit formation</li><li>Behavior-change tools</li><li>Family &amp; community influences</li><li>Social structures</li></ul>
+            <div class="ev"><span class="k">Evidence in focus</span><b>66 days</b><p>median time for a new daily behavior to become automatic in a real-world study, with a range of 18 to 254 days.</p><span class="src">Lally P et al., <a href="https://doi.org/10.1002/ejsp.674" target="_blank" rel="noopener">European Journal of Social Psychology, 2010</a></span></div>
+            <div class="more"><a class="link" href="blog/behavior-change-toolkit-for-advisors.html">Read: a behavior change toolkit <svg aria-hidden="true"><use href="#arr"/></svg></a></div>
+          </div>
+        </article>
+        <article class="course glass">
+          <div class="ph"><img src="assets/video/course-4-sleep.jpg" alt="" width="1280" height="720" loading="lazy"><span class="no">04</span><span class="st">Stage 2</span></div>
+          <div class="bd">
+            <h3>Sleep, Stress, <em>and Healthy Aging</em></h3>
+            <p class="scope">The roles of sleep, stress, recovery and physiological regulation in lifelong health, the common barriers to healthy routines, and realistic strategies for improving sleep and stress management.</p>
+            <ul class="topics"><li>Sleep &amp; recovery</li><li>Stress &amp; regulation</li><li>Barriers to routines</li><li>Realistic strategies</li></ul>
+            <div class="ev"><span class="k">Evidence in focus</span><b>1 in 3</b><p>U.S. adults reported typically sleeping less than seven hours in a 24-hour period.</p><span class="src">Liu Y et al., <a href="https://pubmed.ncbi.nlm.nih.gov/26890214/" target="_blank" rel="noopener">CDC MMWR, 2016</a></span></div>
+            <div class="more"><a class="link" href="blog/sleep-stress-and-healthy-aging.html">Read: sleep and stress regulation <svg aria-hidden="true"><use href="#arr"/></svg></a></div>
+          </div>
+        </article>
+        <article class="course glass">
+          <div class="ph"><img src="assets/video/course-5-purpose.jpg" alt="" width="1280" height="720" loading="lazy"><span class="no">05</span><span class="st">Stage 3</span></div>
+          <div class="bd">
+            <h3>Purpose, Meaning, <em>and Emotional Wellbeing</em></h3>
+            <p class="scope">The relationship between emotional wellbeing, purpose, resilience, identity, life transitions and healthy aging, with reflective tools that can be applied personally or in professional and community settings.</p>
+            <ul class="topics"><li>Purpose &amp; resilience</li><li>Identity</li><li>Life transitions</li><li>Reflective tools</li></ul>
+            <div class="ev"><span class="k">Evidence in focus</span><b>2.43×</b><p>higher all-cause mortality hazard among U.S. adults over 50 with the lowest life-purpose scores, compared with the highest. An observational association.</p><span class="src">Alimujiang A et al., <a href="https://pubmed.ncbi.nlm.nih.gov/31125099/" target="_blank" rel="noopener">JAMA Network Open, 2019</a></span></div>
+            <div class="more"><a class="link" href="blog/purpose-meaning-and-emotional-wellbeing.html">Read: purpose as a health asset <svg aria-hidden="true"><use href="#arr"/></svg></a></div>
+          </div>
+        </article>
+        <article class="course glass">
+          <div class="ph"><img src="assets/video/course-6-social.jpg" alt="" width="1280" height="720" loading="lazy"><span class="no">06</span><span class="st">Stage 3</span></div>
+          <div class="bd">
+            <h3>Social Connection <em>and Longevity</em></h3>
+            <p class="scope">Social connection as a central dimension of health and longevity: loneliness, belonging, family and community relationships, social participation, and the development of supportive environments across the life course.</p>
+            <ul class="topics"><li>Loneliness &amp; belonging</li><li>Family &amp; community</li><li>Social participation</li><li>Supportive environments</li></ul>
+            <div class="ev"><span class="k">Evidence in focus</span><b>50%</b><p>increased likelihood of survival associated with stronger social relationships, across 148 studies and 308,849 participants.</p><span class="src">Holt-Lunstad J et al., <a href="https://pubmed.ncbi.nlm.nih.gov/20668659/" target="_blank" rel="noopener">PLoS Medicine, 2010</a></span></div>
+            <div class="more"><a class="link" href="blog/social-connection-and-longevity.html">Read: social connection and longevity <svg aria-hidden="true"><use href="#arr"/></svg></a></div>
+          </div>
+        </article>
+        <article class="course glass cap">
+          <div class="ph"><img src="assets/video/stage-4-capstone.jpg" alt="" width="1280" height="720" loading="lazy"><span class="no">04</span><span class="st">Stage 4</span></div>
+          <div class="bd">
+            <h3>Practicum <em>and Capstone</em></h3>
+            <p class="scope">Following the six courses, participants integrate the program’s scientific, behavioral, emotional and social perspectives through at least one supervised practice case and a capstone portfolio, then present and defend their work in two concluding sessions.</p>
+            <ul class="topics"><li>Supervised practice case</li><li>Capstone portfolio</li><li>Practicum &amp; capstone clinics</li><li>Presentation &amp; oral assessment</li></ul>
+            <div class="more"><a class="link" href="blog/scope-of-practice-for-wellbeing-advisors.html">Read: scope of practice, from intake to referral <svg aria-hidden="true"><use href="#arr"/></svg></a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="strand glass" data-r>
+      <div><h3>The professional-practice strand</h3><p>A continuous strand runs through every course. Participants build their supervised practice case and capstone portfolio progressively throughout the program.</p></div>
+      <ul class="chips"><li>Structured intake</li><li>Non-diagnostic assessment</li><li>Goal setting</li><li>Behavior change</li><li>Ethical practice</li><li>Documentation</li><li>Professional boundaries</li><li>Red flags</li><li>Referral</li></ul>
+    </div>
   </div>
-  <div>
-  <form id="lead-form" class="form g" novalidate>
+</section>
+
+<!-- ASSESSMENT -->
+<section class="sec light ice" id="assessment" aria-labelledby="as-title">
+  <div class="wrap">
+    <div class="head split">
+      <div><span class="kick" data-r>Assessment</span><h2 id="as-title" data-r>Competence, <em>demonstrated.</em></h2></div>
+      <p class="lede" data-r="2">Achievement is evaluated throughout the program rather than through attendance alone, culminating in a supervised practice case and a capstone portfolio you present and defend.</p>
+    </div>
+    <div class="assess">
+      <div class="weights card" data-r>
+        <h3>How your work is weighted</h3>
+        <div class="wbar" aria-hidden="true"><span>10%</span><span>20%</span><span>30%</span><span>30%</span><span>10%</span></div>
+        <ul class="wlist">
+          <li><i style="background:#9CB8DE"></i><span>Participation, engagement and professional conduct</span><b>10%</b></li>
+          <li><i style="background:#6E92C2"></i><span>Course knowledge checks</span><b>20%</b></li>
+          <li><i style="background:#3D6394"></i><span>Applied assignments and case-based skills assessments</span><b>30%</b></li>
+          <li><i style="background:#24426E"></i><span>Supervised practicum and capstone portfolio</span><b>30%</b></li>
+          <li><i style="background:#0A1E3A"></i><span>Final presentation and oral assessment</span><b>10%</b></li>
+        </ul>
+        <p class="note">Suggested weighting in the program proposal, which may be adjusted according to Bar-Ilan Akadima’s academic and certification requirements.</p>
+      </div>
+      <div class="portfolio card" data-r="2">
+        <h3>Your capstone portfolio</h3>
+        <ol>
+          <li>A structured intake and non-diagnostic longevity and wellbeing assessment</li>
+          <li>A clearly defined client or target-population profile and longevity-related need</li>
+          <li>An evidence summary drawing on credible sources and content from at least four courses</li>
+          <li>A collaborative, prioritized plan with measurable objectives</li>
+          <li>Documentation of implementation, follow-up, feedback and modifications</li>
+          <li>Risks, ethical issues, professional limits and referral considerations</li>
+          <li>A reflective analysis of your decisions, challenges, learning and next steps</li>
+        </ol>
+      </div>
+    </div>
+    <div class="conds card" data-r>
+      <h3>Conditions for certification</h3>
+      <div class="cgrid">
+        <div><b>85%</b><span>Attendance at synchronous sessions, plus all required practicum and capstone clinics</span></div>
+        <div><b>70%</b><span>Minimum grade in each course</span></div>
+        <div><b>75%</b><span>Minimum overall program grade</span></div>
+        <div><b>1+</b><span>Supervised practice case completed, and capstone portfolio approved</span></div>
+        <div><b>Oral</b><span>Final presentation and oral assessment passed</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMAT -->
+<section class="sec dark format" id="format" aria-labelledby="fmt-title">
+  <div class="bgv" aria-hidden="true"><video muted loop playsinline preload="none" data-poster="assets/video/live-online.jpg" data-src="assets/video/live-online.mp4" data-lazy></video></div>
+  <div class="wrap">
+    <div class="head split">
+      <div><span class="kick" data-r>Format &amp; length</span><h2 id="fmt-title" data-r>Live, online <em>and deliberately practical.</em></h2></div>
+      <p class="lede" data-r="2">Synchronous online instruction by trained instructors, guided independent learning in the Health 360 digital knowledge library, short applied assignments between courses, and instructor feedback throughout.</p>
+    </div>
     <div class="fgrid">
-      <div class="f"><label for="fn">First name</label><input id="fn" name="first_name" autocomplete="given-name" required data-msg="Please enter your first name."><span class="err"></span></div>
-      <div class="f"><label for="ln">Last name</label><input id="ln" name="last_name" autocomplete="family-name" required data-msg="Please enter your last name."><span class="err"></span></div>
-      <div class="f"><label for="em">Email</label><input id="em" name="email" type="email" autocomplete="email" required data-msg="Please enter a valid email."><span class="err"></span></div>
-      <div class="f"><label for="ph">Phone</label><input id="ph" name="phone" type="tel" autocomplete="tel" required data-msg="Please enter a valid phone number."><span class="err"></span></div>
-      <div class="f"><label for="co">Country</label><select id="co" name="country" required data-msg="Please choose your country."><option value="">Choose…</option><option>United States</option><option>Canada</option><option>United Kingdom</option><option>Israel</option><option>Other</option></select><span class="err"></span></div>
-      <div class="f"><label for="pr">Your field</label><select id="pr" name="profession" required data-msg="Please choose your field."><option value="">Choose…</option><option>Health promotion or public health</option><option>Nursing or health systems</option><option>HR or employee wellbeing</option><option>Local authority</option><option>Elder care</option><option>Nonprofit or community</option><option>Coaching or wellness</option><option>Other</option></select><span class="err"></span></div>
-      <div class="f full"><label for="tl">When would you like to start?</label><select id="tl" name="timeline" required data-msg="Please choose when you would like to start."><option value="">Choose…</option><option>February 2027 (first cohort)</option><option>Later in 2027</option><option>2028 or later</option><option>Not sure yet</option></select><span class="err"></span></div>
-      <div class="f full"><label for="gl">What is your main goal?</label><select id="gl" name="goal" required data-msg="Please choose your main goal."><option value="">Choose…</option><option>Add an advisory specialization to my current role</option><option>Start an independent advisory or coaching practice</option><option>Lead wellbeing programs in my organization</option><option>Learn for my own life and family</option><option>Something else</option></select><span class="err"></span></div>
-      <div class="f full"><label for="pw">Which pathway interests you?</label><select id="pw" name="pathway"><option value="">Not sure yet</option><option>The full certificate</option><option>A single course</option></select></div>
-      <label class="chk f full"><input type="checkbox" name="consent" required data-msg="Please confirm to continue."><span>I agree to be contacted about this program and accept the <a href="legal.html#privacy">privacy policy</a>.</span><span class="err"></span></label>
+      <div class="fcard glass lift" data-r><b>30</b><span>Live sessions of 90 minutes: 45 clock hours, or 60 academic hours, of live instruction</span></div>
+      <div class="fcard glass lift" data-r="2"><b>~100<small>h</small></b><span>Total learning load, including guided independent study and practicum work</span></div>
+      <div class="fcard glass lift" data-r="3"><b>~8<small>months</small></b><span>Over 30 teaching weeks, excluding institutional breaks. First semester: February 2027</span></div>
     </div>
-    <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content"><input type="hidden" name="utm_term"><input type="hidden" name="gclid"><input type="hidden" name="fbclid">
-    <button class="btn btn-p" type="submit">Send my details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-    <p class="fine">Your details go to the Longevity Life Academy admissions team, operated by eTeacher Group.</p>
-  </form>
-  <div id="thanks" class="thanks g blue" hidden tabindex="-1"><h3>Thank you.</h3><p>An admissions advisor will be in touch shortly with the full program details.</p></div>
+    <div class="fsplit">
+      <div class="glass" data-r>
+        <h3>The 30 live sessions</h3>
+        <ul class="rows">
+          <li><span>Course sessions across the six courses</span><b>24</b></li>
+          <li><span>Orientation and professional scope</span><b>1</b></li>
+          <li><span>Practicum and capstone clinics</span><b>3</b></li>
+          <li><span>Final presentation and oral-assessment sessions</span><b>2</b></li>
+          <li class="sum"><span>Live sessions in total</span><b>30</b></li>
+        </ul>
+      </div>
+      <div class="glass" data-r="2">
+        <h3>About 100 hours of learning</h3>
+        <ul class="rows">
+          <li><span>Live instruction</span><b>45 h</b></li>
+          <li><span>Guided independent learning</span><b>~30 h</b></li>
+          <li><span>Practicum and capstone work</span><b>~25 h</b></li>
+          <li class="sum"><span>Total learning load</span><b>~100 h</b></li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div></section>
+</section>
+
+<!-- FACULTY -->
+<section class="sec light white" id="faculty" aria-labelledby="fac-title">
+  <div class="wrap">
+    <div class="head split">
+      <div><span class="kick" data-r>Faculty &amp; academic leadership</span><h2 id="fac-title" data-r>Faculty led by <em>Prof. Nadav Davidovitch.</em></h2></div>
+      <p class="lede" data-r="2">The program was developed within Bar-Ilan University’s Health 360 Center and is taught under the academic responsibility of Bar-Ilan Akadima and Health 360.</p>
+    </div>
+    <article class="prof card" data-r>
+      <div class="pic"><img src="assets/img/nadav-davidovitch.jpg" alt="Prof. Nadav Davidovitch" width="325" height="270" loading="lazy"></div>
+      <div class="info">
+        <span class="role">Founder &amp; head, Health 360 Center</span>
+        <h3>Prof. Nadav Davidovitch</h3>
+        <p class="t">Full Professor, Bar-Ilan University</p>
+        <ul class="ticks">
+          <li>Medical specialist in Epidemiology and Public Health, with a Ph.D. in the History and Sociology of Health</li>
+          <li>Founded and leads the Health 360 Center, a multidisciplinary research center at Bar-Ilan University</li>
+          <li>Head of the Health Policy Program at the Taub Center and Chairman of the Public Health Forum of the Israel Medical Association</li>
+          <li>Member of the Board of Governors of the Association of Schools of Public Health in the European Region (ASPHER)</li>
+          <li>Formerly Director of the School of Public Health at Ben-Gurion University of the Negev</li>
+        </ul>
+      </div>
+    </article>
+    <div class="fac">
+      <article class="h360 card" data-r>
+        <span class="kick">The academic home</span>
+        <h3>Health 360 Center, Bar-Ilan University</h3>
+        <p>A multidisciplinary research center that serves as an innovation hub for advancing health and social responsibility through systems thinking, interdisciplinary research and cross-sector collaboration.</p>
+        <p>Through research clusters spanning multiple faculties, the Center develops responses to pressing public health and societal challenges. It has existing partnership and teaching experience with ASPHER, the Israeli Ministry of Health and the Israeli Health Funds.</p>
+        <ul class="clusters"><li>Longevity</li><li>Diabetes &amp; obesity</li><li>Addiction</li><li>Mental health</li><li>Climate change</li></ul>
+      </article>
+      <article class="h360 card" data-r="2">
+        <span class="kick">Academic quality</span>
+        <h3>How the program is governed</h3>
+        <ul class="ticks">
+          <li>An academic director appointed or approved by Bar-Ilan Akadima and Health 360 holds responsibility for the syllabus, professional scope, assessment standards and certification decisions</li>
+          <li>Core content is developed or approved by Health 360 subject-matter experts</li>
+          <li>Instructors receive program-specific training and teaching materials</li>
+          <li>Standardized practicum, capstone and observed-skills rubrics are used across cohorts</li>
+          <li>Course materials are periodically updated to reflect new evidence in longevity research</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATE -->
+<section class="sec dark deep" id="certificate" aria-labelledby="cert-title">
+  <div class="wrap">
+    <div class="head split">
+      <div><span class="kick" data-r>The certificate</span><h2 id="cert-title" data-r>A university certificate, <em>with a clear professional scope.</em></h2></div>
+      <p class="lede" data-r="2">An academic home, a quality-assurance framework and an honest account of what the certificate is, and what it is not.</p>
+    </div>
+    <div class="cert">
+      <article class="cred glass" data-tilt="3" data-r>
+        <span class="lbl">Awarded on successful completion</span>
+        <h3>Professional Certificate in Longevity and Lifelong Wellbeing Advisory Practice</h3>
+        <p class="iss">Issued through <b>Bar-Ilan University’s Akadima and Health 360 Center</b>, in partnership with <b>Longevity Life Academy</b>.</p>
+        <div class="des"><span>Proposed graduate designation</span><b>Certified Longevity and Lifelong Wellbeing Advisor</b></div>
+        <p class="fine">Subject to final institutional approval, approved nomenclature and branding requirements.</p>
+        <div class="logos"><img class="biu" src="assets/img/biu-logo-white.png?v=en" alt="Bar-Ilan University" width="833" height="309" loading="lazy"><i aria-hidden="true"></i><img src="assets/img/lla-logo-sm.png" alt="Longevity Life Academy" width="320" height="103" loading="lazy"></div>
+      </article>
+      <div class="cside">
+        <div class="glass" data-r="2"><span class="lbl">International quality standards</span><blockquote>As part of our commitment to academic excellence and international quality standards, the program is currently preparing to apply for accreditation by APHEA (Agency for Public Health Education Accreditation) under its Continuing Training &amp; Educational Event (CTEE) accreditation framework.</blockquote></div>
+        <div class="glass" data-r="3"><span class="lbl">Scope of practice</span><p>The certificate adds a defined advisory specialization to a graduate’s professional role. It does not confer a medical, nutritional, psychological or other regulated clinical license: graduates may not diagnose disease, prescribe treatment, alter medication or provide services reserved for licensed professionals unless separately qualified.</p></div>
+      </div>
+    </div>
+    <div class="paths">
+      <article class="path glass lift" data-r><span class="lbl">Pathway 1</span><h3>Full certification</h3><p>The complete professional sequence: all six courses, assessment, supervised practice, a capstone portfolio and final evaluation. Successful completion leads to the professional certificate and the proposed graduate designation.</p></article>
+      <article class="path glass lift" data-r="2"><span class="lbl">Pathway 2</span><h3>Standalone courses</h3><p>Individual subject courses for members of the general public and for professionals seeking focused continuing education. Completion may lead to a course-specific certificate of completion or participation, subject to Bar-Ilan Akadima policy; it does not confer the professional certificate or the designation.</p></article>
+    </div>
+    <p class="recog glass" data-r><b>Building toward the full certificate.</b> Subject to Bar-Ilan Akadima policy, participants who complete eligible standalone courses and later meet the admission requirements for the certification pathway may apply to have those courses recognized toward the full program. Additional assessments, practicum requirements or time limits may apply.</p>
+  </div>
+</section>
+
+<!-- ADMISSIONS -->
+<section class="sec light" id="admissions" aria-labelledby="adm-title">
+  <div class="wrap">
+    <div class="head center">
+      <span class="kick" data-r>Admissions</span>
+      <h2 id="adm-title" data-r>Join the <em>February 2027</em> semester.</h2>
+      <p class="lede" data-r="2">The first semester is scheduled to open in February 2027. Request the program information pack to receive the full details.</p>
+    </div>
+    <div class="adm">
+      <article class="card lift" data-r><span class="n">01</span><h3>Request information</h3><p>Share your details, your expected enrollment timing and your main goal. An advisor follows up with the full program information.</p><a class="btn btn-dk push" href="#register">Request information <svg aria-hidden="true"><use href="#arr"/></svg></a></article>
+      <article class="card lift" data-r="2"><span class="n">02</span><h3>Tuition and payment plans</h3><p>Tuition and payment plans are shared on application, together with the information pack.</p><a class="link push" href="#register">Ask about tuition <svg aria-hidden="true"><use href="#arr"/></svg></a></article>
+      <article class="card lift" data-r="3"><span class="n">03</span><h3>Employer sponsorship</h3><p>Organizations can sponsor staff members to build internal capacity for evidence-informed wellbeing and health-promotion initiatives.</p><a class="link push" href="#register">Ask about sponsorship <svg aria-hidden="true"><use href="#arr"/></svg></a></article>
+    </div>
+  </div>
+</section>
+
+<!-- INSIGHTS -->
+<section class="sec light white ins" id="insights" aria-labelledby="ins-title">
+  <div class="wrap">
+    <div class="head split">
+      <div><span class="kick" data-r>Insights</span><h2 id="ins-title" data-r>The science <em>behind the program.</em></h2></div>
+      <p class="lede" data-r="2">Evidence-based articles, mapped to the six courses, with full references to the research.</p>
+    </div>
+    <div class="slider" data-slider>
+      <div class="s-top">
+        <span class="s-count" aria-live="polite"><b data-cur>1</b> / 6 · Swipe to explore</span>
+        <div class="s-arrows"><button type="button" data-prev aria-label="Previous article"><svg aria-hidden="true"><use href="#arl"/></svg></button><button type="button" data-next aria-label="Next article"><svg aria-hidden="true"><use href="#arr"/></svg></button></div>
+      </div>
+      <div class="track" tabindex="0" aria-label="Articles, scroll horizontally">
+        <a class="post card" href="blog/what-actually-extends-healthy-life.html"><div class="ph"><img src="assets/video/hero-evidence.jpg" alt="" width="1920" height="1080" loading="lazy"></div><div class="bd"><span class="k">Course 1 · Science of longevity</span><h3>What actually extends healthy life, and what remains unproven</h3><p>Healthspan, not lifespan alone, is the goal, and the evidence ranges from well established to emerging to unsupported.</p><span class="rt">6 min read · 11 references</span></div></a>
+        <a class="post card" href="blog/appraising-longevity-claims.html"><div class="ph"><img src="assets/video/about-academic.jpg" alt="" width="1280" height="720" loading="lazy"></div><div class="bd"><span class="k">Course 1 · Evidence appraisal</span><h3>Appraising longevity claims, from study design to supplement labels</h3><p>A practical framework for separating evidence-based practices from claims that lack sufficient support.</p><span class="rt">6 min read · 12 references</span></div></a>
+        <a class="post card" href="blog/food-as-medicine-dietary-patterns-and-equity.html"><div class="ph"><img src="assets/video/course-2-food.jpg" alt="" width="1280" height="720" loading="lazy"></div><div class="bd"><span class="k">Course 2 · Nutrition</span><h3>Food as medicine, from dietary pattern trials to equitable practice</h3><p>What trials and global burden studies say about dietary patterns, and why cost and culture shape what people eat.</p><span class="rt">6 min read · 11 references</span></div></a>
+        <a class="post card" href="blog/behavior-change-toolkit-for-advisors.html"><div class="ph"><img src="assets/video/course-3-habits.jpg" alt="" width="1280" height="720" loading="lazy"></div><div class="bd"><span class="k">Course 3 · Behavior change</span><h3>An evidence-based behavior change toolkit for longevity advisors</h3><p>How COM-B, behavior change techniques, habit formation and motivational interviewing fit together.</p><span class="rt">5 min read · 10 references</span></div></a>
+        <a class="post card" href="blog/sleep-stress-and-healthy-aging.html"><div class="ph"><img src="assets/video/course-4-sleep.jpg" alt="" width="1280" height="720" loading="lazy"></div><div class="bd"><span class="k">Course 4 · Sleep and stress</span><h3>Sleep and stress regulation as foundations of healthy aging</h3><p>Short sleep is common and chronic stress leaves measurable traces; advisors support realistic routines.</p><span class="rt">6 min read · 12 references</span></div></a>
+        <a class="post card" href="blog/social-connection-and-longevity.html"><div class="ph"><img src="assets/video/course-6-social.jpg" alt="" width="1280" height="720" loading="lazy"></div><div class="bd"><span class="k">Course 6 · Social connection</span><h3>Social connection and longevity, from loneliness to supportive environments</h3><p>Weak social ties are linked to earlier death, heart disease, stroke and dementia.</p><span class="rt">5 min read · 13 references</span></div></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec light" id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="head center">
+      <span class="kick" data-r>FAQ</span>
+      <h2 id="faq-title" data-r>Questions, <em>answered plainly.</em></h2>
+    </div>
+    <div class="faq" data-r>
+      <details><summary>Is this a university degree?<i aria-hidden="true"></i></summary><p class="a">No. It is a structured professional-training and certification program. Participants who complete all requirements receive the Professional Certificate in Longevity and Lifelong Wellbeing Advisory Practice, issued through Bar-Ilan University’s Akadima and Health 360 Center, in partnership with Longevity Life Academy, subject to final institutional approval.</p></details>
+      <details><summary>What will the certificate allow me to do?<i aria-hidden="true"></i></summary><p class="a">Graduates who meet all academic, practical, assessment and conduct requirements will be eligible to use the proposed designation Certified Longevity and Lifelong Wellbeing Advisor. The certificate adds a defined advisory specialization to your existing professional role, or allows you to take on an independent coaching or advisory practice. It does not confer a regulated clinical license.</p></details>
+      <details><summary>Who should apply?<i aria-hidden="true"></i></summary><p class="a">Professionals who want to broaden their existing work through a specialization in longevity and wellbeing: health promotion and public health professionals, nurses and others in health systems, employee wellbeing and HR managers, local-authority staff, elder-care professionals, staff of nonprofit and community organizations, and other professionals whose role includes health, wellbeing, education, workforce development or community programming.</p></details>
+      <details><summary>What are the admission requirements?<i aria-hidden="true"></i></summary><p class="a">A relevant academic degree or recognized professional qualification is recommended. Applicants with substantial relevant experience may be admitted following individual review. All certification participants commit to the attendance, assessment, practicum and professional-conduct requirements and acknowledge the program’s scope of practice.</p></details>
+      <details><summary>How is the program delivered?<i aria-hidden="true"></i></summary><p class="a">Live online. There are 30 synchronous sessions of 90 minutes: 24 course sessions across the six courses, one orientation and professional-scope session, three practicum and capstone clinics and two final assessment sessions. Together with about 30 hours of guided independent learning and about 25 hours of practicum and capstone work, the total is about 100 hours over 30 teaching weeks, normally completed in about eight months.</p></details>
+      <details><summary>When does the program start?<i aria-hidden="true"></i></summary><p class="a">The first semester is scheduled to open in February 2027.</p></details>
+      <details><summary>Who teaches the program?<i aria-hidden="true"></i></summary><p class="a">The faculty is led by Prof. Nadav Davidovitch, founder and head of the Health 360 Center. Core content is developed or approved by Health 360 subject-matter experts, live sessions are taught by trained instructors with program-specific training, and an academic director appointed or approved by Bar-Ilan Akadima and Health 360 is responsible for the syllabus, professional scope, assessment standards and certification decisions.</p></details>
+      <details><summary>How is my work assessed?<i aria-hidden="true"></i></summary><p class="a">Throughout the program: participation, short knowledge checks, applied and case-based assignments, an observed or recorded skills assessment, a supervised practice case, a progressively developed capstone portfolio, and a final presentation and oral assessment. Certification requires at least 85% attendance at synchronous sessions and all required clinics, at least 70% in each course and 75% overall, an approved portfolio and a passed final oral assessment.</p></details>
+      <details><summary>Can I take a single course first?<i aria-hidden="true"></i></summary><p class="a">Yes. Standalone courses are open to the general public and to professionals seeking focused continuing education, without the practicum, capstone portfolio or final professional assessment. Subject to Bar-Ilan Akadima policy, eligible standalone courses may later be recognized toward the full certification pathway.</p></details>
+      <details><summary>How much does it cost?<i aria-hidden="true"></i></summary><p class="a">Tuition and payment plans are shared on application, together with the program information pack. Employer sponsorship is also possible.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- APPLY -->
+<section class="sec dark final" id="register" aria-labelledby="reg-title">
+  <div class="bgv" aria-hidden="true"><video muted loop playsinline preload="none" data-poster="assets/video/cta-final.jpg" data-src="assets/video/cta-final.mp4" data-lazy></video></div>
+  <div class="wrap apply">
+    <div>
+      <span class="kick" data-r>Request information</span>
+      <h2 id="reg-title" data-r>Begin your path <em>for February 2027.</em></h2>
+      <p class="lede" data-r="2">Leave your details and receive the full program information, including tuition and payment plans.</p>
+      <ol class="promise" data-r="2">
+        <li><b>1</b><span>The program information pack, with the curriculum, format and certification requirements</span></li>
+        <li><b>2</b><span>Tuition and payment plans for the February 2027 semester</span></li>
+        <li><b>3</b><span>A conversation with an advisor about your goals and eligibility</span></li>
+      </ol>
+    </div>
+    <div data-r="2">
+      <form id="lead-form" class="form glass" novalidate>
+        <h3>Request program information</h3>
+        <p class="intro">It takes less than a minute.</p>
+        <div class="fld"><label for="f-name">Full name</label><input id="f-name" name="name" autocomplete="name" required data-msg="Please enter your name."><span class="err" aria-live="polite"></span></div>
+        <div class="two">
+          <div class="fld"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required data-msg="Please enter a valid email address."><span class="err" aria-live="polite"></span></div>
+          <div class="fld"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required data-msg="Please enter a valid phone number."><span class="err" aria-live="polite"></span></div>
+        </div>
+        <div class="fld"><label for="f-timing">When do you expect to enroll?</label><select id="f-timing" name="timing" required data-msg="Please choose your expected timing."><option value="">Choose one</option><option>February 2027 semester</option><option>Later in 2027</option><option>2028 or later</option><option>I’m still exploring</option></select><span class="err" aria-live="polite"></span></div>
+        <div class="fld"><label for="f-goal">What is your main goal?</label><select id="f-goal" name="goal" required data-msg="Please choose your main goal."><option value="">Choose one</option><option>Add a longevity and wellbeing specialization to my current role</option><option>Start an independent advisory or coaching practice</option><option>Lead wellbeing programs in my organization</option><option>Deepen my own knowledge</option><option>Something else</option></select><span class="err" aria-live="polite"></span></div>
+        <label class="consent-row"><input type="checkbox" name="consent" required data-msg="Please confirm to continue."><span>I agree to be contacted about this program and accept the <a href="legal.html#privacy">privacy policy</a>.</span></label>
+        <span class="consent-err" aria-live="polite"></span>
+        <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content"><input type="hidden" name="utm_term"><input type="hidden" name="gclid"><input type="hidden" name="fbclid">
+        <button class="btn btn-lt" type="submit">Request information <svg aria-hidden="true"><use href="#arr"/></svg></button>
+        <p class="fine">Your details go to the Longevity Life Academy admissions team, operated by eTeacher Group.</p>
+      </form>
+      <div id="thanks" class="thanks glass" hidden tabindex="-1"><h3>Thank you.</h3><p>We have received your request. An advisor will be in touch with the full program information.</p></div>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer class="ftr"><div class="w">
-  <div><a class="brand" href="#top"><img src="assets/img/lla-logo-sm.png" alt="Longevity Life Academy" width="320" height="103" loading="lazy"><i aria-hidden="true"></i><img class="biu" src="assets/img/biu-logo-white.png?v=en" alt="Bar-Ilan University" width="833" height="309" loading="lazy"></a>
-  <p>Professional Certificate in Longevity and Lifelong Wellbeing Advisory Practice, developed at Bar-Ilan University’s Health 360 Center with Bar-Ilan Akadima. © 2026 Longevity Life Academy is operated by eTeacher Group.</p></div>
-  <nav aria-label="Footer"><a href="blog/">Insights</a><a href="legal.html#privacy">Privacy</a><a href="legal.html#terms">Terms</a><a href="legal.html#cookies">Cookies</a><a href="#register">Contact admissions</a></nav>
-</div></footer>
+<footer class="ftr">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#top"><img src="assets/img/lla-logo-sm.png" alt="Longevity Life Academy" width="320" height="103" loading="lazy"><i aria-hidden="true"></i><img class="biu" src="assets/img/biu-logo-white.png?v=en" alt="Bar-Ilan University" width="833" height="309" loading="lazy"></a>
+      <p>Professional Certificate in Longevity and Lifelong Wellbeing Advisory Practice, developed within Bar-Ilan University’s Health 360 Center in collaboration with Bar-Ilan Akadima.</p>
+      <p>© 2026 Longevity Life Academy is operated by eTeacher Group.</p>
+    </div>
+    <nav aria-label="Footer"><a href="blog/">Insights</a><a href="#journey">Curriculum</a><a href="#register">Request information</a><a href="legal.html#privacy">Privacy</a><a href="legal.html#terms">Terms</a><a href="legal.html#cookies">Cookies</a><a href="#" data-cookie-settings>Cookie settings</a></nav>
+  </div>
+</footer>
 
-<a class="wa" href="https://wa.me/12029494750" target="_blank" rel="noopener" aria-label="Questions? Chat with us on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm5.8 14.06c-.24.68-1.42 1.31-1.95 1.36-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.58.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.27.1 1.7.8 1.99.95.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/></svg><span>Questions? WhatsApp</span></a>
-<div class="consent g" role="dialog" aria-label="Cookie preferences" hidden><p>We use cookies to measure and improve this page. Analytics and advertising cookies load only with your consent.</p><div class="row"><button class="btn btn-p" type="button" data-consent="all">Accept</button><button class="btn btn-g" type="button" data-consent="none">Decline</button></div></div>
-<script src="assets/js/lp.js" defer></script>
+<a class="wa" href="https://wa.me/12029494750" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm5.8 14.06c-.24.68-1.420 1.31-1.95 1.36-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.58.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.19.72-.84.91-1.130.19-.29.38-.24.65-.14.27.1 1.7.8 1.99.95.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/></svg></a>
+<a class="mcta" href="#register"><span><b>February 2027 semester</b>Professional certificate</span><em>Request info</em></a>
+<div class="cookie" role="dialog" aria-label="Cookie preferences" hidden><p>We use cookies to understand how this page is used and to improve it. Analytics and advertising cookies are only set with your consent. <a href="legal.html#cookies">Cookie policy</a></p><div class="row"><button class="btn btn-lt" type="button" data-consent="all">Accept</button><button class="btn btn-ghost" type="button" data-consent="none">Decline</button></div></div>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
