@@ -229,6 +229,29 @@ ul.d3 li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8
 .opt b{display:block;font-size:19px;line-height:1.3;color:var(--white);margin-bottom:8px}
 .opt p{font-size:17px!important;color:var(--soft)!important}
 @media(max-width:900px){.opts{grid-template-columns:1fr}}
+
+/* Colour-coded phases & weeks */
+.tl li:nth-child(1){--c:#6FA8FF}.tl li:nth-child(2){--c:#F2B45C}.tl li:nth-child(3){--c:#4FD1C5}.tl li:nth-child(4){--c:#A78BFA}.tl li.live{--c:#F472B6}
+.tl li{border-color:color-mix(in srgb,var(--c) 55%,transparent)!important;background:linear-gradient(180deg,color-mix(in srgb,var(--c) 22%,transparent),color-mix(in srgb,var(--c) 6%,transparent))!important;border-top:4px solid var(--c)!important}
+.tl li .wk{color:var(--c)!important}
+.tl li::before{border-color:var(--c)!important;box-shadow:0 0 14px var(--c)!important}
+.tl li.live::before{background:var(--c)!important}
+.tl::before{background:linear-gradient(90deg,#6FA8FF,#F2B45C,#4FD1C5,#A78BFA,#F472B6)!important}
+.plan2 .pc:nth-child(1){--c:#F2B45C}.plan2 .pc:nth-child(2){--c:#4FD1C5}
+.plan2 .pc{border-color:color-mix(in srgb,var(--c) 60%,transparent)!important;background:linear-gradient(180deg,color-mix(in srgb,var(--c) 22%,transparent),color-mix(in srgb,var(--c) 6%,transparent))!important;border-top:4px solid var(--c)!important}
+.plan2 .pc .ph-k{color:var(--c)!important}
+.phase:nth-of-type(1){--c:#F2B45C}.phase:nth-of-type(2){--c:#4FD1C5}
+.phase{border-color:color-mix(in srgb,var(--c) 55%,transparent)!important;border-top:4px solid var(--c)!important}
+.phase .ph-head{background:color-mix(in srgb,var(--c) 16%,transparent)!important}
+.phase .ph-k{color:var(--c)!important}
+.stream:nth-child(1){--s:#6FA8FF}.stream:nth-child(2){--s:#F2B45C}.stream:nth-child(3){--s:#A78BFA}
+.phase:nth-of-type(2) .stream:nth-child(1){--s:#4FD1C5}.phase:nth-of-type(2) .stream:nth-child(2){--s:#F472B6}.phase:nth-of-type(2) .stream:nth-child(3){--s:#86EFAC}
+.stream .n{color:var(--s)!important}.stream li::before{background:var(--s)!important;box-shadow:0 0 8px var(--s)}
+.stream{box-shadow:inset 0 3px 0 var(--s)}
+.sum3 .pc:nth-child(1){--c:#6FA8FF}.sum3 .pc:nth-child(2){--c:#F2B45C}.sum3 .pc:nth-child(3){--c:#4FD1C5}
+.sum3 .pc{border-top:4px solid var(--c)!important}.sum3 .pc .ph-k{color:var(--c)!important}.sum3 ul.d3 li::before{background:var(--c);box-shadow:0 0 10px var(--c)}
+.opt:nth-child(1){--c:#6FA8FF}.opt:nth-child(2){--c:#F2B45C}.opt:nth-child(3){--c:#4FD1C5}
+.opt{border-top:4px solid var(--c)}.opt span{color:var(--c)!important}
 </style></head><body>
 <header><div class="w hd">
   <div class="brand"><img src="../site/assets/img/lla-logo.png" alt="Longevity Life Academy" width="720" height="231"><i aria-hidden="true"></i><img class="biu" src="../site/assets/img/biu-logo-white.png?v=en" alt="Bar-Ilan University" width="833" height="309"></div>
