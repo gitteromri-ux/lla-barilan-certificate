@@ -121,7 +121,7 @@ def header_html(base, current=""):
     <a class="lockup" href="{base}index.html" aria-label="Longevity Life Academy, in partnership with Bar-Ilan University — program home">
       <img class="lla" src="{base}assets/img/lla-logo-sm.png" width="320" height="103" alt="Longevity Life Academy">
       <span class="divider" aria-hidden="true"></span>
-      <img class="biu" src="{base}assets/img/biu-logo-white.png" width="833" height="309" alt="Bar-Ilan University">
+      <img class="biu" src="{base}assets/img/biu-logo-white.png?v=en" width="833" height="309" alt="Bar-Ilan University">
     </a>
     <nav class="nav" aria-label="Primary">
       <a href="{base}index.html#journey">Program</a>
@@ -154,7 +154,7 @@ def footer_html(base):
         <a class="lockup" href="{base}index.html" aria-label="Program home">
           <img class="lla" src="{base}assets/img/lla-logo-sm.png" width="320" height="103" alt="Longevity Life Academy" loading="lazy">
           <span class="divider" aria-hidden="true"></span>
-          <img class="biu" src="{base}assets/img/biu-logo-white.png" width="833" height="309" alt="Bar-Ilan University" loading="lazy">
+          <img class="biu" src="{base}assets/img/biu-logo-white.png?v=en" width="833" height="309" alt="Bar-Ilan University" loading="lazy">
         </a>
         <p>Professional Certificate in Longevity and Lifelong Wellbeing Advisory Practice. Issued through Bar-Ilan Akadima and Health 360, in partnership with eTeacher.</p>
       </div>

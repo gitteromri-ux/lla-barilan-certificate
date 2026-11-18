@@ -1,0 +1,33 @@
+/* Readability layer: larger type, higher contrast, calmer motion, less clutter */
+:root {
+  --text-2: #E4ECF8;
+  --text-3: #C8D6EA;
+  --text-4: #AFC1DC;
+  --paper-ink-2: #22385A;
+  --sect: clamp(104px, 11vw, 168px);
+}
+body { font-size: 18px; line-height: 1.7; }
+@media (max-width: 720px) { body { font-size: 17px; } }
+
+#method, #reviews, #insights { display: none !important; }
+.grain, .orbit-dot, .spot::before { display: none !important; }
+
+[data-reveal], .js [data-reveal] { opacity: 1 !important; transform: none !important; filter: none !important; }
+.js .split .w > span, .split .w > span { transform: none !important; opacity: 1 !important; }
+.grad em, .js .grad.split em .w > span {
+  background: none !important;
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  color: #A9CCF6 !important;
+  -webkit-text-fill-color: currentColor !important;
+}
+
+.lead { font-size: clamp(19px, 1.45vw, 22px) !important; line-height: 1.6 !important; color: var(--text-2); }
+.label { font-size: 13px !important; letter-spacing: .14em !important; }
+.section p, .si-copy p, .faq p, .fl-body p { line-height: 1.7; }
+.si-copy p, .faq-a p, .r-row p { font-size: max(1em, 17px); }
+.si-themes li, .si-meta span { font-size: 15px; }
+
+.glass { -webkit-backdrop-filter: blur(6px) saturate(110%); backdrop-filter: blur(6px) saturate(110%); }
+.hero h1 { text-shadow: 0 2px 24px rgba(4, 13, 36, .55); }
+.hero p { color: #EEF4FD; }
