@@ -268,6 +268,35 @@ ul.d3.sm li{font-size:17px!important}
 .opt b{font-size:20px!important}.opt p{font-size:16px!important}
 .bl p{font-size:24px!important;font-weight:800!important}
 #goal h2{max-width:none}
+
+/* Black glass + mobile sliders */
+:root{--bg:#000;--edge:rgba(255,255,255,.16);--edge-hi:rgba(255,255,255,.34)}
+html{background:#000}
+body::before{background:radial-gradient(900px 600px at 85% -10%,rgba(139,196,255,.10),transparent 60%),radial-gradient(800px 600px at -10% 60%,rgba(255,255,255,.05),transparent 60%),#000!important}
+#q{background:transparent!important}
+nav{background:rgba(0,0,0,.6)!important}
+.pc,.tl li,.phase,.qs>li,.list li,.pf div,.callout,.gold,.opt,.pc.dark,.tl li.live,.plan2 .pc{
+ background:linear-gradient(160deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.025) 55%,rgba(255,255,255,.05) 100%)!important;
+ border:1px solid rgba(255,255,255,.16)!important;
+ -webkit-backdrop-filter:blur(22px) saturate(140%);backdrop-filter:blur(22px) saturate(140%);
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.28),inset 0 -1px 0 rgba(255,255,255,.04),0 30px 60px -30px rgba(0,0,0,1)!important}
+.tl li,.plan2 .pc{border-top:3px solid var(--c)!important}
+.phase .ph-head,.ph-head.dark{background:rgba(255,255,255,.03)!important;border-bottom:1px solid rgba(255,255,255,.1)!important;border-top:3px solid var(--c)}
+.stream{border-color:rgba(255,255,255,.08)!important}
+.bl{background:linear-gradient(90deg,rgba(255,255,255,.08),rgba(255,255,255,.02))!important;border:1px solid rgba(255,255,255,.18)!important;border-left:3px solid var(--lb)!important}
+.gold{border-left:3px solid var(--lb)!important}
+.swipe{display:none}
+@media(max-width:720px){
+ .sum3,.plan2,.tl,.opts,.list,.streams,.pf{display:flex!important;grid-template-columns:none!important;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:14px!important;padding:4px 22px 18px!important;margin:0 -22px!important;scrollbar-width:none}
+ .sum3::-webkit-scrollbar,.plan2::-webkit-scrollbar,.tl::-webkit-scrollbar,.opts::-webkit-scrollbar,.list::-webkit-scrollbar,.streams::-webkit-scrollbar,.pf::-webkit-scrollbar{display:none}
+ .sum3>*,.plan2>*,.tl>li,.opts>*,.list>li,.streams>*{flex:0 0 84%;scroll-snap-align:start;min-width:0}
+ .pf>div{flex:0 0 44%;scroll-snap-align:start}
+ .opts{margin:0 -4px!important;padding:4px 4px 18px!important}.opts>*{flex-basis:88%}
+ .tl::before,.tl li::before{display:none!important}
+ .tl li.live{grid-column:auto!important}
+ .stream{border:1px solid rgba(255,255,255,.12)!important;border-radius:20px}
+ .swipe{display:block;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--lb);margin:-20px 0 14px;opacity:.85}
+}
 </style></head><body>
 <header><div class="w hd">
   <div class="brand"><img src="../site/assets/img/lla-logo.png" alt="Longevity Life Academy" width="720" height="231"><i aria-hidden="true"></i><img class="biu" src="../site/assets/img/biu-logo-white.png?v=en" alt="Bar-Ilan University" width="833" height="309"></div>
@@ -283,7 +312,7 @@ ul.d3.sm li{font-size:17px!important}
 <section id="sum"><div class="w">
   <span class="kicker">Summary · one screen</span>
   <h2>The meeting in 3 steps</h2>
-  <div class="sum3">
+  <span class="swipe">Swipe →</span><div class="sum3">
     <div class="pc"><span class="ph-k">Step 1</span><h3>Where we are</h3><ul class="d3"><li>Kick-off was Nov 15</li><li>4 weeks of prep &amp; creation</li><li>Live Dec 13 · 30-day test</li></ul></div>
     <div class="pc hotc"><span class="ph-k">Step 2</span><h3>What we need today</h3><ul class="d3"><li>Product: hours, lessons, units</li><li>Pricing</li><li>Certificate: option A, B or C</li><li>Research &amp; methodologies</li></ul></div>
     <div class="pc"><span class="ph-k">Step 3</span><h3>What happens next</h3><ul class="d3"><li>Week 1 approvals lock this week</li><li>Production starts Week 3</li><li>Results decide the Feb 2027 semester</li></ul></div>
@@ -299,7 +328,7 @@ ul.d3.sm li{font-size:17px!important}
 <section id="plan" class="alt"><div class="w">
   <span class="kicker">02 · The plan</span>
   <h2>The agreed plan</h2>
-  <div class="plan2">
+  <span class="swipe">Swipe →</span><div class="plan2">
     <div class="pc"><span class="ph-k">Phase 1 · 4 weeks</span><span class="dates">Nov 15 – Dec 12</span><h3>Planning &amp; preparation</h3><ul class="d3"><li>Research &amp; messaging</li><li>Creative production</li><li>Landing pages &amp; campaign setup</li></ul></div>
     <div class="pc dark"><span class="ph-k">Phase 2 · 30 days</span><span class="dates">Dec 13 – ~Jan 11</span><h3>Demand validation</h3><ul class="d3"><li>Go live on Meta &amp; Google</li><li>~3 weeks of optimization</li><li>Final demand report</li></ul></div>
   </div>
@@ -309,7 +338,7 @@ ul.d3.sm li{font-size:17px!important}
 <section id="ms" ><div class="w">
   <span class="kicker">03 · Week by week</span>
   <h2>Mini milestones</h2>
-  <ol class="tl">
+  <span class="swipe">Swipe →</span><ol class="tl">
     <li><span class="wk">Week 1</span><span class="dt">Nov 15 – 21</span><h3>Lock the product &amp; research</h3><ul class="d3 sm"><li>Product, price, wording approved</li><li>Market &amp; competitor research</li></ul></li>
     <li><span class="wk">Week 2</span><span class="dt">Nov 22 – 28</span><h3>Positioning, copy &amp; scripts</h3><ul class="d3 sm"><li>Positioning &amp; copy approved</li><li>Landing page draft</li><li>Video scripts</li></ul></li>
     <li><span class="wk">Week 3</span><span class="dt">Nov 29 – Dec 5</span><h3>Creative production</h3><ul class="d3 sm"><li>2 promo videos + 8 cuts</li><li>4 statics, 2 carousels</li><li>3 test videos</li></ul></li>
@@ -339,7 +368,7 @@ ul.d3.sm li{font-size:17px!important}
 <section id="more"><div class="w">
   <span class="kicker">05 · Also to agree today</span>
   <h2>Also to agree today</h2>
-  <ul class="list"><li><b>Approvals</b><span>Who signs off, how fast</span></li><li><b>Data &amp; CRM</b><span>Everything into eTeacher’s CRM</span></li><li><b>Syllabus &amp; faculty</b><span>Who sends, by when</span></li><li><b>Budget &amp; target</b><span>Media budget · 334+ leads · 10+ students</span></li><li><b>Announcement</b><span>When Bar-Ilan announces</span></li></ul>
+  <span class="swipe">Swipe →</span><ul class="list"><li><b>Approvals</b><span>Who signs off, how fast</span></li><li><b>Data &amp; CRM</b><span>Everything into eTeacher’s CRM</span></li><li><b>Syllabus &amp; faculty</b><span>Who sends, by when</span></li><li><b>Budget &amp; target</b><span>Media budget · 334+ leads · 10+ students</span></li><li><b>Announcement</b><span>When Bar-Ilan announces</span></li></ul>
 <div class="bl"><b>Bottom line</b><p>An owner and a date for each, before we leave.</p></div>
 </div></section>
 <section id="phases" class="alt"><div class="w">
@@ -348,7 +377,7 @@ ul.d3.sm li{font-size:17px!important}
 
   <div class="phase">
     <div class="ph-head"><div><span class="ph-k">Phase 1 · up to 4 weeks</span><h3>Planning &amp; preparation</h3></div><p>Build every asset.</p></div>
-    <div class="streams">
+    <span class="swipe">Swipe →</span><div class="streams">
       <article class="stream"><span class="n">1.1</span><h4>Audience research, messaging &amp; creative direction</h4><ul>
         <li>Target audience personas and messaging framework</li><li>Key marketing messages and value propositions</li><li>Creative direction and graphic design for campaign materials</li><li>Adapting messaging and creative assets based on campaign performance</li></ul></article>
       <article class="stream"><span class="n">1.2</span><h4>Paid media assets &amp; campaign preparation</h4><ul>
@@ -360,7 +389,7 @@ ul.d3.sm li{font-size:17px!important}
 
   <div class="phase">
     <div class="ph-head dark"><div><span class="ph-k">Phase 2 · 30 days</span><h3>Demand validation</h3></div><p>Test it in market. Measure. Optimize.</p></div>
-    <div class="streams">
+    <span class="swipe">Swipe →</span><div class="streams">
       <article class="stream"><span class="n">2.1</span><h4>Demand validation &amp; optimization</h4><ul>
         <li>Campaigns across Meta and Google Search</li><li>Testing audiences, messages and creative approaches</li><li>Optimizing ads, targeting and media allocation</li><li>Monitoring leads, acquisition costs and conversion indicators</li><li>Performance reporting and final assessment of market demand</li></ul></article>
       <article class="stream"><span class="n">2.2</span><h4>Media plan</h4><ul>
@@ -374,7 +403,7 @@ ul.d3.sm li{font-size:17px!important}
 <section id="facts" class="strip"><div class="w">
   <span class="kicker">At a glance</span>
   <h2>Program facts</h2>
-  <div class="pf">
+  <span class="swipe">Swipe →</span><div class="pf">
     <div><b>6</b><span>courses</span></div><div><b>30</b><span>live lessons × 90 min</span></div><div><b>~100</b><span>hours</span></div><div><b>~8</b><span>months</span></div><div><b>Feb 2027</b><span>semester start</span></div>
   </div>
 </div></section>
