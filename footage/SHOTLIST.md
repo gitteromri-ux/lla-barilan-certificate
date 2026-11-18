@@ -509,3 +509,18 @@ ffmpeg -ss IN -i SOURCE -frames:v 1 -vf "${VF%,format=yuv420p}" -q:v 4 site/asse
 - Every resolution above comes from ffprobe on the downloaded original, not from the file name; one Pexels file named `uhd_4096_2160` turned out to be 2732x1440 and was rejected for a hero slot.
 - Every chosen clip was checked visually: contact sheets, 1-second filmstrips of the cut, and 1:1 crops at the delivered resolution for logos and legible text.
 - Rejected along the way, among others: clips with legible charts, flipcharts, slogans or screens; bike-share branding; 1080p and 1440p clips; vertical clips; foggy or dim hiking shots; and posed or fashion-styled stock.
+
+## Added for the v3 landing page (18 Nov 2026)
+
+All Pexels, free licence, real footage (no AI or CGI). Files in `site/assets/video/`.
+
+| Slot | Used in | Clip | Creator | Source |
+|---|---|---|---|---|
+| `course-1-lab` | Courses slider, card 1 (The Science of Longevity) | Close-up of a light microscope objective with gloved hands adjusting a slide. Replaces the LLA CGI cell clip on the course card. | Edward Jenner | [Pexels 4114797](https://www.pexels.com/video/laboratory-medical-medicine-virus-4114797/) |
+| `why-lab` | Why now, chapter 3 (the evidence) | Researcher in safety glasses at a microscope, cool blue light. | Artem Podrez | [Pexels 5752729](https://www.pexels.com/video/a-woman-looking-through-the-microscope-5752729/) |
+| `moment-learning` | Program moments: support across generations | Younger woman and older woman working together on a laptop on a sofa. | Pressmaster | [Pexels 3209763](https://www.pexels.com/video/a-young-woman-teaching-an-elderly-woman-how-to-use-a-laptop-3209763/) |
+| `moment-hike` | Why now, chapter 1, and program moments: active aging | Older couple with backpacks walking into morning mist. | Kampus Production | [Pexels 7786247](https://www.pexels.com/video/couple-walking-together-7786247/) |
+| `moment-picnic` | Program moments: social connection | Four older adults sharing a picnic at a park table. | Kampus Production | [Pexels 7655642](https://www.pexels.com/video/elderly-people-having-a-picnic-at-the-park-7655642/) |
+| `moment-sunset` | Program moments: healthy longevity | Couple seated in a field at golden hour with bicycles behind them. | Ron Lach | [Pexels 10215322](https://www.pexels.com/video/a-couple-watching-the-sunset-10215322/) |
+
+The v3 page no longer uses `hero-science` (AI-generated) or `course-1-science` (LLA CGI cluster); both remain only for the archived versions.
