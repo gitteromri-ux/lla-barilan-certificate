@@ -329,6 +329,8 @@ def index_page(arts):
 
 def inject(text, marker, block):
     start, end = f"<!-- {marker}:START -->", f"<!-- {marker}:END -->"
+    if start not in text or end not in text:
+        return text
     i, j = text.index(start), text.index(end)
     return text[: i + len(start)] + "\n" + block + "\n" + text[j:]
 
