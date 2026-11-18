@@ -222,6 +222,13 @@ ul.d3{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:10px}
 ul.d3 li{position:relative;padding-left:22px;font-size:19px;line-height:1.45;color:var(--text)}
 ul.d3 li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--lb);box-shadow:0 0 10px rgba(139,196,255,.8)}
 @media(max-width:900px){.sum3{grid-template-columns:1fr}}
+
+.opts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:16px}
+.opt{border:1px solid var(--edge);border-radius:18px;padding:20px;background:rgba(255,255,255,.05)}
+.opt span{display:block;font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--lb);margin-bottom:6px}
+.opt b{display:block;font-size:19px;line-height:1.3;color:var(--white);margin-bottom:8px}
+.opt p{font-size:17px!important;color:var(--soft)!important}
+@media(max-width:900px){.opts{grid-template-columns:1fr}}
 </style></head><body>
 <header><div class="w hd">
   <div class="brand"><img src="../site/assets/img/lla-logo.png" alt="Longevity Life Academy" width="720" height="231"><i aria-hidden="true"></i><img class="biu" src="../site/assets/img/biu-logo-white.png?v=en" alt="Bar-Ilan University" width="833" height="309"></div>
@@ -231,7 +238,7 @@ ul.d3 li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8
   <div class="tabs"><a class="on" href="./">Pre-pilot plan</a><a href="certification.html">US &amp; Europe certification</a></div>
 </div></header>
 
-<nav aria-label="Sections"><div class="w"><a href="#sum">Summary</a><a href="#goal">Why</a><a href="#plan">Plan</a><a href="#ms">Week by week</a><a class="hot" href="#q">5 decisions today</a><a href="#more">Also to agree</a><a href="#phases">Appendix: scope</a><a href="certification.html">Certification →</a></div></nav>
+<nav aria-label="Sections"><div class="w"><a href="#sum">Summary</a><a href="#goal">Why</a><a href="#plan">Plan</a><a href="#ms">Week by week</a><a class="hot" href="#q">Decisions today</a><a href="#more">Also to agree</a><a href="#phases">Appendix: scope</a><a href="certification.html">Certification →</a></div></nav>
 
 <main>
 <section id="sum"><div class="w">
@@ -239,10 +246,10 @@ ul.d3 li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8
   <h2>The meeting in 3 steps</h2>
   <div class="sum3">
     <div class="pc"><span class="ph-k">Step 1</span><h3>Where we are</h3><ul class="d3"><li>Kick-off was Nov 15</li><li>Phase 1: 4 weeks of prep &amp; creation</li><li>Go-live Dec 13, then 30 days of demand validation</li></ul></div>
-    <div class="pc hotc"><span class="ph-k">Step 2</span><h3>What we need today</h3><ul class="d3"><li>Product &amp; scope</li><li>Course structure &amp; length</li><li>APHEA wording &amp; timing</li><li>Price &amp; installments</li><li>Certificate &amp; Bar-Ilan branding</li></ul></div>
+    <div class="pc hotc"><span class="ph-k">Step 2</span><h3>What we need today</h3><ul class="d3"><li>Product: hours, lessons, units</li><li>Pricing</li><li>Certificate: option A, B or C</li><li>Research &amp; methodologies</li></ul></div>
     <div class="pc"><span class="ph-k">Step 3</span><h3>What happens next</h3><ul class="d3"><li>Week 1 approvals lock this week</li><li>Production starts Week 3</li><li>Results decide the Feb 2027 semester</li></ul></div>
   </div>
-  <div class="bl"><b>Bottom line</b><p>Answer the 5 questions today and we go live on Dec 13 as agreed.</p></div>
+  <div class="bl"><b>Bottom line</b><p>Close these decisions today and we go live on Dec 13 as agreed.</p></div>
 </div></section>
 
 <section id="goal" class="goal"><div class="w">
@@ -276,17 +283,22 @@ ul.d3 li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8
 </div></section>
 <section id="q"><div class="w">
   <span class="kicker">04 · Decisions for today</span>
-  <h2>5 decisions we need today</h2>
+  <h2>Decisions we need today</h2>
   <p class="intro">The heart of this meeting: each answer unlocks the next milestone.</p>
   <ol class="qs">
-    <li><span class="qn" aria-hidden="true">01</span><div><h3>The product itself</h3><p>Who is the graduate and what can they do with the certificate (scope of practice)? Fully live online or a mix with recordings? Lesson times that work for US students?</p></div></li>
-    <li><span class="qn" aria-hidden="true">02</span><div><h3>Length of each course</h3><p>Today: 6 courses, 30 live lessons × 90 min, ~100 hours, ~8 months. How many lessons per course, in what order, and who teaches each?</p><p class="note">An even split would be 5 lessons per course. That is our arithmetic, not confirmed.</p></div></li>
-    <li><span class="qn" aria-hidden="true">03</span><div><h3>The European standard (APHEA)</h3><p>When is the application submitted, when is a decision expected, and may we use the line in ads?</p>
-      <div class="gold"><b>Approved wording only:</b><q>"As part of our commitment to academic excellence and international quality standards, the program is currently preparing to apply for accreditation by APHEA (Agency for Public Health Education Accreditation) under its Continuing Training &amp; Educational Event (CTEE) accreditation framework."</q><span class="note">Never say "accredited".</span></div></div></li>
-    <li><span class="qn" aria-hidden="true">04</span><div><h3>Price &amp; payments</h3><p>Tuition amount, 12-month installments, early-bird or academic-credit savings. To be confirmed today.</p></div></li>
-    <li><span class="qn" aria-hidden="true">05</span><div><h3>Certificate &amp; Bar-Ilan branding</h3><p>Exact certificate wording, and approval to use the Bar-Ilan name and logo in ads and on the landing page.</p><a class="certlink" href="certification.html">Which certificates matter in the US &amp; Europe →</a></div></li>
+    <li><span class="qn" aria-hidden="true">01</span><div><h3>The product: hours, lessons, units</h3><p>What exactly are we selling? Total hours, number of lessons, number of units/courses, and how they split.</p><ul class="d"><li>Current numbers: 6 courses, 30 live lessons × 90 min, ~100 hours, ~8 months. Confirm or correct.</li><li>Lessons per course (the proposal shows 4 per course, which totals 24, not 30)</li><li>Live vs. recorded, practicum and capstone, and who teaches each course</li></ul></div></li>
+    <li><span class="qn" aria-hidden="true">02</span><div><h3>Pricing</h3><p>Tuition, the 12-month installment plan, pay-in-full and single-course prices, early-bird or credit savings.</p></div></li>
+    <li><span class="qn" aria-hidden="true">03</span><div><h3>How we present the certificate: 3 options</h3>
+      <div class="opts">
+        <div class="opt"><span>Option A</span><b>Get one model approved before the pilot</b><p>Secure one recognized approval before launch and market with it. Open question: what is that model called?</p></div>
+        <div class="opt"><span>Option B</span><b>Use their approved "in process" wording</b><p>The APHEA gold line below, verbatim.</p></div>
+        <div class="opt"><span>Option C</span><b>Say nothing about accreditation</b><p>Lead with Bar-Ilan's credibility, relationships and its ties to the European Commission.</p></div>
+      </div>
+      <div class="gold"><b>Option B wording (approved):</b><q>"As part of our commitment to academic excellence and international quality standards, the program is currently preparing to apply for accreditation by APHEA (Agency for Public Health Education Accreditation) under its Continuing Training &amp; Educational Event (CTEE) accreditation framework."</q><span class="note">Never say "accredited".</span></div>
+      <a class="certlink" href="certification.html">Which certificates matter in the US &amp; Europe →</a></div></li>
+    <li><span class="qn" aria-hidden="true">04</span><div><h3>The research &amp; methodologies behind it</h3><p>Which research and advanced methodologies make this a cutting-edge program?</p><ul class="d"><li>Health 360's own framework and research, or other advanced methodologies too?</li><li>Which ones do we deploy and name in the marketing?</li></ul></div></li>
   </ol>
-<div class="bl"><b>Bottom line</b><p>We need these 5 answers today to start production on schedule.</p></div>
+<div class="bl"><b>Bottom line</b><p>Product, price, certificate wording and methodology: lock these today and production starts on schedule.</p></div>
 </div></section>
 <section id="more"><div class="w">
   <span class="kicker">05 · Also to agree today</span>
