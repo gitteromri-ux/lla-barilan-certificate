@@ -30,13 +30,14 @@
 <div class="s"><img src="research/slide-23.jpg" alt="University alternatives"></div>
 <div class="s"><img src="research/slide-24.jpg" alt="Other buyer alternatives"></div>
 <div class="n" id="p"></div><div class="n" id="x"></div><div id="c"></div>
+<link rel="stylesheet" href="research/decision.css"><script src="research/decision.js"></script>
 <script>let i=0;const S=[...document.querySelectorAll('.s')];function g(k){i=Math.max(0,Math.min(S.length-1,k));S.forEach((s,j)=>s.classList.toggle('on',j==i));document.getElementById('c').textContent=(i+1)+' / '+S.length}
 document.getElementById('p').onclick=()=>g(i-1);document.getElementById('x').onclick=()=>g(i+1);
 document.onkeydown=e=>{if(['ArrowRight','ArrowDown',' ','PageDown'].includes(e.key))g(i+1);if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key))g(i-1)};
-let t0;document.ontouchstart=e=>t0=e.touches[0].clientX;document.ontouchend=e=>{let d=e.changedTouches[0].clientX-t0;if(d<-40)g(i+1);if(d>40)g(i-1)};g(location.hash==='#research'?9:0)</script>
+let t0;document.ontouchstart=e=>t0=e.touches[0].clientX;document.ontouchend=e=>{let d=e.changedTouches[0].clientX-t0;if(d<-40)g(i+1);if(d>40)g(i-1)};g(window.evidenceStart??(location.hash==='#research'?9:0))</script>
 <script>
-fetch('research/sources.json').then(r=>r.json()).then(data=>data.forEach((entries,n)=>{
- const slide=S[n+9],img=slide.querySelector('img'),frame=document.createElement('div');
+if(window.evidenceStart!=null)fetch('research/sources.json').then(r=>r.json()).then(data=>data.forEach((entries,n)=>{
+ const slide=S[n],img=slide.querySelector('img'),frame=document.createElement('div');
  frame.style.cssText='position:relative;width:min(100vw,177.7778vh);line-height:0';slide.append(frame);frame.append(img);img.style.width='100%';
  for(const [x,w,label,url] of entries){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.title=label;a.setAttribute('aria-label','Source: '+label);a.style.cssText=`position:absolute;z-index:4;left:${x/19.2}%;width:${w/19.2}%;top:94.7%;height:3.2%`;frame.append(a)}
 })).catch(()=>{});
