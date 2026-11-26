@@ -1,0 +1,12 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bar-Ilan x LLA, 26 Nov</title>
+<style>html,body{margin:0;height:100%;background:#000;overflow:hidden;font-family:sans-serif}
+.s{position:absolute;inset:0;display:none;align-items:center;justify-content:center}.s.on{display:flex}
+.s img{max-width:100vw;max-height:100vh;object-fit:contain}
+.n{position:fixed;top:0;bottom:0;width:20%;cursor:pointer;z-index:2}#p{left:0}#x{right:0}
+#c{position:fixed;bottom:14px;right:20px;color:#9cc4ff;font-size:16px;z-index:3}</style></head><body>
+<div class="s"><img src="01-cover.png"></div><div class="s"><img src="02-why.png"></div><div class="s"><img src="03-where-we-are.png"></div><div class="s"><img src="04-close-today.png"></div><div class="s"><img src="05-also-needed.png"></div><div class="s"><img src="06-assets.png"></div><div class="s"><img src="07-behind.png"></div><div class="s"><img src="08-facts.png"></div><div class="s"><img src="09-research.png"></div>
+<div class="n" id="p"></div><div class="n" id="x"></div><div id="c"></div>
+<script>let i=0;const S=[...document.querySelectorAll('.s')];function g(k){i=Math.max(0,Math.min(S.length-1,k));S.forEach((s,j)=>s.classList.toggle('on',j==i));document.getElementById('c').textContent=(i+1)+' / '+S.length}
+document.getElementById('p').onclick=()=>g(i-1);document.getElementById('x').onclick=()=>g(i+1);
+document.onkeydown=e=>{if(['ArrowRight','ArrowDown',' ','PageDown'].includes(e.key))g(i+1);if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key))g(i-1)};
+let t0;document.ontouchstart=e=>t0=e.touches[0].clientX;document.ontouchend=e=>{let d=e.changedTouches[0].clientX-t0;if(d<-40)g(i+1);if(d>40)g(i-1)};g(0)</script></body></html>
