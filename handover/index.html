@@ -343,6 +343,29 @@ nav{background:rgba(0,0,0,.6)!important}
  .kv b{display:block;min-width:0;margin:0 0 2px}
  #research .slot{padding:32px 20px}#research .slot p{font-size:19px}
 }
+
+/* Multicolor cards (v2) */
+.mc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.mc.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.mcc{--c:#6FA8FF;position:relative;padding:32px 30px 34px;border-radius:26px;border:1px solid color-mix(in srgb,var(--c) 55%,transparent);border-top:7px solid var(--c);background:linear-gradient(165deg,color-mix(in srgb,var(--c) 30%,#05070d) 0%,color-mix(in srgb,var(--c) 9%,#05070d) 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 30px 60px -30px rgba(0,0,0,1);min-width:0}
+.mc>.mcc:nth-child(6n+1){--c:#6FA8FF}.mc>.mcc:nth-child(6n+2){--c:#F2B45C}.mc>.mcc:nth-child(6n+3){--c:#4FD1C5}.mc>.mcc:nth-child(6n+4){--c:#A78BFA}.mc>.mcc:nth-child(6n+5){--c:#F472B6}.mc>.mcc:nth-child(6n){--c:#86EFAC}
+.mcc .k{display:block;font-size:15px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--c);margin-bottom:12px}
+.mcc h3{margin:0 0 12px;font-family:Inter,system-ui,sans-serif;font-size:clamp(26px,2.4vw,32px);line-height:1.2;font-weight:800;color:#fff}
+.mcc p{font-size:21px;line-height:1.45;color:#fff}
+.mcc .big{display:block;font-family:IS,Georgia,serif;font-size:clamp(52px,5vw,68px);line-height:1;color:var(--c);margin-bottom:12px}
+.mcc .kv{font-size:19px!important;margin-top:12px}
+.mcc .kv b{color:var(--c)!important;display:block;margin:0 0 2px}
+.mcc.hot{box-shadow:0 0 0 2px var(--c),0 0 50px -8px var(--c)}
+.mcc.cur{box-shadow:0 0 0 2px var(--c),0 0 40px -10px var(--c)}
+.mcc.shoot{--c:#F472B6!important;box-shadow:0 0 0 2px var(--c),0 0 40px -10px var(--c)}
+.mc.two>.mcc.hot{--c:#F472B6}
+.pf div{border-top:5px solid var(--c)}
+.pf div:nth-child(1){--c:#6FA8FF}.pf div:nth-child(2){--c:#F2B45C}.pf div:nth-child(3){--c:#4FD1C5}.pf div:nth-child(4){--c:#A78BFA}.pf div:nth-child(5){--c:#F472B6}
+.pf b{color:var(--c)!important}
+#key,#more,#assets,#behind,#now{padding:96px 0}
+.gold q{font-size:23px}
+@media(max-width:1000px){.mc,.mc.two{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.mc,.mc.two{grid-template-columns:1fr;gap:16px}.mcc{padding:26px 22px 28px}.mcc p{font-size:20px}#key,#more,#assets,#behind,#now{padding:64px 0}}
 </style></head><body>
 <header><div class="w hd">
   <div class="brand"><img src="../site/assets/img/lla-logo.png" alt="Longevity Life Academy" width="720" height="231"><i aria-hidden="true"></i><img class="biu" src="../site/assets/img/biu-logo-white.png?v=en" alt="Bar-Ilan University" width="833" height="309"></div>
@@ -352,142 +375,48 @@ nav{background:rgba(0,0,0,.6)!important}
   <div class="tabs"><a class="on" href="./">Pre-pilot plan</a><a href="certification.html">US &amp; Europe certification</a></div>
 </div></header>
 
-<nav aria-label="Sections"><div class="w"><a href="#sum">Summary</a><a href="#goal">Why</a><a href="#plan">Plan</a><a href="#ms">Week by week</a><a href="#now">Where we are</a><a class="hot" href="#open">Open questions</a><a href="#q">Decisions</a><a href="#more">Also to agree</a><a href="#phases">Appendix: scope</a><a href="#research">Research</a><a href="certification.html">Certification →</a></div></nav>
+<nav aria-label="Sections"><div class="w"><a href="#goal">Why</a><a href="#now">Where we are</a><a class="hot" href="#key">Close today</a><a href="#more">Also needed</a><a href="#assets">Assets</a><a href="#behind">Behind</a><a href="#research">Research</a><a href="certification.html">Certification →</a></div></nav>
 
 <main>
-<section id="sum"><div class="w">
-  <span class="kicker">Summary · one screen</span>
-  <h2>The meeting in 3 steps</h2>
-  <span class="swipe">Swipe →</span><div class="sum3">
-    <div class="pc"><span class="ph-k">Step 1</span><h3>Where we are</h3><ul class="d3"><li>Kick-off was Nov 15</li><li>Deck, website &amp; materials built Nov 17–18</li><li>Live Dec 13 · 30-day test</li></ul></div>
-    <div class="pc hotc"><span class="ph-k">Step 2</span><h3>What we need today</h3><ul class="d3"><li>Course layout &amp; async sessions</li><li>Pricing</li><li>Certificate: one-module pilot</li><li>Shoot day &amp; meeting dates</li><li>Research &amp; methodologies</li></ul></div>
-    <div class="pc"><span class="ph-k">Step 3</span><h3>What happens next</h3><ul class="d3"><li>Shoot day in early December</li><li>Production starts Week 3 (Nov 29)</li><li>Results decide the Feb 2027 semester</li></ul></div>
-  </div>
-  <div class="bl"><b>Bottom line</b><p>Answers today → live Dec 13.</p></div>
-</div></section>
-
 <section id="goal" class="goal"><div class="w">
   <span class="kicker">01 · Why</span>
   <h2>Prove US demand. <em style="color:var(--lb);font-style:normal">Decide with data.</em></h2><ul class="d3 big"><li>Test the market for the Bar-Ilan certificate</li><li>Find the messages that bring qualified leads</li><li>Decide on Feb 2027 from real results</li></ul>
+  <p class="callout"><b>Lead =</b>&nbsp;US contact + 2 answers: when they’ll enroll, and their main goal. Channels: Meta &amp; Google Search.</p>
 <div class="bl"><b>Bottom line</b><p>One test. One decision.</p></div>
 </div></section>
-<section id="plan" class="alt"><div class="w">
-  <span class="kicker">02 · The plan</span>
-  <h2>The agreed plan</h2>
-  <span class="swipe">Swipe →</span><div class="plan2">
-    <div class="pc"><span class="ph-k">Phase 1 · 4 weeks</span><span class="dates">Nov 15 – Dec 12</span><h3>Planning &amp; preparation</h3><ul class="d3"><li>Research &amp; messaging</li><li>Creative production</li><li>Landing pages &amp; campaign setup</li></ul></div>
-    <div class="pc dark"><span class="ph-k">Phase 2 · 30 days</span><span class="dates">Dec 13 – ~Jan 11</span><h3>Demand validation</h3><ul class="d3"><li>Go live on Meta &amp; Google</li><li>~3 weeks of optimization</li><li>Final demand report</li></ul></div>
-  </div>
-  <p class="callout"><b>Lead =</b>&nbsp;US contact + 2 answers: when they’ll enroll, and their main goal.</p>
-<div class="bl"><b>Bottom line</b><p>4 weeks build → live Dec 13 → 30 days test.</p></div>
-</div></section>
-<section id="ms" ><div class="w">
-  <span class="kicker">03 · Week by week</span>
-  <h2>Mini milestones</h2>
-  <span class="swipe">Swipe →</span><ol class="tl">
-    <li><span class="wk">Week 1</span><span class="dt">Nov 15 – 21</span><h3>Lock the product &amp; research</h3><ul class="d3 sm"><li>Product, price, wording approved</li><li>Market &amp; competitor research</li></ul></li>
-    <li><span class="wk">Week 2</span><span class="dt">Nov 22 – 28</span><h3>Positioning, copy &amp; scripts</h3><ul class="d3 sm"><li>Positioning &amp; copy approved</li><li>Landing page draft</li><li>Video scripts &amp; shoot-day layout</li></ul></li>
-    <li><span class="wk">Week 3</span><span class="dt">Nov 29 – Dec 5</span><h3>Creative production</h3><ul class="d3 sm"><li>Shoot day: 3–4 h, 3 people (date TBC)</li><li>2 promo videos + 8 cuts</li><li>4 statics, 2 carousels</li><li>3 test videos</li></ul></li>
-    <li><span class="wk">Week 4</span><span class="dt">Dec 6 – 12</span><h3>Build, track &amp; approve</h3><ul class="d3 sm"><li>2 landing pages, 3 forms</li><li>100+ Google ads, 8 blogs</li><li>CRM tracking, final OK</li></ul></li>
-    <li class="live"><span class="wk">Go-live</span><span class="dt">Dec 13 – Jan 11</span><h3>Demand validation</h3><ul class="d3 sm"><li>30 days live, ~3 weeks optimizing</li><li>Feb 2027 decision</li></ul></li>
-  </ol>
-<div class="bl"><b>Bottom line</b><p>Dec 13 holds only if Week 1–2 approvals land now.</p></div>
-</div></section>
 <section id="now"><div class="w">
-  <span class="kicker">04 · Where we are now</span>
-  <h2>Where we are, and what’s next</h2>
-  <div class="now">
-    <div>
-      <h3>Done since kick-off</h3>
-      <ol class="rows done">
-        <li><span class="d">Nov 15</span><div><b>Kick-off</b><span class="t">4-week prep phase starts</span></div></li>
-        <li><span class="d">Nov 17</span><div><b>Materials, brief &amp; first website</b><span class="t">Matan’s brief, proposal and Appendix A filed. Landing page and 8-article journal built</span></div></li>
-        <li><span class="d">Nov 18</span><div><b>Pre-pilot meeting, deck &amp; redesign</b><span class="t">Deck finished 10:20. Website redesigned 13:31</span></div></li>
-        <li><span class="d">Nov 23</span><div><b>Open questions sent to Bar-Ilan</b><span class="t">Bar-Ilan replied the same day. Layout, accreditation and meeting dates still open</span></div></li>
-        <li><span class="d">Nov 26</span><div><b>Today: this update</b><span class="t">Open questions on the next slide</span></div></li>
-      </ol>
-    </div>
-    <div>
-      <h3>Coming up</h3>
-      <ol class="rows">
-        <li class="wait"><span class="d">This week<small>Bar-Ilan</small></span><div><b>Meeting dates with Ariel</b><span class="t">Requested 23 Nov. Layout and async rationale to be presented</span></div></li>
-        <li class="plan"><span class="d">Nov 22–28<small>Week 2</small></span><div><b>Positioning, copy &amp; scripts</b><span class="t">Landing page draft. Shoot-day layout and scripts</span></div></li>
-        <li class="wait"><span class="d">Early Dec<small>Week 3 · date TBC</small></span><div><b>Shoot day</b><span class="t">3–4 hours, 3 people filmed, ideally incl. Nadav. Creative production starts Nov 29</span></div></li>
-        <li class="plan"><span class="d">Dec 6–12<small>Week 4</small></span><div><b>Build, track &amp; final approval</b><span class="t">Landing pages, forms, Google ads, CRM</span></div></li>
-        <li class="go"><span class="d">Dec 13<small>Go-live</small></span><div><b>30-day demand test</b><span class="t">Runs to ~Jan 11. Decides the Feb 2027 semester</span></div></li>
-      </ol>
-    </div>
-  </div>
-  <div class="bl"><b>Commitment</b><p>Committed go-live: Dec 13. Amber items need Bar-Ilan.</p></div>
+  <span class="kicker">02 · Where we are now</span>
+  <h2>Today is Thu Nov 26. Week 2 of 4.</h2>
+  <div class="mc"><div class="mcc "><span class="k">Week 1 · Nov 15–21 · Done</span><h3>Kick-off &amp; build</h3><p>Kick-off Nov 15. Brief, materials, website and deck built Nov 17–18. Bar-Ilan meeting Nov 18.</p></div><div class="mcc cur"><span class="k">Week 2 · Nov 22–28 · Now</span><h3>Questions out, copy &amp; scripts</h3><p>Questions sent to Bar-Ilan Nov 23. Positioning, copy, scripts and landing page draft.</p></div><div class="mcc "><span class="k">Week 3 · Nov 29–Dec 5</span><h3>Creative production starts</h3><p>Shoot window opens Dec 4–5. Book it today.</p></div><div class="mcc "><span class="k">Week 4 · Dec 6–12</span><h3>Shoot closes, comments, build</h3><p>Shoot window closes Dec 8–9. Bar-Ilan comments, our edits. Pages, forms, CRM. Final approval by Dec 12.</p></div><div class="mcc go"><span class="k">Go-live · Dec 13 – Jan 11</span><h3>30-day demand test</h3><p>~3 weeks of optimization. Final demand report.</p></div><div class="mcc "><span class="k">Feb 2027</span><h3>Semester decision</h3><p>Decided from the pilot results.</p></div></div>
+<div class="bl"><b>Bottom line</b><p>Phase 1: Nov 15–Dec 12 (4 weeks). Go-live Dec 13.</p></div>
 </div></section>
-<section id="open"><div class="w">
-  <span class="kicker">05 · Open questions</span>
-  <h2>What we need from Bar-Ilan to proceed</h2>
-  <ol class="qs">
-    <li><span class="qn" aria-hidden="true">01</span><div><h3>Course length, frequency &amp; yearly layout</h3><p class="sub">Plus a syllabus a lecturer can run</p><p class="kv own"><b>Owner</b>Bar-Ilan team, with Ariel</p><p class="kv blk"><b>Blocks</b>Product facts on the landing page and ads. Today 4 × 6 = 24 lessons, not 30. No session-by-session syllabus yet</p><p class="kv pd"><b>Plan date</b>Week 1 (Nov 15–21), passed</p></div></li>
-    <li><span class="qn" aria-hidden="true">02</span><div><h3>Async sessions: rationale &amp; change</h3><p class="sub">Differs from what we agreed</p><p class="kv own"><b>Owner</b>Bar-Ilan team, with Ariel</p><p class="kv blk"><b>Blocks</b>What we market: live vs. async, hours, months</p><p class="kv pd"><b>Next</b>Bar-Ilan presents the rationale and discusses it with us</p></div></li>
-    <li><span class="qn" aria-hidden="true">03</span><div><h3>One-module accreditation: name &amp; plan</h3><p class="sub">Nadav’s pilot idea</p><p class="kv own"><b>Owner</b>Ariel &amp; Nadav, still checking</p><p class="kv blk"><b>Blocks</b>Certificate wording: Option A or the APHEA line. Never “accredited”</p><p class="kv pd"><b>Need</b>What the module is called and the plan</p></div></li>
-    <li><span class="qn" aria-hidden="true">04</span><div><h3>Shoot day: date and the 3 people</h3><p class="sub">3–4 hours, early December</p><p class="kv own"><b>Owner</b>Nadav Davidovitch, with the Bar-Ilan team</p><p class="kv blk"><b>Blocks</b>Creative production, Week 3 (Nov 29–Dec 5). Our layout and scripts depend on who is filmed</p><p class="kv pd"><b>Need</b>Date, location, and Nadav as one of the 3</p></div></li>
-    <li><span class="qn" aria-hidden="true">05</span><div><h3>Meeting dates this week</h3><p class="sub">To present the layout</p><p class="kv own"><b>Owner</b>Ariel</p><p class="kv blk"><b>Blocks</b>Items 01 and 02 can’t close without it</p><p class="kv pd"><b>Asked</b>Nov 23</p></div></li>
-    <li><span class="qn" aria-hidden="true">06</span><div><h3>Approvals, faculty &amp; brand assets</h3><p class="sub">Who signs off, how fast</p><p class="kv own"><b>Owner</b>Bar-Ilan team, owner to be named</p><p class="kv blk"><b>Blocks</b>Publishing. Needs faculty list, official Health 360 logo, permission for the APHEA logo, official team photos</p><p class="kv pd"><b>Need</b>One approver and a turnaround time</p></div></li>
-  </ol>
-  <div class="bl"><b>Bottom line</b><p>6 answers keep Dec 13 on track.</p></div>
-</div></section>
-<section id="q"><div class="w">
-  <span class="kicker">06 · Decisions from the Nov 18 deck</span>
-  <h2>Decisions we need today</h2>
-  <ol class="qs">
-    <li><span class="qn" aria-hidden="true">01</span><div><h3>The product</h3><p class="sub">Hours, lessons, units</p><ul class="d"><li>Today: 6 courses · 30 lessons × 90 min · ~100 h · ~8 months</li><li>Lessons per course? (4 × 6 = 24, not 30)</li><li><span class="tag">23 Nov</span>Bar-Ilan proposes added asynchronous sessions. This differs from what we agreed</li><li>Live vs. async · practicum · faculty</li></ul></div></li>
-    <li><span class="qn" aria-hidden="true">02</span><div><h3>Pricing</h3><p class="sub">What it costs, how they pay</p><ul class="d"><li>Tuition</li><li>12 monthly installments</li><li>Pay-in-full · single course · early-bird</li></ul></div></li>
-    <li><span class="qn" aria-hidden="true">03</span><div><h3>The certificate</h3><p class="sub">How we present it: pick one</p>
-      <div class="opts">
-        <div class="opt"><span>Option A</span><b>Approve one module before the pilot</b><p>Nadav’s idea. Ariel &amp; Nadav are checking. What is it called?</p></div>
-        <div class="opt"><span>Option B</span><b>Use the approved “in process” line</b><p>APHEA wording below</p></div>
-        <div class="opt"><span>Option C</span><b>Say nothing</b><p>Lean on Bar-Ilan’s credibility &amp; EU ties</p></div>
-      </div>
-      <div class="gold"><b>Option B wording (approved):</b><q>"As part of our commitment to academic excellence and international quality standards, the program is currently preparing to apply for accreditation by APHEA (Agency for Public Health Education Accreditation) under its Continuing Training &amp; Educational Event (CTEE) accreditation framework."</q><span class="note">Never say "accredited".</span></div>
-      <a class="certlink" href="certification.html">Which certificates matter in the US &amp; Europe →</a></div></li>
-    <li><span class="qn" aria-hidden="true">04</span><div><h3>Research &amp; methods</h3><p class="sub">What makes it cutting-edge</p><ul class="d"><li>Health 360 framework, or others too?</li><li>Which methods do we name in marketing?</li></ul></div></li>
-  </ol>
-<div class="bl"><b>Bottom line</b><p>Lock these 4 today. Production starts on time.</p></div>
+<section id="key"><div class="w">
+  <span class="kicker">03 · Close today</span>
+  <h2>4 things to close today</h2>
+  <div class="mc two"><div class="mcc hot"><span class="k">Key item · Book it today</span><h3>Shoot day: Dec 4 or 5 to Dec 8 or 9</h3><p>3–4 hours, 3 people, ideally incl. Nadav.</p><p class="kv"><b>Why</b>Leaves time for Bar-Ilan comments and our edits before Dec 13</p><p class="kv"><b>Owner</b>Nadav &amp; the Bar-Ilan team</p><p class="kv"><b>Need</b>Date, place, the 3 people</p></div><div class="mcc "><span class="k">Product</span><h3>Module structure &amp; name</h3><p>How the certificate’s modules play out, the one-module idea (Nadav), and what it’s called.</p><p class="kv"><b>Owner</b>Ariel &amp; Nadav, still checking</p><p class="kv"><b>Blocks</b>Certificate wording on the site and ads</p></div><div class="mcc "><span class="k">Product</span><h3>Internal split of the course</h3><p>How the course divides. Lessons per course (4 × 6 = 24, not 30). Async sessions proposed 23 Nov, which differs from what we agreed.</p><p class="kv"><b>Owner</b>Bar-Ilan team, with Ariel</p><p class="kv"><b>Blocks</b>Product facts on the site and ads</p></div><div class="mcc "><span class="k">Product</span><h3>Final syllabus</h3><p>Session by session, one a lecturer can run. We build every asset around it.</p><p class="kv"><b>Owner</b>Bar-Ilan team</p><p class="kv"><b>Blocks</b>All creative production</p></div></div>
+  <div class="gold"><b>Approved certificate wording (fallback):</b><q>"…the program is currently preparing to apply for accreditation by APHEA (Agency for Public Health Education Accreditation) under its Continuing Training &amp; Educational Event (CTEE) accreditation framework."</q><span class="note">Never say "accredited". <a class="certlink" href="certification.html">US &amp; Europe certification →</a></span></div>
+<div class="bl"><b>Bottom line</b><p>Close these 4 and production starts on time.</p></div>
 </div></section>
 <section id="more"><div class="w">
-  <span class="kicker">07 · Also to agree today</span>
-  <h2>Also to agree today</h2>
-  <span class="swipe">Swipe →</span><ul class="list"><li><b>Approvals</b><span>Who signs off, how fast</span></li><li><b>Data &amp; CRM</b><span>Everything into eTeacher’s CRM</span></li><li><b>Syllabus &amp; faculty</b><span>A syllabus a lecturer can run · who sends, by when</span></li><li><b>Budget &amp; target</b><span>Media budget · 334+ leads · 10+ students</span></li><li><b>Announcement</b><span>When Bar-Ilan announces</span></li></ul>
+  <span class="kicker">04 · Also needed from Bar-Ilan</span>
+  <h2>Also needed from Bar-Ilan</h2>
+  <div class="mc"><div class="mcc "><span class="k">Materials</span><h3>Everything beyond what Nadav shared</h3><p>Imagery, videos, footage, anything existing that has value.</p><p class="kv"><b>Blocks</b>Creative production</p></div><div class="mcc "><span class="k">Brand</span><h3>Bar-Ilan brand book</h3><p>Logos and co-branding rules, so we treat their brand with respect. Plus the official Health 360 logo and APHEA logo permission.</p></div><div class="mcc "><span class="k">Dates</span><h3>Meeting dates with Ariel</h3><p>Asked Nov 23. To present the layout and the async rationale.</p><p class="kv"><b>Blocks</b>Course split and syllabus</p></div><div class="mcc "><span class="k">Approvals</span><h3>Sign-off, faculty, announcement</h3><p>Who signs off and how fast. Faculty list. When Bar-Ilan announces.</p></div><div class="mcc "><span class="k">Pricing</span><h3>Tuition &amp; payment plans</h3><p>Tuition, 12 monthly installments, pay-in-full, single course. Not in any document we hold.</p></div><div class="mcc "><span class="k">Research</span><h3>Research &amp; methods</h3><p>Health 360 framework, or others too? Which methods we name in marketing.</p></div></div>
 <div class="bl"><b>Bottom line</b><p>An owner and a date for each, before we leave.</p></div>
 </div></section>
-<section id="phases" class="alt"><div class="w">
-  <span class="kicker">Appendix · Full scope of work</span>
-  <h2>Marketing phases in detail</h2>
-
-  <div class="phase">
-    <div class="ph-head"><div><span class="ph-k">Phase 1 · up to 4 weeks</span><h3>Planning &amp; preparation</h3></div><p>Build every asset.</p></div>
-    <span class="swipe">Swipe →</span><div class="streams">
-      <article class="stream"><span class="n">1.1</span><h4>Audience research, messaging &amp; creative direction</h4><ul>
-        <li>Target audience personas and messaging framework</li><li>Key marketing messages and value propositions</li><li>Creative direction and graphic design for campaign materials</li><li>Adapting messaging and creative assets based on campaign performance</li></ul></article>
-      <article class="stream"><span class="n">1.2</span><h4>Paid media assets &amp; campaign preparation</h4><ul>
-        <li>Up to 2 promotional videos (~90 seconds), up to 8 format adaptations</li><li>4 static feed ads, stories/reels and 2 carousels</li><li>2 landing pages and 3 creative-rich lead forms with OTP</li><li>100+ Google Search ad variations</li><li>Creative production, campaign setup, landing page programming, design and motion assets</li></ul></article>
-      <article class="stream"><span class="n">1.3</span><h4>Course collateral &amp; supporting content</h4><ul>
-        <li>3 video test ads (~90 seconds)</li><li>8 blog posts with one-page summaries and cover designs</li><li>Optional: 2 lead magnets, health education materials and cheat sheets</li></ul></article>
-    </div>
-  </div>
-
-  <div class="phase">
-    <div class="ph-head dark"><div><span class="ph-k">Phase 2 · 30 days</span><h3>Demand validation</h3></div><p>Test it in market. Measure. Optimize.</p></div>
-    <span class="swipe">Swipe →</span><div class="streams">
-      <article class="stream"><span class="n">2.1</span><h4>Demand validation &amp; optimization</h4><ul>
-        <li>Campaigns across Meta and Google Search</li><li>Testing audiences, messages and creative approaches</li><li>Optimizing ads, targeting and media allocation</li><li>Monitoring leads, acquisition costs and conversion indicators</li><li>Performance reporting and final assessment of market demand</li></ul></article>
-      <article class="stream"><span class="n">2.2</span><h4>Media plan</h4><ul>
-        <li><b>Meta:</b> audience testing, video and static ads, lead generation and retargeting</li><li><b>Google Search:</b> campaigns targeting relevant demand, measuring acquisition performance</li><li><b>Landing pages &amp; lead forms:</b> conversion testing, lead capture and measurement</li><li>Budget can shift between channels during validation, within the approved total</li></ul></article>
-      <article class="stream"><span class="n">2.3</span><h4>Lead definition</h4><ul>
-        <li>US audience; contact details given after a high-level program overview</li><li>Two qualifying questions: expected enrollment timing, and main goal</li><li>Showing price or a price range: recommended, not mandatory</li></ul></article>
-    </div>
-  </div>
-<div class="bl"><b>Bottom line</b><p>Phase 1 builds. Phase 2 proves.</p></div>
+<section id="assets"><div class="w">
+  <span class="kicker">05 · Scope of assets</span>
+  <h2>Scope of assets we’re committed to</h2>
+  <div class="mc"><div class="mcc "><span class="big">Up to 2</span><h3>Promo videos</h3><p>~90 seconds each, up to 8 format adaptations</p></div><div class="mcc "><span class="big">3</span><h3>Video test ads</h3><p>~90 seconds each</p></div><div class="mcc "><span class="big">4</span><h3>Static feed ads</h3><p>Plus stories/reels formats (count to confirm)</p></div><div class="mcc "><span class="big">2</span><h3>Carousels</h3><p></p></div><div class="mcc "><span class="big">2</span><h3>Landing pages</h3><p>3 lead forms with OTP</p></div><div class="mcc "><span class="big">100+</span><h3>Google Search ad variations</h3><p></p></div><div class="mcc "><span class="big">8</span><h3>Blog posts</h3><p>One-page summaries and cover designs</p></div><div class="mcc "><span class="big">Optional 2</span><h3>Lead magnets</h3><p>Educational materials and cheat sheets</p></div><div class="mcc "><span class="big">To confirm</span><h3>AI UGC videos</h3><p>Count to confirm</p></div><div class="mcc "><span class="big">To confirm</span><h3>Banners &amp; ad kit</h3><p>Count to confirm</p></div><div class="mcc shoot"><span class="big">3 people</span><h3>Real-people shoot (Bar-Ilan faculty)</h3><p>3–4 hours, Dec 4/5–8/9. Real footage joins the AI assets in the ad kit. Omri explains the exact mix. Count to confirm</p></div></div>
+  <p class="note" style="margin-top:22px">Source: Appendix A. Quantities may be reasonably adjusted within the approved plan and budget.</p>
+</div></section>
+<section id="behind"><div class="w">
+  <span class="kicker">06 · Where we’re behind</span>
+  <h2>Where we’re behind, and the decisions that fix it</h2>
+  <div class="mc"><div class="mcc"><span class="k">Late</span><h3>Product &amp; wording: course split, module name</h3><p class="kv"><b>Date</b>Planned Nov 21 (Week 1). 5 days late today</p><p class="kv"><b>If not closed</b>Landing page copy and all ads stay blocked</p></div><div class="mcc"><span class="k">Due today</span><h3>Shoot day booked</h3><p class="kv"><b>Date</b>Today Nov 26, for Dec 4 or 5 to Dec 8 or 9</p><p class="kv"><b>If not closed</b>No real footage in time for comments and edits before Dec 13</p></div><div class="mcc"><span class="k">Due in 2 days</span><h3>Positioning &amp; copy approved</h3><p class="kv"><b>Date</b>Nov 28 (end of Week 2)</p><p class="kv"><b>If not closed</b>Landing page and scripts slip into production week</p></div><div class="mcc"><span class="k">Due in 3 days</span><h3>Final syllabus, brand book &amp; materials</h3><p class="kv"><b>Date</b>Nov 29 (production starts)</p><p class="kv"><b>If not closed</b>Assets built on a layout that may change, or with wrong logo use</p></div><div class="mcc"><span class="k">Hard date</span><h3>Final approval</h3><p class="kv"><b>Date</b>Dec 12 (end of Week 4)</p><p class="kv"><b>If not closed</b>Go-live moves day for day, and so does the Jan 11 end of the test</p></div><div class="mcc"><span class="k">Go-live</span><h3>Campaigns live</h3><p class="kv"><b>Date</b>Dec 13, 30-day test to ~Jan 11</p><p class="kv"><b>If not closed</b>Feb 2027 semester decision moves with it</p></div></div>
+<div class="bl"><b>Bottom line</b><p>Close 4 key items today to hold Dec 13.</p></div>
 </div></section>
 <section id="facts" class="strip"><div class="w">
-  <span class="kicker">At a glance</span>
+  <span class="kicker">07 · At a glance</span>
   <h2>Program facts</h2>
   <span class="swipe">Swipe →</span><div class="pf">
     <div><b>6</b><span>courses</span></div><div><b>30</b><span>live lessons × 90 min</span></div><div><b>~100</b><span>hours</span></div><div><b>~8</b><span>months</span></div><div><b>Feb 2027</b><span>semester start</span></div>
