@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bar-Ilan × LLA · Pre-Pilot Handover · Nov 18, 2026</title>
+<title>Bar-Ilan × LLA · Pre-Pilot Update · Nov 26, 2026</title>
 <meta name="robots" content="noindex">
 <link rel="preload" href="../site/assets/fonts/InstrumentSerif-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../site/assets/fonts/Inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
@@ -307,27 +307,63 @@ nav{background:rgba(0,0,0,.6)!important}
 .qs>li>div{min-width:0;max-width:100%}
 .qs>li{overflow:hidden}
 .callout{display:block!important}.callout::before{display:none!important}
+
+/* Update pass: tags, where-we-are-now, open questions, research slot */
+#open{padding:128px 0;background:transparent}
+#open h2{font-size:clamp(42px,5.6vw,72px)!important}
+#now{padding:104px 0}
+.tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#05070D;background:var(--lb);padding:3px 9px;border-radius:999px;margin-right:8px;vertical-align:middle;line-height:1.5}
+.tag.amb{background:#F2B45C}
+.kv{font-size:18px!important;line-height:1.45;margin-top:10px}
+.kv b{display:inline-block;min-width:78px;font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--lb);margin-right:8px}
+.kv.own b{color:#F2B45C}
+.kv.blk b{color:#F472B6}
+.kv.pd b{color:#4FD1C5}
+.now{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:start}
+.now h3{margin:0 0 16px;font-size:14px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--lb)}
+.rows{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.rows li{position:relative;display:grid;grid-template-columns:116px minmax(0,1fr);gap:16px;padding:18px 22px;border-radius:20px;border:1px solid rgba(255,255,255,.16);border-left:4px solid var(--c);background:linear-gradient(160deg,rgba(255,255,255,.09) 0%,rgba(255,255,255,.025) 55%,rgba(255,255,255,.05) 100%);-webkit-backdrop-filter:blur(22px) saturate(140%);backdrop-filter:blur(22px) saturate(140%);box-shadow:inset 0 1px 0 rgba(255,255,255,.28),0 30px 60px -30px rgba(0,0,0,1)}
+.rows.done li{--c:#4FD1C5}
+.rows li.wait{--c:#F2B45C}
+.rows li.plan{--c:#6FA8FF}
+.rows li.go{--c:#F472B6}
+.rows .d{font-family:IS,Georgia,serif;font-size:28px;line-height:1.05;color:var(--c)}
+.rows .d small{display:block;margin-top:6px;font-family:Inter,system-ui,sans-serif;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.rows b{display:block;font-size:19px;line-height:1.3;font-weight:800;color:var(--white)}
+.rows .t{display:block;margin-top:4px;font-size:17px;line-height:1.45;color:var(--soft)}
+#research .slot{border:2px dashed rgba(139,196,255,.55);border-radius:28px;padding:48px 40px;background:rgba(139,196,255,.05);text-align:center}
+#research .slot b{display:block;font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#F2B45C;margin-bottom:12px}
+#research .slot p{font-size:22px;color:var(--white);max-width:34ch;margin:0 auto}
+@media(max-width:1000px){.now{grid-template-columns:1fr}}
+@media(max-width:720px){
+ #open{padding:80px 0}#open h2{font-size:44px!important}
+ #now{padding:72px 0}
+ .rows li{grid-template-columns:1fr;gap:8px;padding:18px 18px}
+ .rows .d{font-size:26px}.rows .d small{display:inline;margin-left:10px}
+ .kv b{display:block;min-width:0;margin:0 0 2px}
+ #research .slot{padding:32px 20px}#research .slot p{font-size:19px}
+}
 </style></head><body>
 <header><div class="w hd">
   <div class="brand"><img src="../site/assets/img/lla-logo.png" alt="Longevity Life Academy" width="720" height="231"><i aria-hidden="true"></i><img class="biu" src="../site/assets/img/biu-logo-white.png?v=en" alt="Bar-Ilan University" width="833" height="309"></div>
-  <span class="pill">Pre-pilot handover · Meeting Nov 18, 2026</span>
+  <span class="pill">Pre-pilot update · Meeting Nov 26, 2026</span>
   <h1>Longevity &amp; Lifelong Wellbeing <em>Advisory Practice</em></h1>
   <p>Professional certificate · Bar-Ilan University Health 360 (Prof. Nadav Davidovitch) &amp; Akadima, with eTeacher.</p>
   <div class="tabs"><a class="on" href="./">Pre-pilot plan</a><a href="certification.html">US &amp; Europe certification</a></div>
 </div></header>
 
-<nav aria-label="Sections"><div class="w"><a href="#sum">Summary</a><a href="#goal">Why</a><a href="#plan">Plan</a><a href="#ms">Week by week</a><a class="hot" href="#q">Decisions today</a><a href="#more">Also to agree</a><a href="#phases">Appendix: scope</a><a href="certification.html">Certification →</a></div></nav>
+<nav aria-label="Sections"><div class="w"><a href="#sum">Summary</a><a href="#goal">Why</a><a href="#plan">Plan</a><a href="#ms">Week by week</a><a href="#now">Where we are</a><a class="hot" href="#open">Open questions</a><a href="#q">Decisions</a><a href="#more">Also to agree</a><a href="#phases">Appendix: scope</a><a href="#research">Research</a><a href="certification.html">Certification →</a></div></nav>
 
 <main>
 <section id="sum"><div class="w">
   <span class="kicker">Summary · one screen</span>
   <h2>The meeting in 3 steps</h2>
   <span class="swipe">Swipe →</span><div class="sum3">
-    <div class="pc"><span class="ph-k">Step 1</span><h3>Where we are</h3><ul class="d3"><li>Kick-off was Nov 15</li><li>4 weeks of prep &amp; creation</li><li>Live Dec 13 · 30-day test</li></ul></div>
-    <div class="pc hotc"><span class="ph-k">Step 2</span><h3>What we need today</h3><ul class="d3"><li>Product: hours, lessons, units</li><li>Pricing</li><li>Certificate: option A, B or C</li><li>Research &amp; methodologies</li></ul></div>
-    <div class="pc"><span class="ph-k">Step 3</span><h3>What happens next</h3><ul class="d3"><li>Week 1 approvals lock this week</li><li>Production starts Week 3</li><li>Results decide the Feb 2027 semester</li></ul></div>
+    <div class="pc"><span class="ph-k">Step 1</span><h3>Where we are</h3><ul class="d3"><li>Kick-off was Nov 15</li><li>Deck, website &amp; materials built Nov 17–18</li><li>Live Dec 13 · 30-day test</li></ul></div>
+    <div class="pc hotc"><span class="ph-k">Step 2</span><h3>What we need today</h3><ul class="d3"><li>Course layout &amp; async sessions</li><li>Pricing</li><li>Certificate: one-module pilot</li><li>Shoot day &amp; meeting dates</li><li>Research &amp; methodologies</li></ul></div>
+    <div class="pc"><span class="ph-k">Step 3</span><h3>What happens next</h3><ul class="d3"><li>Shoot day in early December</li><li>Production starts Week 3 (Nov 29)</li><li>Results decide the Feb 2027 semester</li></ul></div>
   </div>
-  <div class="bl"><b>Bottom line</b><p>4 decisions today → live Dec 13.</p></div>
+  <div class="bl"><b>Bottom line</b><p>Answers today → live Dec 13.</p></div>
 </div></section>
 
 <section id="goal" class="goal"><div class="w">
@@ -350,22 +386,62 @@ nav{background:rgba(0,0,0,.6)!important}
   <h2>Mini milestones</h2>
   <span class="swipe">Swipe →</span><ol class="tl">
     <li><span class="wk">Week 1</span><span class="dt">Nov 15 – 21</span><h3>Lock the product &amp; research</h3><ul class="d3 sm"><li>Product, price, wording approved</li><li>Market &amp; competitor research</li></ul></li>
-    <li><span class="wk">Week 2</span><span class="dt">Nov 22 – 28</span><h3>Positioning, copy &amp; scripts</h3><ul class="d3 sm"><li>Positioning &amp; copy approved</li><li>Landing page draft</li><li>Video scripts</li></ul></li>
-    <li><span class="wk">Week 3</span><span class="dt">Nov 29 – Dec 5</span><h3>Creative production</h3><ul class="d3 sm"><li>2 promo videos + 8 cuts</li><li>4 statics, 2 carousels</li><li>3 test videos</li></ul></li>
+    <li><span class="wk">Week 2</span><span class="dt">Nov 22 – 28</span><h3>Positioning, copy &amp; scripts</h3><ul class="d3 sm"><li>Positioning &amp; copy approved</li><li>Landing page draft</li><li>Video scripts &amp; shoot-day layout</li></ul></li>
+    <li><span class="wk">Week 3</span><span class="dt">Nov 29 – Dec 5</span><h3>Creative production</h3><ul class="d3 sm"><li>Shoot day: 3–4 h, 3 people (date TBC)</li><li>2 promo videos + 8 cuts</li><li>4 statics, 2 carousels</li><li>3 test videos</li></ul></li>
     <li><span class="wk">Week 4</span><span class="dt">Dec 6 – 12</span><h3>Build, track &amp; approve</h3><ul class="d3 sm"><li>2 landing pages, 3 forms</li><li>100+ Google ads, 8 blogs</li><li>CRM tracking, final OK</li></ul></li>
     <li class="live"><span class="wk">Go-live</span><span class="dt">Dec 13 – Jan 11</span><h3>Demand validation</h3><ul class="d3 sm"><li>30 days live, ~3 weeks optimizing</li><li>Feb 2027 decision</li></ul></li>
   </ol>
-<div class="bl"><b>Bottom line</b><p>Week 1 approvals today keep Dec 13 on track.</p></div>
+<div class="bl"><b>Bottom line</b><p>Dec 13 holds only if Week 1–2 approvals land now.</p></div>
+</div></section>
+<section id="now"><div class="w">
+  <span class="kicker">04 · Where we are now</span>
+  <h2>Where we are, and what’s next</h2>
+  <div class="now">
+    <div>
+      <h3>Done since kick-off</h3>
+      <ol class="rows done">
+        <li><span class="d">Nov 15</span><div><b>Kick-off</b><span class="t">4-week prep phase starts</span></div></li>
+        <li><span class="d">Nov 17</span><div><b>Materials, brief &amp; first website</b><span class="t">Matan’s brief, proposal and Appendix A filed. Landing page and 8-article journal built</span></div></li>
+        <li><span class="d">Nov 18</span><div><b>Pre-pilot meeting, deck &amp; redesign</b><span class="t">Deck finished 10:20. Website redesigned 13:31</span></div></li>
+        <li><span class="d">Nov 23</span><div><b>Open questions sent to Bar-Ilan</b><span class="t">Bar-Ilan replied the same day. Layout, accreditation and meeting dates still open</span></div></li>
+        <li><span class="d">Nov 26</span><div><b>Today: this update</b><span class="t">Open questions on the next slide</span></div></li>
+      </ol>
+    </div>
+    <div>
+      <h3>Coming up</h3>
+      <ol class="rows">
+        <li class="wait"><span class="d">This week<small>Bar-Ilan</small></span><div><b>Meeting dates with Ariel</b><span class="t">Requested 23 Nov. Layout and async rationale to be presented</span></div></li>
+        <li class="plan"><span class="d">Nov 22–28<small>Week 2</small></span><div><b>Positioning, copy &amp; scripts</b><span class="t">Landing page draft. Shoot-day layout and scripts</span></div></li>
+        <li class="wait"><span class="d">Early Dec<small>Week 3 · date TBC</small></span><div><b>Shoot day</b><span class="t">3–4 hours, 3 people filmed, ideally incl. Nadav. Creative production starts Nov 29</span></div></li>
+        <li class="plan"><span class="d">Dec 6–12<small>Week 4</small></span><div><b>Build, track &amp; final approval</b><span class="t">Landing pages, forms, Google ads, CRM</span></div></li>
+        <li class="go"><span class="d">Dec 13<small>Go-live</small></span><div><b>30-day demand test</b><span class="t">Runs to ~Jan 11. Decides the Feb 2027 semester</span></div></li>
+      </ol>
+    </div>
+  </div>
+  <div class="bl"><b>Commitment</b><p>Committed go-live: Dec 13. Amber items need Bar-Ilan.</p></div>
+</div></section>
+<section id="open"><div class="w">
+  <span class="kicker">05 · Open questions</span>
+  <h2>What we need from Bar-Ilan to proceed</h2>
+  <ol class="qs">
+    <li><span class="qn" aria-hidden="true">01</span><div><h3>Course length, frequency &amp; yearly layout</h3><p class="sub">Plus a syllabus a lecturer can run</p><p class="kv own"><b>Owner</b>Bar-Ilan team, with Ariel</p><p class="kv blk"><b>Blocks</b>Product facts on the landing page and ads. Today 4 × 6 = 24 lessons, not 30. No session-by-session syllabus yet</p><p class="kv pd"><b>Plan date</b>Week 1 (Nov 15–21), passed</p></div></li>
+    <li><span class="qn" aria-hidden="true">02</span><div><h3>Async sessions: rationale &amp; change</h3><p class="sub">Differs from what we agreed</p><p class="kv own"><b>Owner</b>Bar-Ilan team, with Ariel</p><p class="kv blk"><b>Blocks</b>What we market: live vs. async, hours, months</p><p class="kv pd"><b>Next</b>Bar-Ilan presents the rationale and discusses it with us</p></div></li>
+    <li><span class="qn" aria-hidden="true">03</span><div><h3>One-module accreditation: name &amp; plan</h3><p class="sub">Nadav’s pilot idea</p><p class="kv own"><b>Owner</b>Ariel &amp; Nadav, still checking</p><p class="kv blk"><b>Blocks</b>Certificate wording: Option A or the APHEA line. Never “accredited”</p><p class="kv pd"><b>Need</b>What the module is called and the plan</p></div></li>
+    <li><span class="qn" aria-hidden="true">04</span><div><h3>Shoot day: date and the 3 people</h3><p class="sub">3–4 hours, early December</p><p class="kv own"><b>Owner</b>Nadav Davidovitch, with the Bar-Ilan team</p><p class="kv blk"><b>Blocks</b>Creative production, Week 3 (Nov 29–Dec 5). Our layout and scripts depend on who is filmed</p><p class="kv pd"><b>Need</b>Date, location, and Nadav as one of the 3</p></div></li>
+    <li><span class="qn" aria-hidden="true">05</span><div><h3>Meeting dates this week</h3><p class="sub">To present the layout</p><p class="kv own"><b>Owner</b>Ariel</p><p class="kv blk"><b>Blocks</b>Items 01 and 02 can’t close without it</p><p class="kv pd"><b>Asked</b>Nov 23</p></div></li>
+    <li><span class="qn" aria-hidden="true">06</span><div><h3>Approvals, faculty &amp; brand assets</h3><p class="sub">Who signs off, how fast</p><p class="kv own"><b>Owner</b>Bar-Ilan team, owner to be named</p><p class="kv blk"><b>Blocks</b>Publishing. Needs faculty list, official Health 360 logo, permission for the APHEA logo, official team photos</p><p class="kv pd"><b>Need</b>One approver and a turnaround time</p></div></li>
+  </ol>
+  <div class="bl"><b>Bottom line</b><p>6 answers keep Dec 13 on track.</p></div>
 </div></section>
 <section id="q"><div class="w">
-  <span class="kicker">04 · Decisions for today</span>
+  <span class="kicker">06 · Decisions from the Nov 18 deck</span>
   <h2>Decisions we need today</h2>
   <ol class="qs">
-    <li><span class="qn" aria-hidden="true">01</span><div><h3>The product</h3><p class="sub">Hours, lessons, units</p><ul class="d"><li>Today: 6 courses · 30 lessons × 90 min · ~100 h · ~8 months</li><li>Lessons per course? (4 × 6 = 24, not 30)</li><li>Live vs. recorded · practicum · faculty</li></ul></div></li>
+    <li><span class="qn" aria-hidden="true">01</span><div><h3>The product</h3><p class="sub">Hours, lessons, units</p><ul class="d"><li>Today: 6 courses · 30 lessons × 90 min · ~100 h · ~8 months</li><li>Lessons per course? (4 × 6 = 24, not 30)</li><li><span class="tag">23 Nov</span>Bar-Ilan proposes added asynchronous sessions. This differs from what we agreed</li><li>Live vs. async · practicum · faculty</li></ul></div></li>
     <li><span class="qn" aria-hidden="true">02</span><div><h3>Pricing</h3><p class="sub">What it costs, how they pay</p><ul class="d"><li>Tuition</li><li>12 monthly installments</li><li>Pay-in-full · single course · early-bird</li></ul></div></li>
     <li><span class="qn" aria-hidden="true">03</span><div><h3>The certificate</h3><p class="sub">How we present it: pick one</p>
       <div class="opts">
-        <div class="opt"><span>Option A</span><b>Approve one model before the pilot</b><p>What is the model called?</p></div>
+        <div class="opt"><span>Option A</span><b>Approve one module before the pilot</b><p>Nadav’s idea. Ariel &amp; Nadav are checking. What is it called?</p></div>
         <div class="opt"><span>Option B</span><b>Use the approved “in process” line</b><p>APHEA wording below</p></div>
         <div class="opt"><span>Option C</span><b>Say nothing</b><p>Lean on Bar-Ilan’s credibility &amp; EU ties</p></div>
       </div>
@@ -376,9 +452,9 @@ nav{background:rgba(0,0,0,.6)!important}
 <div class="bl"><b>Bottom line</b><p>Lock these 4 today. Production starts on time.</p></div>
 </div></section>
 <section id="more"><div class="w">
-  <span class="kicker">05 · Also to agree today</span>
+  <span class="kicker">07 · Also to agree today</span>
   <h2>Also to agree today</h2>
-  <span class="swipe">Swipe →</span><ul class="list"><li><b>Approvals</b><span>Who signs off, how fast</span></li><li><b>Data &amp; CRM</b><span>Everything into eTeacher’s CRM</span></li><li><b>Syllabus &amp; faculty</b><span>Who sends, by when</span></li><li><b>Budget &amp; target</b><span>Media budget · 334+ leads · 10+ students</span></li><li><b>Announcement</b><span>When Bar-Ilan announces</span></li></ul>
+  <span class="swipe">Swipe →</span><ul class="list"><li><b>Approvals</b><span>Who signs off, how fast</span></li><li><b>Data &amp; CRM</b><span>Everything into eTeacher’s CRM</span></li><li><b>Syllabus &amp; faculty</b><span>A syllabus a lecturer can run · who sends, by when</span></li><li><b>Budget &amp; target</b><span>Media budget · 334+ leads · 10+ students</span></li><li><b>Announcement</b><span>When Bar-Ilan announces</span></li></ul>
 <div class="bl"><b>Bottom line</b><p>An owner and a date for each, before we leave.</p></div>
 </div></section>
 <section id="phases" class="alt"><div class="w">
@@ -416,6 +492,7 @@ nav{background:rgba(0,0,0,.6)!important}
   <span class="swipe">Swipe →</span><div class="pf">
     <div><b>6</b><span>courses</span></div><div><b>30</b><span>live lessons × 90 min</span></div><div><b>~100</b><span>hours</span></div><div><b>~8</b><span>months</span></div><div><b>Feb 2027</b><span>semester start</span></div>
   </div>
+  <p class="callout"><b>Format under review:</b>&nbsp;Bar-Ilan proposes adding asynchronous sessions (23 Nov). Live lessons, hours and months may change once the layout is presented.</p>
 </div></section>
 
 
@@ -424,6 +501,12 @@ nav{background:rgba(0,0,0,.6)!important}
 
 
 
+<!-- RESEARCH-SLIDES-INSERT-HERE: Omri's 6-7 research slides go in this section, after the program facts. Replace the .slot block. -->
+<section id="research"><div class="w">
+  <span class="kicker">08 · Research</span>
+  <h2>Research slides</h2>
+  <div class="slot"><b>Placeholder · slides coming</b><p>6–7 key research slides from Omri go here.</p></div>
+</div></section>
 </main>
-<footer><div class="w">Longevity Life Academy · Prepared for the Nov 18, 2026 meeting</div></footer>
+<footer><div class="w">Longevity Life Academy · Prepared for the Nov 26, 2026 meeting · first version Nov 18</div></footer>
 </body></html>
